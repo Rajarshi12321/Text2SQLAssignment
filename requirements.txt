@@ -1,4 +1,8 @@
+langchain
 google-generativeai
+langchain-core==0.2.22
+langchain-google-genai==1.0.8
+langgraph
 psycopg2
 pandas
 gradio

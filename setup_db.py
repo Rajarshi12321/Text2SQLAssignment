@@ -1,6 +1,7 @@
 import subprocess
 import os
 import time
+import platform  # Add this import at the top
 
 
 # SQL queries
@@ -63,27 +64,36 @@ def setup_pagila_database():
             )
         else:
             print("Database 'pagila' already exists, skipping creation...")
-
-        # Check if schema exists by checking for a known table
+        # Check if schema exists by checking for tables
         check_schema = subprocess.run(
-            """docker exec -i postgres psql -U postgres -d pagila -t -c "SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'actor');" """,
+            """docker exec -i postgres psql -U postgres -d pagila -c "\dt" """,
             shell=True,
             text=True,
             capture_output=True,
         )
 
-        if "t" not in check_schema.stdout.strip():
-            # Load schema
+        # Modified schema loading for Windows compatibility
+        if not check_schema.stdout.strip():
             print("Loading pagila schema...")
             try:
-                subprocess.run(
-                    "type pagila/pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila",
-                    shell=True,
-                    check=True,
-                )
+                # Use different commands based on OS
+                if platform.system() == "Windows":
+                    subprocess.run(
+                        "docker exec -i postgres psql -U postgres -d pagila < pagila/pagila-schema.sql",
+                        shell=True,
+                        check=True,
+                    )
+                else:
+                    # Original Unix command
+                    subprocess.run(
+                        "type pagila/pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila",
+                        shell=True,
+                        check=True,
+                    )
             except subprocess.CalledProcessError as e:
                 print(f"Error loading schema: {e}")
                 raise
+
         else:
             print("Schema already exists, skipping schema load...")
 
@@ -95,15 +105,24 @@ def setup_pagila_database():
             capture_output=True,
         )
 
+        # Check if data exists
         if check_data.stdout.strip() == "0":
-            # Load data
             print("Loading pagila data...")
             try:
-                subprocess.run(
-                    "type pagila/pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila",
-                    shell=True,
-                    check=True,
-                )
+                # Use different commands based on OS
+                if platform.system() == "Windows":
+                    subprocess.run(
+                        "docker exec -i postgres psql -U postgres -d pagila < pagila/pagila-data.sql",
+                        shell=True,
+                        check=True,
+                    )
+                else:
+                    # Original Unix command
+                    subprocess.run(
+                        "type pagila/pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila",
+                        shell=True,
+                        check=True,
+                    )
             except subprocess.CalledProcessError as e:
                 print(f"Error loading data: {e}")
                 raise
