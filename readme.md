@@ -23,6 +23,7 @@
   - [Features](#features)
   - [Database Schema](#database-schema)
   - [Example Queries](#example-queries)
+    - [Demo Example](#demo-example)
   - [Troubleshooting](#troubleshooting)
   - [Notes](#notes)
   - [License](#license)
@@ -144,14 +145,15 @@ for query in queries:
     print(f"Results: {results}")
 ```
 
-Demo example of 1 query:
+### Demo Example
+
+Here's an example of converting a natural language query to SQL:
 
 Function and example:
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/059a2377-bf89-4593-a788-713fc26b6395" />
 
 Output:
 <img width="353" alt="image" src="https://github.com/user-attachments/assets/a4b4210a-ca0a-4cf8-985f-611150c4b700" />
-
 
 ## Troubleshooting
 
@@ -174,6 +176,14 @@ Output:
 - The system uses Google's Gemini model for natural language processing
 - Queries are validated and optimized before execution
 - Results are formatted for clear display
+- The inferenced dataset containing the natural language queries, generated SQL queries and their outputs is stored in `inferenced_results.csv`
+- The CSV file includes columns for:
+  - Query Number
+  - Natural Language Query
+  - Difficulty
+  - Query
+  - SQL_Generated
+  - Results
 
 ## License
 
