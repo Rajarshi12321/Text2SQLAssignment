@@ -144,6 +144,15 @@ for query in queries:
     print(f"Results: {results}")
 ```
 
+Demo example of 1 query:
+
+Function and example:
+<img width="406" alt="image" src="https://github.com/user-attachments/assets/059a2377-bf89-4593-a788-713fc26b6395" />
+
+Output:
+<img width="353" alt="image" src="https://github.com/user-attachments/assets/a4b4210a-ca0a-4cf8-985f-611150c4b700" />
+
+
 ## Troubleshooting
 
 1. **Docker Issues**
