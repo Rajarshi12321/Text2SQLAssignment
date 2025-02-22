@@ -6,7 +6,6 @@
 
 - [Medium - Rajarshi Roy](https://medium.com/@rajarshiroy.machinelearning)
   
-- [Kaggle - Rajarshi Roy](https://www.kaggle.com/rajarshiroy0123/)
 - [Mail - Rajarshi Roy](mailto:royrajarshi0123@gmail.com)
 - [Personal-Website - Rajarshi Roy](https://rajarshi12321.github.io/rajarshi_portfolio/)
 
@@ -43,24 +42,22 @@ A natural language to SQL query converter using Google's Gemini model, specifica
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Rajarshi12321/Text2SQLAssignment.git
 cd Text2Sql-assignment
 ```
 
 2. Install required Python packages:
 ```bash
 pip install -r requirements.txt
-pip install langchain-core==0.2.22
-pip install langchain-google-genai==1.0.8
-pip install langgraph
 ```
 
 3. Set up your Google API key:
    - Get an API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
    - Add it to your code:
-```python
-import os
-os.environ["GOOGLE_API_KEY"] = "your-api-key-here"
+Create a `.env` file in the root directory with the following content:
+```
+GOOGLE_API_KEY = "your-api-key-here"
+LANGCHAIN_API_KEY = "your-api-key-here"
 ```
 
 ## Database Setup
@@ -97,7 +94,6 @@ b. Agent-based approach:
 # Using the agent executor
 result = agent_executor.invoke({
     "input": natural_language_query,
-    "database_schema": DATABASE_SCHEMA,
     "sql_query": "",
     "final_query": ""
 })
@@ -166,7 +162,6 @@ for query in queries:
 
 ## Notes
 
-- The Pagila database is a sample database for DVD rentals
 - The system uses Google's Gemini model for natural language processing
 - Queries are validated and optimized before execution
 - Results are formatted for clear display
