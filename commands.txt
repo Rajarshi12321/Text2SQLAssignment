@@ -1,0 +1,20 @@
+docker pull postgres
+docker run --name postgres -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres
+
+docker exec -it postgres psql -U postgres
+
+```postgres
+psql (13.1 (Debian 13.1-1.pgdg100+1))
+Type "help" for help.
+
+postgres=# CREATE DATABASE pagila;
+postgres-# CREATE DATABASE
+postgres=\q
+```
+
+```cmd
+type pagila/pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila
+type pagila/pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila
+docker exec -it postgres psql -U postgres
+```
+

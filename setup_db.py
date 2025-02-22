@@ -1,0 +1,194 @@
+import subprocess
+import os
+import time
+
+
+# SQL queries
+QUERIES = {
+    "list_tables": """SELECT table_schema, table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name""",
+    "check_schema": """SELECT current_database(), current_schema""",
+    "check_permissions": """SELECT usename, usesuper, usecreatedb FROM pg_user""",
+    "check_database": """SELECT datname FROM pg_database""",
+}
+
+
+def setup_pagila_database():
+    """Sets up the pagila database using SQL files"""
+    try:
+        # Check if postgres image exists
+        check_image = subprocess.run(
+            "docker images postgres -q", shell=True, text=True, capture_output=True
+        )
+
+        if not check_image.stdout.strip():
+            print("Pulling postgres image...")
+            subprocess.run("docker pull postgres", shell=True, check=True)
+        else:
+            print("Postgres image already exists, skipping pull...")
+
+        # Run postgres container if not already running
+        check_container = subprocess.run(
+            "docker ps -q -f name=postgres", shell=True, text=True, capture_output=True
+        )
+
+        if not check_container.stdout.strip():
+            print("Starting postgres container...")
+            subprocess.run(
+                # "docker run --name postgres -e POSTGRES_PASSWORD=secret -d postgres",
+                "docker run --name postgres -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres",  # Update according to your postgres port
+                shell=True,
+                check=True,
+            )
+        else:
+            print("Postgres container already running, skipping start...")
+
+        time.sleep(3)
+        # Check if database exists
+        check_db = subprocess.run(
+            """docker exec -i postgres psql -U postgres -t -c "SELECT datname FROM pg_database WHERE datname='pagila';""",
+            shell=True,
+            text=True,
+            capture_output=True,
+        )
+        # # Print running containers
+        # print("\nRunning containers:")
+        # subprocess.run("docker ps -a", shell=True, check=True)
+        # print("\n\n")
+        if "pagila" not in check_db.stdout:
+            print("Creating pagila database...")
+            subprocess.run(
+                'docker exec -i postgres psql -U postgres -c "CREATE DATABASE pagila;"',
+                shell=True,
+                check=True,
+            )
+        else:
+            print("Database 'pagila' already exists, skipping creation...")
+
+        # Check if schema exists by checking for a known table
+        check_schema = subprocess.run(
+            """docker exec -i postgres psql -U postgres -d pagila -t -c "SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'actor');" """,
+            shell=True,
+            text=True,
+            capture_output=True,
+        )
+
+        if "t" not in check_schema.stdout.strip():
+            # Load schema
+            print("Loading pagila schema...")
+            try:
+                subprocess.run(
+                    "type pagila/pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila",
+                    shell=True,
+                    check=True,
+                )
+            except subprocess.CalledProcessError as e:
+                print(f"Error loading schema: {e}")
+                raise
+        else:
+            print("Schema already exists, skipping schema load...")
+
+        # Check if data exists by counting rows in actor table
+        check_data = subprocess.run(
+            """docker exec -i postgres psql -U postgres -d pagila -t -c "SELECT COUNT(*) FROM actor;" """,
+            shell=True,
+            text=True,
+            capture_output=True,
+        )
+
+        if check_data.stdout.strip() == "0":
+            # Load data
+            print("Loading pagila data...")
+            try:
+                subprocess.run(
+                    "type pagila/pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila",
+                    shell=True,
+                    check=True,
+                )
+            except subprocess.CalledProcessError as e:
+                print(f"Error loading data: {e}")
+                raise
+        else:
+            print("Data already exists, skipping data load...")
+
+        print("Pagila database setup completed successfully!")
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error setting up database: {e}")
+    except FileNotFoundError as e:
+        print(f"SQL file not found: {e}")
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+
+
+def execute_query(query):
+    """Runs a SQL query inside the Docker container."""
+    # Escape double quotes in the query and wrap the entire query in double quotes
+    escaped_query = query.replace('"', '\\"').strip()
+    docker_command = (
+        f"""docker exec -i postgres psql -U postgres -d pagila -c "{escaped_query}" """
+    )
+
+    try:
+        result = subprocess.run(
+            docker_command, shell=True, check=True, text=True, capture_output=True
+        )
+        # print(result.stdout)
+        return result.stdout
+    except subprocess.CalledProcessError as e:
+        print(f"Error running query: {e.stderr}")
+        return e.stderr
+
+
+def restart_postgres_container():
+    """Stops any running postgres container and starts a new one"""
+    try:
+        # Stop and remove existing container if running
+        check_container = subprocess.run(
+            "docker ps -q -f name=postgres", shell=True, text=True, capture_output=True
+        )
+        if check_container.stdout.strip():
+            print("Stopping existing postgres container...")
+            subprocess.run("docker stop postgres", shell=True, check=True)
+            subprocess.run("docker rm postgres", shell=True, check=True)
+
+        # Check if postgres image exists
+        check_image = subprocess.run(
+            "docker images postgres -q", shell=True, text=True, capture_output=True
+        )
+        if not check_image.stdout.strip():
+            print("Pulling postgres image...")
+            subprocess.run("docker pull postgres", shell=True, check=True)
+
+        # Start new container
+        print("Starting new postgres container...")
+        subprocess.run(
+            "docker run --name postgres -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres",
+            shell=True,
+            check=True,
+        )
+        print("Postgres container started successfully!")
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error managing container: {e}")
+        raise
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        raise
+
+
+if __name__ == "__main__":
+    # First setup the database
+    restart_postgres_container()
+    setup_pagila_database()
+
+    print("\n=== Checking current database and schema ===")
+    print(execute_query(QUERIES["check_schema"]))
+
+    print("\n=== Checking database existence ===")
+    print(execute_query(QUERIES["check_database"]))
+
+    print("\n=== Checking user permissions ===")
+    print(execute_query(QUERIES["check_permissions"]))
+
+    print("\n=== Listing all tables in public schema ===")
+    print(execute_query(QUERIES["list_tables"]))
