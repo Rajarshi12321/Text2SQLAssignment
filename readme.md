@@ -25,10 +25,10 @@
   - [Database Schema](#database-schema)
   - [Example Queries](#example-queries)
   - [Troubleshooting](#troubleshooting)
+  - [Notes](#notes)
+  - [License](#license)
   - [Contributing](#contributing)
   - [Contact](#contact)
-  - [License](#license)
-
 
 ## About The Project
 A natural language to SQL query converter using Google's Gemini model, specifically designed for the Pagila database.
@@ -113,11 +113,14 @@ print("\nFinal SQL Query:", result["final_query"])
 
 ## Features
 
-- Natural language to SQL conversion using Google's Gemini model
-- PostgreSQL compatibility with syntax validation
-- Support for complex queries with joins and aggregations
+- Natural language to SQL conversion using Gemini model
+- Query validation and correction
+- Support for complex queries including:
+  - Joins across multiple tables
+  - Aggregations and grouping
+  - Sorting and limiting results
+- Comprehensive database schema support
 - Error handling and query validation
-- Docker-based database setup for reproducibility
 
 ## Database Schema
 
@@ -147,24 +150,38 @@ for query in queries:
 
 ## Troubleshooting
 
-1. If Docker container fails to start:
-```bash
-python setup_db.py  # This will restart the container
-```
+1. **Docker Issues**
+   - Ensure Docker is running
+   - Check container status: `docker ps`
+   - Restart container: `python setup_db.py`
 
-2. If you get API key errors:
-- Verify your Google API key is valid
-- Ensure the environment variable is set correctly
+2. **Database Connection Issues**
+   - Verify PostgreSQL container is running
+   - Check port availability (default: 5432)
+   - Ensure database credentials are correct
 
-3. For database connection issues:
-- Check if Docker is running
-- Verify PostgreSQL container is up (`docker ps`)
-- Check port 5432 is available
+3. **API Key Issues**
+   - Verify API keys in .env file
+   - Check for proper environment variable loading
+
+## Notes
+
+- The Pagila database is a sample database for DVD rentals
+- The system uses Google's Gemini model for natural language processing
+- Queries are validated and optimized before execution
+- Results are formatted for clear display
+
+## License
+
+This project is licensed under the MIT License. Feel free to modify and distribute it as per the terms of the license.
+
+I hope this README provides you with the necessary information to get started with the road to Generative AI with Google Gemini and Langchain.
 
 
 
 ## Contributing
-I welcome contributions to improve the functionality and performance of the app. If you'd like to contribute, please follow these guidelines:
+I welcome contributions to improve the functionality and performance of the app. If you'd 
+like to contribute, please follow these guidelines:
 
 1. Fork the repository and create a new branch for your feature or bug fix.
 
@@ -177,10 +194,3 @@ I welcome contributions to improve the functionality and performance of the app.
 ## Contact
 
 Rajarshi Roy - [royrajarshi0123@gmail.com](mailto:royrajarshi0123@gmail.com)
-
-
-
-## License
-This project is licensed under the MIT License. Feel free to modify and distribute it as per the terms of the license.
-
-I hope this README provides you with the necessary information to get started with the road to Generative AI with Google Gemini and Langchain.
