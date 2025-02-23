@@ -176,6 +176,9 @@ Here's an example of converting a natural language query to SQL:
 
 Function and example:
 
+This function reruns the agent executor if the sql query execution encounters error and also pass the information of the past errors to fix the newly generated SQL query
+Default max_retries is 5 and can be updated
+
 ```python
 
 # Update example usage
