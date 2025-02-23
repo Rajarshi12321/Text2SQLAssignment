@@ -203,11 +203,98 @@ Here's an example of converting a natural language query to SQL:
 
 Function and example:
 
-<img width="406" alt="image" src="https://github.com/user-attachments/assets/059a2377-bf89-4593-a788-713fc26b6395" />
+```python
+
+# Update example usage
+def process_query(natural_language_query: str, max_retries=5, show_print=False):
+    attempt = 0
+    error_message = ""
+
+    state = {
+        "input": natural_language_query,
+        "sql_query": "",
+        "final_query": "",
+        "query_results": ""
+    }
+
+    error_messages = []
+    while attempt < max_retries:
+        # print(f"Attempt {attempt + 1}:{error_messages}")
+        try:
+            result = agent_executor.invoke(state)
+
+            # Extract query and results
+            sql_query = result["final_query"]
+            query_results = result["query_results"]
+
+            if show_print:
+                print(f"\nAttempt {attempt + 1}:")
+                print("\nNatural Language Query:\n", state["input"])
+                print("\nGenerated SQL:\n", sql_query)
+                print("\nQuery results:\n", query_results)
+
+            # Check if the result contains an error
+            if "ERROR" in query_results.upper():
+                # Extract the error message
+                error_message = query_results  # Full error message
+                error_messages.append(error_message)
+                # Prepare the retry prompt
+                state["input"] = f"""{natural_language_query}\n\nPrevious Error list: {error_messages}"""
+                attempt += 1
+                continue  # Retry the process
+
+            # If no error, return the successful result
+            return sql_query, query_results
+
+        except Exception as e:
+            # print(f"Unexpected error in attempt {attempt + 1}: {str(e)}")
+            attempt += 1
+
+    print(f"\nMax retries reached. Last error: {error_message}")
+    return None, None  # Return None if max retries are exceeded
+
+
+# Test the processing
+test_query = "Show me the top 5 customers who have rented the most movies"
+sql, results = process_query(test_query,show_print=True)
+```
 
 Output:
 
-<img width="353" alt="image" src="https://github.com/user-attachments/assets/a4b4210a-ca0a-4cf8-985f-611150c4b700" />
+```python
+
+Attempt 1:
+
+Natural Language Query:
+ Show me the top 5 customers who have rented the most movies
+
+Generated SQL:
+ SELECT
+    C.first_name,
+    C.last_name,
+    COUNT(R.rental_id) AS rental_count
+FROM
+    customer AS C
+    JOIN rental AS R ON C.customer_id = R.customer_id
+GROUP BY
+    C.customer_id,
+    C.first_name,
+    C.last_name
+ORDER BY
+    rental_count DESC
+LIMIT 5;
+
+Query results:
+  first_name | last_name | rental_count 
+------------+-----------+--------------
+ ELEANOR    | HUNT      |           46
+ KARL       | SEAL      |           45
+ MARCIA     | DEAN      |           42
+ CLARA      | SHAW      |           42
+ TAMMY      | SANDERS   |           41
+(5 rows)
+
+```
 
 Here's an example of using the Gradio UI - app.py:
 
