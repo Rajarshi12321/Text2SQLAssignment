@@ -167,12 +167,15 @@ Prompt:
         Reasoning: The query is logically correct but has minor errors. (with proper reasoning and improvements)
         Score: 0
         Reasoning: The query is incorrect or produces the wrong results. (with proper reasoning and improvements)
+"""
 ```
 
 
 ## Evaluation Results
 
 Average accuracy of the model is 100%
+
+<img width="362" alt="image" src="https://github.com/user-attachments/assets/be502394-01d7-4e1b-8332-7a393dbc91e5" />
 
 
 ## Example Queries
