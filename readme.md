@@ -92,6 +92,29 @@ python app.py
 - `requirements.txt`: Python package dependencies
 - `pagila/`: Directory containing Pagila database SQL files
 
+## Agent Workflow:
+
+```python
+
+The agent in the `text2sql.py` or `text2sql.ipynb` script has several nodes that perform specific tasks in the Text-to-SQL conversion workflow. Here are the different nodes and their functions:
+
+- **generate_sql_node(state: AgentState)**:
+  - This node generates an initial SQL query based on the natural language input provided in the `state`.
+  - It uses the `generate_sql` function to produce the SQL query using the database schema and example input.
+
+- **validate_sql_node(state: AgentState)**:
+  - This node validates and corrects the SQL query generated in the previous node.
+  - It employs the `validate_and_fix_sql` function to ensure the SQL query is syntactically correct and formatted for PostgreSQL.
+
+- **execute_sql_node(state: AgentState)**:
+  - This node executes the validated SQL query against the database and stores the results in the `state`.
+  - It uses the `execute_query` function from the `setup_db` module to run the SQL query and retrieve the results.
+
+These nodes are part of a state graph workflow, which defines the sequence of operations and ensures that each step is performed in the correct order. The workflow starts with `generate_sql`, moves to `validate_sql`, and finally to `execute_sql`.
+```
+
+
+
 ## Features
 
 - Natural language to SQL conversion using Gemini model
@@ -102,6 +125,9 @@ python app.py
   - Sorting and limiting results
 - Comprehensive database schema support
 - Error handling and query validation
+
+## Function for only app.py 
+The `validate_nl_query` function validates and improves natural language queries for a database. It checks for ambiguity, incompleteness, or incorrectness in the query, provides corrections if needed, and returns a Python dictionary containing the original query, corrected input, and feedback.
 
 ## Database Schema
 
