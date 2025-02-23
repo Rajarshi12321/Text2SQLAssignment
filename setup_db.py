@@ -16,34 +16,7 @@ QUERIES = {
 def setup_pagila_database():
     """Sets up the pagila database using SQL files"""
     try:
-        # Check if postgres image exists
-        check_image = subprocess.run(
-            "docker images postgres -q", shell=True, text=True, capture_output=True
-        )
-
-        if not check_image.stdout.strip():
-            print("Pulling postgres image...")
-            subprocess.run("docker pull postgres", shell=True, check=True)
-        else:
-            print("Postgres image already exists, skipping pull...")
-
-        # Run postgres container if not already running
-        check_container = subprocess.run(
-            "docker ps -q -f name=postgres", shell=True, text=True, capture_output=True
-        )
-
-        if not check_container.stdout.strip():
-            print("Starting postgres container...")
-            subprocess.run(
-                # "docker run --name postgres -e POSTGRES_PASSWORD=secret -d postgres",
-                "docker run --name postgres -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres",  # Update according to your postgres port
-                shell=True,
-                check=True,
-            )
-        else:
-            print("Postgres container already running, skipping start...")
-
-        time.sleep(3)
+        time.sleep(3)  # Wait for the container to be ready
         # Check if database exists
         check_db = subprocess.run(
             """docker exec -i postgres psql -U postgres -t -c "SELECT datname FROM pg_database WHERE datname='pagila';""",
@@ -161,22 +134,41 @@ def execute_query(query):
 def restart_postgres_container():
     """Stops any running postgres container and starts a new one"""
     try:
-        # Stop and remove existing container if running
-        check_container = subprocess.run(
-            "docker ps -q -f name=postgres", shell=True, text=True, capture_output=True
-        )
-        if check_container.stdout.strip():
-            print("Stopping existing postgres container...")
-            subprocess.run("docker stop postgres", shell=True, check=True)
-            subprocess.run("docker rm postgres", shell=True, check=True)
-
         # Check if postgres image exists
         check_image = subprocess.run(
-            "docker images postgres -q", shell=True, text=True, capture_output=True
+            "docker images postgres --format '{{.Repository}}'",
+            shell=True,
+            text=True,
+            capture_output=True,
         )
+
         if not check_image.stdout.strip():
-            print("Pulling postgres image...")
+            print("Postgres image not found, pulling from Docker Hub...")
             subprocess.run("docker pull postgres", shell=True, check=True)
+            print("Successfully pulled postgres image")
+        # Check for existing container (running or stopped)
+        check_container = subprocess.run(
+            "docker ps -a -f name=postgres", shell=True, text=True, capture_output=True
+        )
+
+        if check_container.stdout.strip():
+            print("Found existing postgres container...")
+            # Get container status
+            status = subprocess.run(
+                "docker inspect -f '{{.State.Running}}' postgres",
+                shell=True,
+                text=True,
+                capture_output=True,
+            )
+            # The container status comes with quotes, so we need to strip them
+            container_status = status.stdout.strip().lower().strip("'")
+            print(f"Container status: {container_status}")
+            if container_status == "true":
+                print("Stopping running postgres container...")
+                subprocess.run("docker stop postgres", shell=True, check=True)
+
+            print("Removing existing postgres container...")
+            subprocess.run("docker rm postgres", shell=True, check=True)
 
         # Start new container
         print("Starting new postgres container...")
@@ -185,7 +177,22 @@ def restart_postgres_container():
             shell=True,
             check=True,
         )
-        print("Postgres container started successfully!")
+
+        # Wait for container to be ready
+        print("Waiting for container to be ready...")
+
+        # Verify container is running
+        verify = subprocess.run(
+            "docker ps -f name=postgres --format '{{.Status}}'",
+            shell=True,
+            text=True,
+            capture_output=True,
+        )
+
+        if "Up" in verify.stdout:
+            print("Postgres container started successfully!")
+        else:
+            raise Exception("Container failed to start properly")
 
     except subprocess.CalledProcessError as e:
         print(f"Error managing container: {e}")
@@ -198,6 +205,7 @@ def restart_postgres_container():
 if __name__ == "__main__":
     # First setup the database
     restart_postgres_container()
+    time.sleep(10)  # Wait for the container to be ready
     setup_pagila_database()
 
     print("\n=== Checking current database and schema ===")

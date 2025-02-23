@@ -19,9 +19,12 @@
   - [Installation](#installation)
   - [Database Setup](#database-setup)
   - [Usage](#usage)
+  - [OR](#or)
   - [Project Structure](#project-structure)
   - [Features](#features)
   - [Database Schema](#database-schema)
+  - [Evaluation Function](#evaluation-function)
+  - [Evaluation Results](#evaluation-results)
   - [Example Queries](#example-queries)
     - [Demo Example](#demo-example)
   - [Troubleshooting](#troubleshooting)
@@ -74,6 +77,13 @@ This will:
 
 ## Usage
 
+1. Run the app.py file:
+```bash
+python app.py
+```
+--- 
+OR
+ ---
 1. Run the Jupyter notebook:
 ```bash
 jupyter notebook text2sql.ipynb
@@ -87,7 +97,7 @@ a. Simple approach:
 natural_language_query = "Show me the top 5 customers who have rented the most movies"
 sql = text_to_sql(natural_language_query)
 results = execute_query(sql)
-print("\nResults:", results)
+print("\nresults:", results)
 ```
 
 b. Agent-based approach:
@@ -103,6 +113,7 @@ print("\nFinal SQL Query:", result["final_query"])
 
 ## Project Structure
 
+- `app.py`: Main application file
 - `text2sql.ipynb`: Main notebook containing the text-to-SQL conversion logic
 - `setup_db.py`: Database setup and query execution utilities
 - `requirements.txt`: Python package dependencies
@@ -128,6 +139,42 @@ The Pagila database includes tables for:
 - Store locations and inventory
 - Categories and languages
 
+## Evaluation Function
+
+A LLM powered evaluation function is used to evaluate the accuracy of the SQL Query generated.
+
+Prompt:
+```python
+ f""" 
+        Check if the following SQL query correctly implements the given natural language request:
+
+        NL Query: {nl_query}
+        SQL Query: {sql_query}
+        
+        Provided Database Schema: 
+        {DATABASE_SCHEMA}
+
+        Provide a response indicating if it is logically correct, with reasoning.
+        The scoring breakdown could be as follows:
+        100 for fully correct queries.
+        50 for queries that are logically correct but have minor errors.
+        0 for queries that are incorrect or produce the wrong results
+        
+        The response should be in the following format:
+        Score: 100
+        Reasoning: The query is fully correct.
+        Score: 50
+        Reasoning: The query is logically correct but has minor errors. (with proper reasoning and improvements)
+        Score: 0
+        Reasoning: The query is incorrect or produces the wrong results. (with proper reasoning and improvements)
+```
+
+
+## Evaluation Results
+
+Average accuracy of the model is 100%
+
+
 ## Example Queries
 
 ```python
@@ -142,8 +189,10 @@ for query in queries:
     sql = text_to_sql(query)
     results = execute_query(sql)
     print(f"\nQuery: {query}")
-    print(f"Results: {results}")
+    print(f"results: {results}")
 ```
+
+
 
 ### Demo Example
 
@@ -175,15 +224,26 @@ Output:
 
 - The system uses Google's Gemini model for natural language processing
 - Queries are validated and optimized before execution
-- Results are formatted for clear display
+- results are formatted for clear display
 - The inferenced dataset containing the natural language queries, generated SQL queries and their outputs is stored in `inferenced_results.csv`
 - The CSV file includes columns for:
   - Query Number
   - Natural Language Query
   - Difficulty
   - Query
-  - SQL_Generated
-  - Results
+  - sql_gen_query
+  - results
+- The evaluation dataset containing reasoning, score for the SQL queries and their outputs is stored in `evaluation_results.csv`
+- The CSV file includes columns for:
+  - Query Number
+  - Natural Language Query
+  - Difficulty
+  - Query
+  - sql_gen_query
+  - results
+  - reasoning
+  - score
+
 
 ## License
 

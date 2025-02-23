@@ -7,6 +7,16 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 
+
+# Example queries
+EXAMPLE_QUERIES = [
+    "Show me the top 5 customers who have rented the most movies",
+    "List all actors who have appeared in at least one film in each category",
+    "Find the films that have been rented more times than the average",
+    "Show the average payment amount for each customer",
+    "List the top 5 films with the highest revenue",
+]
+
 COT_TEXT2SQL_EXAMPLE = """**Question**: How many Thai restaurants can be found in San Pablo Ave, Albany?
     **Evidence**: Thai restaurant refers to food_type = 'thai'; San Pablo Ave Albany refers to street_name
     = 'san pablo ave' AND T1.city = 'albany'

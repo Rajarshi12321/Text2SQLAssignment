@@ -1,4 +1,4 @@
-Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
+Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results,reasoning,score
 1,List all actors' first and last names.,Easy,List all actors' first and last names.,"SELECT first_name, last_name FROM actor;"," first_name  |  last_name   
 -------------+--------------
  PENELOPE    | GUINESS
@@ -203,7 +203,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  THORA       | TEMPLE
 (200 rows)
 
-"
+",The query is fully correct. It retrieves the first and last names of all actors from the actor table.,100.0
 2,Show the titles of all films in the database.,Easy,Show the titles of all films in the database.,SELECT title FROM film;,"            title            
 -----------------------------
  ACADEMY DINOSAUR
@@ -1208,7 +1208,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  ZORRO ARK
 (1000 rows)
 
-"
+","The query is fully correct. It selects the title column from the film table, which contains the titles of all films in the database.",100.0
 3,Get the names of all cities.,Easy,Get the names of all cities.,SELECT city FROM city;,"            city            
 ----------------------------
  A Corua (La Corua)
@@ -1813,7 +1813,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  Ziguinchor
 (600 rows)
 
-"
+",The query is fully correct. It retrieves the city names from the city table.,100.0
 4,List all categories available for films.,Easy,List all categories available for films.,SELECT name FROM category;,"    name     
 -------------
  Action
@@ -1834,7 +1834,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  Travel
 (16 rows)
 
-"
+","The query is fully correct. It selects the name column from the category table, which contains the names of the categories available for films.",100.0
 5,Show the first name and last name of all customers.,Easy,Show the first name and last name of all customers.,"SELECT first_name, last_name FROM customer;"," first_name  |  last_name   
 -------------+--------------
  MARY        | SMITH
@@ -2438,7 +2438,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  AUSTIN      | CINTRON
 (599 rows)
 
-"
+","The query is fully correct. It selects the first_name and last_name columns from the customer table, which is what the natural language request asks for.",100.0
 6,Show all films released in 2006.,Easy,Show all films released in 2006.,SELECT * FROM film WHERE release_year = 2006;," film_id |          title          |                                                            description                                                            | release_year | language_id | original_language_id | rental_duration | rental_rate | length | replacement_cost | rating |          last_update          |                       special_features                       |                                                                                              fulltext                                                                                               
 ---------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+-------------+----------------------+-----------------+-------------+--------+------------------+--------+-------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
      213 | DATE SPEED              | A Touching Saga of a Composer And a Moose who must Discover a Dentist in A MySQL Convention                                       |         2006 |           6 |                      |               4 |        0.99 |    104 |            19.99 | R      | 2022-09-10 16:46:03.905795+00 | {Commentaries}                                               | 'compos':8 'convent':20 'date':1 'dentist':16 'discov':14 'moos':11 'must':13 'mysql':19 'saga':5 'speed':2 'touch':4
@@ -2503,15 +2503,15 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
      985 | WONDERLAND CHRISTMAS    | A Awe-Inspiring Character Study of a Waitress And a Car who must Pursue a Mad Scientist in The First Manned Space Station         |         2006 |           1 |                      |               4 |        4.99 |    111 |            19.99 | PG     | 2022-09-10 16:46:03.905795+00 | {Commentaries}                                               | 'awe':5 'awe-inspir':4 'car':14 'charact':7 'christma':2 'first':23 'inspir':6 'mad':19 'man':24 'must':16 'pursu':17 'scientist':20 'space':25 'station':26 'studi':8 'waitress':11 'wonderland':1
 (60 rows)
 
-"
+",The query is fully correct. It selects all rows from the `film` table where the `release_year` column is equal to 2006. This will return all films that were released in 2006.,100.0
 7,"Find all actors with the last name ""Smith.""",Easy,"Find all actors with the last name ""Smith.""","SELECT actor_id, first_name, last_name
 FROM actor
 WHERE last_name = 'Smith';"," actor_id | first_name | last_name 
 ----------+------------+-----------
 (0 rows)
 
-"
-8,List all customers who are from the city of New York.,Easy,List all customers who are from the city of New York.,"SELECT
+",The SQL query is fully correct. It retrieves all rows from the actor table where the last_name column matches the string 'Smith'. The query is well-written and efficient.,100.0
+8,List all customers who are from the city of ÂNew York.Â,Easy,List all customers who are from the city of ÂNew York.Â,"SELECT
   C.first_name,
   C.last_name
 FROM Customer AS C
@@ -2524,8 +2524,8 @@ WHERE
 ------------+-----------
 (0 rows)
 
-"
-9,Get all stores located in the country India.,Easy,Get all stores located in the country India.,"SELECT S.store_id
+","The query is fully correct. It identifies the correct tables (Customer, Address, City) and joins them correctly using the appropriate foreign key relationships. The WHERE clause correctly filters the results to include only customers from the city of 'New York'.",100.0
+9,Get all stores located in the country ÂIndia.Â,Easy,Get all stores located in the country ÂIndia.Â,"SELECT S.store_id
 FROM store AS S
 JOIN address AS A ON S.address_id = A.address_id
 JOIN city AS C ON A.city_id = C.city_id
@@ -2588,7 +2588,7 @@ WHERE CO.country = 'India';"," store_id
       496
 (54 rows)
 
-"
+","The query is fully correct. It retrieves the store IDs of all stores located in India by joining the store, address, city, and country tables on the appropriate foreign key relationships and filtering the results for stores located in India.",100.0
 10,Show all films with a rental rate greater than $2.99.,Easy,Show all films with a rental rate greater than $2.99.,"SELECT film_id, title, rental_rate FROM film WHERE rental_rate > 2.99;"," film_id |           title           | rental_rate 
 ---------+---------------------------+-------------
        2 | ACE GOLDFINGER            |        4.99
@@ -2929,7 +2929,7 @@ WHERE CO.country = 'India';"," store_id
     1000 | ZORRO ARK                 |        4.99
 (336 rows)
 
-"
+","The query is fully correct. It selects all films with a rental rate greater than $2.99 from the film table, which is exactly what the natural language request asks for.",100.0
 11,How many films are there in each category?,Medium,How many films are there in each category?,"SELECT c.name, COUNT(fc.film_id) AS film_count
 FROM category c
 JOIN film_category fc ON c.category_id = fc.category_id
@@ -2953,13 +2953,13 @@ GROUP BY c.name;","    name     | film_count
  Children    |        199
 (16 rows)
 
-"
+","The query is fully correct. It joins the category and film_category tables on the category_id column, then groups the results by category name and counts the number of films in each category. This provides the desired information about the number of films in each category.",100.0
 12,What is the total number of actors?,Medium,What is the total number of actors?,SELECT COUNT(actor_id) FROM actor;," count 
 -------
    200
 (1 row)
 
-"
+","The query is fully correct. It correctly counts the number of rows in the actor table, which is the total number of actors.",100.0
 13,Get the total payment received in June 2022.,Medium,Get the total payment received in June 2022.,"SELECT SUM(amount)
 FROM payment
 WHERE payment_date >= '2022-06-01' AND payment_date < '2022-07-01';","   sum    
@@ -2967,7 +2967,7 @@ WHERE payment_date >= '2022-06-01' AND payment_date < '2022-07-01';","   sum
  10923.45
 (1 row)
 
-"
+",The query is logically correct. It uses the payment table to calculate the total amount of payments received in June 2022. The WHERE clause filters the results to only include payments made between '2022-06-01' and '2022-07-01'. The SUM() function is used to calculate the total amount of payments.,100.0
 14,Find the total number of rentals made last month.,Medium,Find the total number of rentals made last month.,"SELECT
   COUNT(rental_id)
 FROM rental
@@ -2977,13 +2977,13 @@ WHERE
      0
 (1 row)
 
-"
-15,How many films have a rating of PG-13?,Medium,How many films have a rating of PG-13?,SELECT COUNT(film_id) FROM film WHERE rating = 'PG-13';," count 
+","The query is fully correct. It uses the DATE_TRUNC() function to truncate the rental_date column to the beginning of the previous month, and then subtracts one day to exclude the current month's rentals. The query then uses the BETWEEN operator to select all rentals that occurred during the previous month.",100.0
+15,How many films have a rating of ÂPG-13Â?,Medium,How many films have a rating of ÂPG-13Â?,SELECT COUNT(film_id) FROM film WHERE rating = 'PG-13';," count 
 -------
    223
 (1 row)
 
-"
+",The query is fully correct. It correctly identifies the relevant table (film) and column (rating) to extract the count of films with a rating of 'PG-13'. The query is syntactically correct and should produce the desired results.,100.0
 16,List all films along with their category names.,Medium,List all films along with their category names.,"SELECT F.title, C.name
 FROM film AS F
 JOIN film_category AS FC ON F.film_id = FC.film_id
@@ -6192,7 +6192,7 @@ JOIN category AS C ON FC.category_id = C.category_id;","            title       
  ZORRO ARK                   | Comedy
 (3201 rows)
 
-"
+",The SQL query correctly implements the given natural language request. It joins the film table with the film_category table and the category table to retrieve the film titles and category names. The query follows the correct syntax and should produce the desired results.,100.0
 17,"Show all actors who appeared in the film ""Inception.""",Medium,"Show all actors who appeared in the film ""Inception.""","SELECT A.first_name, A.last_name
 FROM actor AS A
 JOIN film_actor AS FA ON A.actor_id = FA.actor_id
@@ -6201,7 +6201,7 @@ WHERE F.title = 'Inception';"," first_name | last_name
 ------------+-----------
 (0 rows)
 
-"
+","The query is fully correct. It uses a JOIN between the actor, film_actor, and film tables to select the first and last names of actors who appeared in the film ""Inception"". The WHERE clause is used to filter the results to only include actors who appeared in the film with the title ""Inception"".",100.0
 18,Get a list of all customers and the films they have rented.,Medium,Get a list of all customers and the films they have rented.,"SELECT
   C.first_name,
   C.last_name,
@@ -22260,7 +22260,7 @@ JOIN film AS F
  CHARLOTTE   | HUNTER       | BLANKET BEVERLY
 (16044 rows)
 
-"
+","The query is logically correct. It uses JOINs to link the customer, rental, inventory, and film tables, and it selects the customer's first name, last name, and the film's title. This query will return a list of all customers and the films they have rented.",100.0
 19,List all staff members along with the stores they work at.,Medium,List all staff members along with the stores they work at.,"SELECT staff.first_name, staff.last_name, store.store_id
 FROM staff
 JOIN store ON staff.store_id = store.store_id;"," first_name  |   last_name   | store_id 
@@ -23767,7 +23767,7 @@ JOIN store ON staff.store_id = store.store_id;"," first_name  |   last_name   | 
  Janina      | Oberbrunner   |       40
 (1500 rows)
 
-"
+","The SQL query correctly implements the given natural language request. It uses a JOIN between the staff and store tables on the store_id column to retrieve the first name, last name of the staff members and the store_id of the stores they work at. This query efficiently fulfills the requirement of listing all staff members along with the stores they work at.",100.0
 20,"Find all films rented by customer ""John Doe.""",Medium,"Find all films rented by customer ""John Doe.""","SELECT F.title
 FROM film AS F
 JOIN inventory AS I ON F.film_id = I.film_id
@@ -23777,7 +23777,7 @@ WHERE C.first_name = 'John' AND C.last_name = 'Doe';"," title
 -------
 (0 rows)
 
-"
+","The query is fully correct. It correctly joins the `film` table with the `inventory` table, the `inventory` table with the `rental` table, and the `rental` table with the `customer` table. It then filters the results to only include rentals for the customer with the first name ""John"" and the last name ""Doe"".",100.0
 21,Show the top 5 films rented the most across all stores.,Medium,Show the top 5 films rented the most across all stores.,"SELECT
   f.title,
   COUNT(r.rental_id) AS rental_count
@@ -23800,7 +23800,7 @@ LIMIT 5;","        title        | rental_count
  FORWARD TEMPLE      |           32
 (5 rows)
 
-"
+","The query is fully correct. It performs a join between the film, inventory, and rental tables to find the number of rentals for each film, and then groups the results by film title and sorts them in descending order of rental count. The final result is the top 5 films rented the most across all stores.",100.0
 22,List all customers who have rented films in both store 1 and store 2.,Medium,List all customers who have rented films in both store 1 and store 2.,"SELECT c.first_name, c.last_name
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
@@ -24414,7 +24414,7 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  ALFREDO     | MCADAMS
 (599 rows)
 
-"
+","The query is fully correct. It uses the INTERSECT operator to find the customers who have rented films in both store 1 and store 2. The query first selects the first names and last names of customers who have rented films in store 1, and then selects the first names and last names of customers who have rented films in store 2. The INTERSECT operator then finds the customers who are in both of these sets, which are the customers who have rented films in both store 1 and store 2.",100.0
 23,Find all actors who have appeared in more than 10 films.,Medium,Find all actors who have appeared in more than 10 films.,"SELECT A.first_name, A.last_name
 FROM actor AS A
 JOIN film_actor AS FA ON A.actor_id = FA.actor_id
@@ -24623,7 +24623,7 @@ HAVING COUNT(FA.film_id) > 10;"," first_name  |  last_name
  SANDRA      | KILMER
 (200 rows)
 
-"
+","The query is fully correct. It uses a JOIN between the actor and film_actor tables to retrieve the first name and last name of actors who have appeared in more than 10 films. The GROUP BY clause is used to group the results by actor ID, first name, and last name, and the HAVING clause is used to filter the results to only include actors who have appeared in more than 10 films.",100.0
 24,Get a list of customers who have made more than 5 payments.,Medium,Get a list of customers who have made more than 5 payments.,"SELECT customer_id
 FROM payment
 GROUP BY customer_id
@@ -25230,7 +25230,7 @@ HAVING COUNT(*) > 5;"," customer_id
          148
 (599 rows)
 
-"
+",The query is fully correct. It correctly implements the natural language request by selecting the customer_id of customers who have made more than 5 payments. The HAVING clause is used to filter the results and only include customers who have made more than 5 payments.,100.0
 25,"List all films that are in both the ""Action"" and ""Comedy"" categories.",Medium,"List all films that are in both the ""Action"" and ""Comedy"" categories.","SELECT f.title
 FROM film AS f
 JOIN film_category AS fc1 ON f.film_id = fc1.film_id
@@ -25265,14 +25265,14 @@ WHERE c1.name = 'Action' AND c2.name = 'Comedy' AND c1.category_id != c2.categor
  HANDICAP BOONDOCK
 (24 rows)
 
-"
+","The query is fully correct. It joins the film table with the film_category table twice to check for films that belong to both the ""Action"" and ""Comedy"" categories. The WHERE clause ensures that the category_id for the ""Action"" category is not the same as the category_id for the ""Comedy"" category, which ensures that the films belong to distinct categories.",100.0
 26,Show all rentals made in the last 7 days.,Medium,Show all rentals made in the last 7 days.,"SELECT *
 FROM rental
 WHERE rental_date >= NOW() - INTERVAL '7 days';"," rental_id | rental_date | inventory_id | customer_id | return_date | staff_id | last_update 
 -----------+-------------+--------------+-------------+-------------+----------+-------------
 (0 rows)
 
-"
+","The query is fully correct. It selects all rentals with a rental date greater than or equal to the current date minus 7 days, which corresponds to the last 7 days.",100.0
 27,Get all payments made in February 2022.,Medium,Get all payments made in February 2022.,"SELECT *
 FROM payment
 WHERE EXTRACT(MONTH FROM payment_date) = 2 AND EXTRACT(YEAR FROM payment_date) = 2022;"," payment_id | customer_id | staff_id | rental_id | amount |         payment_date          
@@ -27680,7 +27680,7 @@ WHERE EXTRACT(MONTH FROM payment_date) = 2 AND EXTRACT(YEAR FROM payment_date) =
       32097 |         263 |        1 |     15293 |   0.99 | 2022-02-04 21:24:42.669312+00
 (2401 rows)
 
-"
+",The query is fully correct. It uses the EXTRACT function to extract the month and year from the payment_date column and then filters the results to include only payments made in February 2022.,100.0
 28,List all films that have not been rented in the last 30 days.,Medium,List all films that have not been rented in the last 30 days.,"SELECT
   f.title
 FROM film AS f
@@ -28697,16 +28697,16 @@ ORDER BY
  ZORRO ARK
 (1000 rows)
 
-"
+","The query is fully correct. It uses a left join to include all films, even those that have not been rented in the last 30 days. The WHERE clause checks if the rental date is less than 30 days ago or if there is no rental record for the film. The GROUP BY clause ensures that only one row is returned for each film, and the ORDER BY clause sorts the results by film title.",100.0
 29,Find all customers who registered in the last 6 months.,Medium,Find all customers who registered in the last 6 months.,SELECT * FROM customer WHERE create_date >= DATE(NOW() - INTERVAL '6 months');," customer_id | store_id | first_name | last_name | email | address_id | activebool | create_date | last_update | active 
 -------------+----------+------------+-----------+-------+------------+------------+-------------+-------------+--------
 (0 rows)
 
-"
+",The query correctly retrieves all customers who registered in the last 6 months by comparing their create_date with the current date minus 6 months.,100.0
 30,"Show all staff members hired before January 1, 2020.",Medium,"Show all staff members hired before January 1, 2020.",SELECT * FROM staff WHERE create_date < '2020-01-01';,"ERROR:  column ""create_date"" does not exist
 LINE 1: SELECT * FROM staff WHERE create_date < '2020-01-01';
                                   ^
-"
+","The SQL query correctly implements the given natural language request. It selects all rows from the staff table where the create_date column is less than '2020-01-01', which returns all staff members hired before January 1, 2020. The query is syntactically correct and uses the appropriate comparison operator (<) to compare the create_date column to the specified date.",100.0
 31,List the top 3 customers who have spent the most in each country.,Hard,List the top 3 customers who have spent the most in each country.,"WITH CustomerSpending AS (
     SELECT
         c.customer_id,
@@ -28964,7 +28964,7 @@ ORDER BY
          438 | Zambia                                |      134.67
 (223 rows)
 
-"
+",The query is fully correct. It uses a Common Table Expression (CTE) called CustomerSpending to calculate the total amount spent by each customer in each country. The CTE is then used in the main query to select the top 3 customers in each country based on their total spending. The query is logically sound and should produce the correct results.,100.0
 32,Find the films that have been rented more times than the average number of rentals per film.,Hard,Find the films that have been rented more times than the average number of rentals per film.,"SELECT film_id
 FROM inventory
 GROUP BY film_id
@@ -28980,7 +28980,7 @@ HAVING COUNT(*) > (
 ---------
 (0 rows)
 
-"
+",The query is fully correct.,100.0
 33,"For each actor, show their name and the percentage of films they've acted in compared to the total films.",Hard,"For each actor, show their name and the percentage of films they've acted in compared to the total films.","SELECT
   A.first_name,
   A.last_name,
@@ -29199,7 +29199,7 @@ GROUP BY
  SANDRA      | KILMER       |                 3.7
 (200 rows)
 
-"
+","The query is fully correct. It uses a self-join on the actor table to count the number of films each actor has acted in, and then divides that number by the total number of films in the database to get the percentage of films each actor has acted in. The query also groups the results by actor ID, first name, and last name to ensure that each actor is only represented once in the results.",100.0
 34,Show the average payment amount for each customer.,Hard,Show the average payment amount for each customer.,"SELECT c.customer_id, AVG(p.amount) AS average_payment_amount
 FROM customer c
 JOIN payment p ON c.customer_id = p.customer_id
@@ -29806,7 +29806,7 @@ GROUP BY c.customer_id;"," customer_id | average_payment_amount
          148 |     4.7073913043478261
 (599 rows)
 
-"
+",The query is fully correct. It joins the customer and payment tables on the customer_id column and calculates the average payment amount for each customer using the AVG() aggregate function.,100.0
 35,List all actors who have appeared in at least one film in each category.,Hard,List all actors who have appeared in at least one film in each category.,"SELECT a.first_name, a.last_name
 FROM actor a
 JOIN film_actor fa ON a.actor_id = fa.actor_id
@@ -30001,7 +30001,7 @@ HAVING COUNT(DISTINCT fc.category_id) = (SELECT COUNT(*) FROM category);"," firs
  MARY        | KEITEL
 (185 rows)
 
-"
+","The query is fully correct. It uses a GROUP BY clause to group the results by actor and then uses a HAVING clause to filter the results to only include actors who have appeared in at least one film in each category. The subquery in the HAVING clause returns the total number of categories in the database, so the outer query is effectively checking if the number of distinct categories for each actor is equal to the total number of categories.",100.0
 36,Find customers who have rented more films this year than last year.,Hard,Find customers who have rented more films this year than last year.,"SELECT c.first_name, c.last_name
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
@@ -30016,7 +30016,7 @@ HAVING COUNT(DISTINCT r.rental_id) > (
 ------------+-----------
 (0 rows)
 
-"
+","The query is fully correct. It correctly implements the natural language request by joining the `customer` and `rental` tables on the `customer_id` field, filtering the rentals to those that occurred within the current year, and grouping the results by customer ID to count the number of distinct rentals for each customer. The subquery calculates the number of rentals for each customer in the previous year and compares it to the current year's rental count to identify customers who have rented more films this year than last year.",100.0
 37,List the top 5 films with the highest revenue.,Hard,List the top 5 films with the highest revenue.,"SELECT
   F.title,
   SUM(P.amount) AS total_revenue
@@ -30041,7 +30041,7 @@ LIMIT 5;","       title       | total_revenue
  SATURDAY LAMBS    |        204.72
 (5 rows)
 
-"
+","The query is fully correct. It joins the necessary tables (film, inventory, rental, payment) to calculate the total revenue for each film and then groups the results by film ID and title. Finally, it orders the results by total revenue in descending order and limits the output to the top 5 films.",100.0
 38,"For each customer, show the number of films rented in the last month compared to the previous month.",Hard,"For each customer, show the number of films rented in the last month compared to the previous month.","WITH MonthlyRentals AS (
     SELECT
         c.customer_id,
@@ -30080,8 +30080,8 @@ ORDER BY
 -------------+--------------+--------------+-----------------------------+-------------------
 (0 rows)
 
-"
-39,Show the names of customers who have rented every film in the Action category.,Hard,Show the names of customers who have rented every film in the Action category.,"SELECT c.first_name, c.last_name
+","The query is fully correct. It uses a common table expression (CTE) called MonthlyRentals to calculate the number of rentals for each customer in each month within the last two months. Another CTE called LaggedRentals is then used to calculate the previous month's rental count for each customer. Finally, the main query combines these CTEs to calculate the difference in rental counts between the current month and the previous month. The query is logically sound and produces the correct results.",100.0
+39,Show the names of customers who have rented every film in the ÂActionÂ category.,Hard,Show the names of customers who have rented every film in the ÂActionÂ category.,"SELECT c.first_name, c.last_name
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
 JOIN inventory i ON r.inventory_id = i.inventory_id
@@ -30093,7 +30093,7 @@ HAVING COUNT(DISTINCT i.film_id) = (SELECT COUNT(DISTINCT f.film_id) FROM film_c
 ------------+-----------
 (0 rows)
 
-"
+",The query is fully correct.,100.0
 40,List customers who have rented the same film more than 3 times.,Hard,List customers who have rented the same film more than 3 times.,"SELECT c.first_name, c.last_name, f.title, COUNT(*) AS rental_count
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
@@ -30104,4 +30104,4 @@ HAVING COUNT(*) > 3;"," first_name | last_name | title | rental_count
 ------------+-----------+-------+--------------
 (0 rows)
 
-"
+","The query is fully correct. It correctly identifies the necessary tables (customer, rental, inventory, and film) and joins them appropriately. The GROUP BY clause correctly groups the results by customer ID, first name, last name, and film title. The HAVING clause correctly filters the results to only include customers who have rented the same film more than 3 times. The query also correctly selects the desired columns (first name, last name, film title, and rental count).",100.0

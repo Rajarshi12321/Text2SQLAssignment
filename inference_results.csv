@@ -1,5 +1,5 @@
-Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
-1,List all actors' first and last names.,Easy,List all actors' first and last names.,"SELECT first_name, last_name FROM actor;"," first_name  |  last_name   
+Query Number,Natural Language Query,Difficulty,sql_gen_query,results
+1,List all actors' first and last names.,Easy,"SELECT first_name, last_name FROM actor;"," first_name  |  last_name   
 -------------+--------------
  PENELOPE    | GUINESS
  NICK        | WAHLBERG
@@ -204,7 +204,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
 (200 rows)
 
 "
-2,Show the titles of all films in the database.,Easy,Show the titles of all films in the database.,SELECT title FROM film;,"            title            
+2,Show the titles of all films in the database.,Easy,SELECT title FROM film;,"            title            
 -----------------------------
  ACADEMY DINOSAUR
  ACE GOLDFINGER
@@ -218,9 +218,10 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  ALADDIN CALENDAR
  ALAMO VIDEOTAPE
  ALASKA PHANTOM
+ DATE SPEED
+ ALI FOREVER
  ALICE FANTASIA
  ALIEN CENTER
- ALI FOREVER
  ALLEY EVOLUTION
  ALONE TRIP
  ALTER VICTORY
@@ -258,8 +259,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  BAKED CLEOPATRA
  BALLOON HOMEWARD
  BALLROOM MOCKINGBIRD
- BANGER PINOCCHIO
  BANG KWAI
+ BANGER PINOCCHIO
  BARBARELLA STREETCAR
  BAREFOOT MANCHURIAN
  BASIC EASY
@@ -267,8 +268,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  BEAR GRACELAND
  BEAST HUNCHBACK
  BEAUTY GREASE
- BEDAZZLED MARRIED
  BED HIGHBALL
+ BEDAZZLED MARRIED
  BEETHOVEN EXORCIST
  BEHAVIOR RUNAWAY
  BENEATH RUSH
@@ -280,8 +281,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  BILL OTHERS
  BINGO TALENTED
  BIRCH ANTITRUST
- BIRDCAGE CASPER
  BIRD INDEPENDENCE
+ BIRDCAGE CASPER
  BIRDS PERDITION
  BLACKOUT PRIVATE
  BLADE POLISH
@@ -332,8 +333,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  CASPER DRAGONFLY
  CASSIDY WYOMING
  CASUALTIES ENCINO
- CATCH AMISTAD
  CAT CONEHEADS
+ CATCH AMISTAD
  CAUSE DATE
  CELEBRITY HORN
  CENTER DINOSAUR
@@ -345,15 +346,17 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  CHARADE DUFFEL
  CHARIOTS CONSPIRACY
  CHASING FIGHT
+ CLUB GRAFFITI
  CHEAPER CLYDE
  CHICAGO NORTH
  CHICKEN HELLFIGHTERS
  CHILL LUCK
+ EVERYONE CRAFT
  CHINATOWN GLADIATOR
  CHISUM BEHAVIOR
  CHITTY LOCK
- CHOCOLATE DUCK
  CHOCOLAT HARRY
+ CHOCOLATE DUCK
  CHRISTMAS MOONSHINE
  CIDER DESIRE
  CINCINATTI WHISPERER
@@ -365,7 +368,6 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  CLOCKWORK PARADISE
  CLONES PINOCCHIO
  CLOSER BANG
- CLUB GRAFFITI
  CLUE GRAIL
  CLUELESS BUCKET
  CLYDE THEORY
@@ -399,8 +401,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  CROOKED FROGMEN
  CROSSING DIVORCE
  CROSSROADS CASUALTIES
- CROWDS TELEMARK
  CROW GREASE
+ CROWDS TELEMARK
  CRUELTY UNFORGIVEN
  CRUSADE HONEY
  CRYSTAL BREAKING
@@ -418,7 +420,6 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  DARKO DORADO
  DARLING BREAKING
  DARN FORRESTER
- DATE SPEED
  DAUGHTER MADIGAN
  DAWN POND
  DAY UNFAITHFUL
@@ -455,8 +456,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  DOWNHILL ENOUGH
  DOZEN LION
  DRACULA CRYSTAL
- DRAGONFLY STRANGERS
  DRAGON SQUAD
+ DRAGONFLY STRANGERS
  DREAM PICKUP
  DRIFTER COMMANDMENTS
  DRIVER ANNIE
@@ -487,6 +488,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  ELIZABETH SHANE
  EMPIRE MALKOVICH
  ENCINO ELF
+ GROSSE WONDERFUL
  ENCOUNTERS CURTAIN
  ENDING CROWDS
  ENEMY ODDS
@@ -495,7 +497,6 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  ENTRAPMENT SATISFACTION
  ESCAPE METROPOLIS
  EVE RESURRECTION
- EVERYONE CRAFT
  EVOLUTION ALTER
  EXCITEMENT EVE
  EXORCIST STING
@@ -521,9 +522,9 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  FIDELITY DEVIL
  FIGHT JAWBREAKER
  FINDING ANACONDA
+ FIRE WOLVES
  FIREBALL PHILADELPHIA
  FIREHOUSE VIETNAM
- FIRE WOLVES
  FISH OPUS
  FLAMINGOS CONNECTICUT
  FLASH WARS
@@ -534,8 +535,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  FLYING HOOK
  FOOL MOCKINGBIRD
  FOREVER CANDIDATE
- FORRESTER COMANCHEROS
  FORREST SONS
+ FORRESTER COMANCHEROS
  FORWARD TEMPLE
  FRANKENSTEIN STRANGER
  FREAKY POCUS
@@ -559,8 +560,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  GASLIGHT CRUSADE
  GATHERING CALENDAR
  GENTLEMEN STAGE
- GHOSTBUSTERS ELF
  GHOST GROUNDHOG
+ GHOSTBUSTERS ELF
  GIANT TROOPERS
  GILBERT PELICAN
  GILMORE BOILED
@@ -568,13 +569,13 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  GLASS DYING
  GLEAMING JAWBREAKER
  GLORY TRACY
+ GO PURPLE
  GODFATHER DIARY
+ GOLD RIVER
  GOLDFINGER SENSIBILITY
  GOLDMINE TYCOON
- GOLD RIVER
  GONE TROUBLE
  GOODFELLAS SALUTE
- GO PURPLE
  GORGEOUS BINGO
  GOSFORD DONNIE
  GRACELAND DYNAMITE
@@ -589,12 +590,11 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  GRINCH MASSAGE
  GRIT CLOCKWORK
  GROOVE FICTION
- GROSSE WONDERFUL
  GROUNDHOG UNCUT
  GUMP DATE
  GUN BONNIE
- GUNFIGHTER MUSSOLINI
  GUNFIGHT MOON
+ GUNFIGHTER MUSSOLINI
  GUYS FALCON
  HALF OUTFIELD
  HALL CASSIDY
@@ -620,8 +620,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  HEAVYWEIGHTS BEAST
  HEDWIG ALTER
  HELLFIGHTERS SIERRA
- HIGHBALL POTTER
  HIGH ENCINO
+ HIGHBALL POTTER
  HILLS NEIGHBORS
  HOBBIT ALIEN
  HOCUS FRIDA
@@ -643,6 +643,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  HOTEL HAPPINESS
  HOURS RAGE
  HOUSE DYNAMITE
+ MISSION ZOOLANDER
  HUMAN GRAFFITI
  HUNCHBACK IMPOSSIBLE
  HUNGER ROOF
@@ -670,6 +671,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  INSIDER ARIZONA
  INSTINCT AIRPORT
  INTENTIONS EMPIRE
+ MAUDE MOD
  INTERVIEW LIAISONS
  INTOLERABLE INTENTIONS
  INTRIGUE WORST
@@ -711,8 +713,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  KRAMER CHOCOLATE
  KWAI HOMEWARD
  LABYRINTH LEAGUE
- LADYBUGS ARMAGEDDON
  LADY STAGE
+ LADYBUGS ARMAGEDDON
  LAMBS CINCINATTI
  LANGUAGE COWBOY
  LAWLESS VISION
@@ -731,6 +733,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  LIGHTS DEER
  LION UNCUT
  LOATHING LEGALLY
+ PELICAN COMFORTS
  LOCK REAR
  LOLA AGENT
  LOLITA WORLD
@@ -740,10 +743,10 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  LOSER HUSTLER
  LOST BIRD
  LOUISIANA HARRY
- LOVELY JINGLE
- LOVERBOY ATTACKS
- LOVER TRUMAN
  LOVE SUICIDES
+ LOVELY JINGLE
+ LOVER TRUMAN
+ LOVERBOY ATTACKS
  LUCK OPUS
  LUCKY FLYING
  LUKE MUMMY
@@ -766,12 +769,11 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  MANNEQUIN WORST
  MARRIED GO
  MARS ROMAN
- MASKED BUBBLE
  MASK PEACH
+ MASKED BUBBLE
  MASSACRE USUAL
  MASSAGE IMAGE
  MATRIX SNOWMAN
- MAUDE MOD
  MEET CHOCOLATE
  MEMENTO ZOOLANDER
  MENAGERIE RUSHMORE
@@ -788,13 +790,12 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  MINE TITANS
  MINORITY KISS
  MIRACLE VIRTUAL
- MISSION ZOOLANDER
  MIXED DOORS
  MOB DUFFEL
  MOCKINGBIRD HOLLYWOOD
+ MOD SECRETARY
  MODEL FISH
  MODERN DORADO
- MOD SECRETARY
  MONEY HAROLD
  MONSOON CAUSE
  MONSTER SPARTACUS
@@ -875,7 +876,6 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  PEACH INNOCENT
  PEAK FOREVER
  PEARL DESTINY
- PELICAN COMFORTS
  PERDITION FARGO
  PERFECT GROOVE
  PERSONAL LADYBUGS
@@ -883,6 +883,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  PHANTOM GLORY
  PHILADELPHIA WIFE
  PIANIST OUTFIELD
+ RANGE MOONWALKER
  PICKUP DRIVING
  PILOT HOOSIERS
  PINOCCHIO SIMON
@@ -920,7 +921,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  RAIDERS ANTITRUST
  RAINBOW SHOCK
  RANDOM GO
- RANGE MOONWALKER
+ SHEPHERD MIDSUMMER
  REAP UNFAITHFUL
  REAR TRADING
  REBEL AIRPORT
@@ -942,8 +943,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  ROAD ROXANNE
  ROBBERS JOON
  ROBBERY BRIGHT
- ROCKETEER MOTHER
  ROCK INSTINCT
+ ROCKETEER MOTHER
  ROCKY WAR
  ROLLERCOASTER BRINGING
  ROMAN PUNK
@@ -955,9 +956,9 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  ROXANNE REBEL
  RUGRATS SHAKESPEARE
  RULES HUMAN
+ RUN PACIFIC
  RUNAWAY TENENBAUMS
  RUNNER MADIGAN
- RUN PACIFIC
  RUSH GOODFELLAS
  RUSHMORE MERMAID
  SABRINA MIDNIGHT
@@ -975,14 +976,17 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  SCALAWAG DUCK
  SCARFACE BANG
  SCHOOL JACKET
+ SLEEPY JAPANESE
+ SHOOTIST SUPERFLY
  SCISSORHANDS SLUMS
+ SHIP WONDERLAND
  SCORPION APOLLO
+ SEA VIRGIN
  SEABISCUIT PUNK
  SEARCHERS WAIT
  SEATTLE EXPECATIONS
- SEA VIRGIN
- SECRETARY ROUGE
  SECRET GROUNDHOG
+ SECRETARY ROUGE
  SECRETS PARADISE
  SENSE GREEK
  SENSIBILITY REAR
@@ -991,11 +995,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  SHANE DARKNESS
  SHANGHAI TYCOON
  SHAWSHANK BUBBLE
- SHEPHERD MIDSUMMER
  SHINING ROSES
- SHIP WONDERLAND
  SHOCK CABIN
- SHOOTIST SUPERFLY
  SHOW LORD
  SHREK LICENSE
  SHRUNK DIVINE
@@ -1011,16 +1012,16 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  SLACKER LIAISONS
  SLEEPING SUSPECTS
  SLEEPLESS MONSOON
- SLEEPY JAPANESE
  SLEUTH ORIENT
  SLING LUKE
  SLIPPER FIDELITY
  SLUMS DUCK
  SMILE EARRING
+ TROOPERS METAL
  SMOKING BARBARELLA
  SMOOCHY CONTROL
- SNATCHERS MONTEZUMA
  SNATCH SLIPPER
+ SNATCHERS MONTEZUMA
  SNOWMAN ROLLERCOASTER
  SOLDIERS EVOLUTION
  SOMETHING DUCK
@@ -1035,15 +1036,15 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  SPICE SORORITY
  SPIKING ELEMENT
  SPINAL ROCKY
- SPIRITED CASUALTIES
  SPIRIT FLINTSTONES
+ SPIRITED CASUALTIES
  SPLASH GUMP
  SPLENDOR PATTON
  SPOILERS HELLFIGHTERS
  SPY MILE
  SQUAD FISH
- STAGECOACH ARMAGEDDON
  STAGE WORLD
+ STAGECOACH ARMAGEDDON
  STALLION SUNDANCE
  STAMPEDE DISTURBING
  STAR OPERATION
@@ -1057,9 +1058,10 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  STORM HAPPINESS
  STORY SIDE
  STRAIGHT HOURS
+ SWEET BROTHERHOOD
  STRANGELOVE DESIRE
- STRANGERS GRAFFITI
  STRANGER STRANGERS
+ STRANGERS GRAFFITI
  STREAK RIDGEMONT
  STREETCAR INTENTIONS
  STRICTLY SCARFACE
@@ -1072,12 +1074,11 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  SUNDANCE INVASION
  SUNRISE LEAGUE
  SUNSET RACER
- SUPERFLY TRIP
  SUPER WYOMING
+ SUPERFLY TRIP
  SUSPECTS QUILLS
  SWARM GOLD
  SWEDEN SHINING
- SWEET BROTHERHOOD
  SWEETHEARTS SUSPECTS
  TADPOLE PARK
  TALENTED HOMICIDE
@@ -1118,7 +1119,6 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  TREATMENT JEKYLL
  TRIP NEWTON
  TROJAN TOMORROW
- TROOPERS METAL
  TROUBLE DATE
  TRUMAN CRAZY
  TURN STAR
@@ -1162,9 +1162,9 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  WAKE JAWS
  WALLS ARTIST
  WANDA CHAMBER
+ WAR NOTTING
  WARDROBE PHANTOM
  WARLOCK WEREWOLF
- WAR NOTTING
  WARS PLUTO
  WASH HEAVENLY
  WASTELAND DIVINE
@@ -1181,8 +1181,8 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
  WIFE TURN
  WILD APOLLO
  WILLOW TRACY
- WINDOW SIDE
  WIND PHANTOM
+ WINDOW SIDE
  WISDOM WORKER
  WITCHES PANIC
  WIZARD COLDBLOODED
@@ -1209,7 +1209,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
 (1000 rows)
 
 "
-3,Get the names of all cities.,Easy,Get the names of all cities.,SELECT city FROM city;,"            city            
+3,Get the names of all cities.,Easy,    SELECT city FROM city;,"            city            
 ----------------------------
  A Corua (La Corua)
  Abha
@@ -1814,7 +1814,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
 (600 rows)
 
 "
-4,List all categories available for films.,Easy,List all categories available for films.,SELECT name FROM category;,"    name     
+4,List all categories available for films.,Easy,SELECT name FROM category;,"    name     
 -------------
  Action
  Animation
@@ -1835,7 +1835,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
 (16 rows)
 
 "
-5,Show the first name and last name of all customers.,Easy,Show the first name and last name of all customers.,"SELECT first_name, last_name FROM customer;"," first_name  |  last_name   
+5,Show the first name and last name of all customers.,Easy,"SELECT first_name, last_name FROM customer;"," first_name  |  last_name   
 -------------+--------------
  MARY        | SMITH
  PATRICIA    | JOHNSON
@@ -2439,7 +2439,7 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
 (599 rows)
 
 "
-6,Show all films released in 2006.,Easy,Show all films released in 2006.,SELECT * FROM film WHERE release_year = 2006;," film_id |          title          |                                                            description                                                            | release_year | language_id | original_language_id | rental_duration | rental_rate | length | replacement_cost | rating |          last_update          |                       special_features                       |                                                                                              fulltext                                                                                               
+6,Show all films released in 2006.,Easy,SELECT * FROM film WHERE release_year = 2006;," film_id |          title          |                                                            description                                                            | release_year | language_id | original_language_id | rental_duration | rental_rate | length | replacement_cost | rating |          last_update          |                       special_features                       |                                                                                              fulltext                                                                                               
 ---------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+-------------+----------------------+-----------------+-------------+--------+------------------+--------+-------------------------------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
      213 | DATE SPEED              | A Touching Saga of a Composer And a Moose who must Discover a Dentist in A MySQL Convention                                       |         2006 |           6 |                      |               4 |        0.99 |    104 |            19.99 | R      | 2022-09-10 16:46:03.905795+00 | {Commentaries}                                               | 'compos':8 'convent':20 'date':1 'dentist':16 'discov':14 'moos':11 'must':13 'mysql':19 'saga':5 'speed':2 'touch':4
       20 | AMELIE HELLFIGHTERS     | A Boring Drama of a Woman And a Squirrel who must Conquer a Student in A Baloon                                                   |         2006 |           1 |                      |               4 |        4.99 |     79 |            23.99 | R      | 2022-09-10 16:46:03.905795+00 | {Commentaries,""Deleted Scenes"",""Behind the Scenes""}          | 'ameli':1 'baloon':19 'bore':4 'conquer':14 'drama':5 'hellfight':2 'must':13 'squirrel':11 'student':16 'woman':8
@@ -2504,20 +2504,20 @@ Query Number,Natural Language Query,Difficulty,Query,sql_gen_query,results
 (60 rows)
 
 "
-7,"Find all actors with the last name ""Smith.""",Easy,"Find all actors with the last name ""Smith.""","SELECT actor_id, first_name, last_name
+7,"Find all actors with the last name ""Smith.""",Easy,"SELECT actor_id, first_name, last_name
 FROM actor
-WHERE last_name = 'Smith';"," actor_id | first_name | last_name 
+WHERE last_name ILIKE 'Smith';"," actor_id | first_name | last_name 
 ----------+------------+-----------
 (0 rows)
 
 "
-8,List all customers who are from the city of New York.,Easy,List all customers who are from the city of New York.,"SELECT
+8,List all customers who are from the city of New York.,Easy,"SELECT
   C.first_name,
   C.last_name
-FROM Customer AS C
-JOIN Address AS A
+FROM customer AS C
+JOIN address AS A
   ON C.address_id = A.address_id
-JOIN City AS CI
+JOIN city AS CI
   ON A.city_id = CI.city_id
 WHERE
   CI.city = 'New York';"," first_name | last_name 
@@ -2525,12 +2525,17 @@ WHERE
 (0 rows)
 
 "
-9,Get all stores located in the country India.,Easy,Get all stores located in the country India.,"SELECT S.store_id
+9,Get all stores located in the country India.,Easy,"SELECT
+  S.store_id
 FROM store AS S
-JOIN address AS A ON S.address_id = A.address_id
-JOIN city AS C ON A.city_id = C.city_id
-JOIN country AS CO ON C.country_id = CO.country_id
-WHERE CO.country = 'India';"," store_id 
+JOIN address AS A
+  ON S.address_id = A.address_id
+JOIN city AS C
+  ON A.city_id = C.city_id
+JOIN country AS CO
+  ON C.country_id = CO.country_id
+WHERE
+  CO.country = 'India';"," store_id 
 ----------
        13
        18
@@ -2589,7 +2594,7 @@ WHERE CO.country = 'India';"," store_id
 (54 rows)
 
 "
-10,Show all films with a rental rate greater than $2.99.,Easy,Show all films with a rental rate greater than $2.99.,"SELECT film_id, title, rental_rate FROM film WHERE rental_rate > 2.99;"," film_id |           title           | rental_rate 
+10,Show all films with a rental rate greater than $2.99.,Easy,"SELECT film_id, title, rental_rate FROM film WHERE rental_rate > 2.99;"," film_id |           title           | rental_rate 
 ---------+---------------------------+-------------
        2 | ACE GOLDFINGER            |        4.99
        7 | AIRPLANE SIERRA           |        4.99
@@ -2930,64 +2935,63 @@ WHERE CO.country = 'India';"," store_id
 (336 rows)
 
 "
-11,How many films are there in each category?,Medium,How many films are there in each category?,"SELECT c.name, COUNT(fc.film_id) AS film_count
+11,How many films are there in each category?,Medium,"SELECT c.name, COUNT(fc.film_id) AS film_count
 FROM category c
 JOIN film_category fc ON c.category_id = fc.category_id
 GROUP BY c.name;","    name     | film_count 
 -------------+------------
- Sports      |        213
- Classics    |        198
- New         |        199
- Family      |        209
- Comedy      |        193
- Animation   |        200
- Travel      |        198
- Music       |        194
- Drama       |        200
- Horror      |        188
- Sci-Fi      |        196
- Games       |        199
- Documentary |        204
- Foreign     |        211
- Action      |        200
- Children    |        199
+ Sports      |        145
+ Classics    |        147
+ New         |        147
+ Family      |        147
+ Comedy      |        143
+ Animation   |        148
+ Travel      |        151
+ Music       |        152
+ Drama       |        152
+ Horror      |        142
+ Sci-Fi      |        149
+ Games       |        150
+ Documentary |        145
+ Foreign     |        150
+ Action      |        149
+ Children    |        150
 (16 rows)
 
 "
-12,What is the total number of actors?,Medium,What is the total number of actors?,SELECT COUNT(actor_id) FROM actor;," count 
+12,What is the total number of actors?,Medium,SELECT COUNT(actor_id) FROM actor," count 
 -------
    200
 (1 row)
 
 "
-13,Get the total payment received in June 2022.,Medium,Get the total payment received in June 2022.,"SELECT SUM(amount)
-FROM payment
-WHERE payment_date >= '2022-06-01' AND payment_date < '2022-07-01';","   sum    
+13,Get the total payment received in June 2022.,Medium,SELECT SUM(amount) FROM payment WHERE EXTRACT(YEAR FROM payment_date) = 2022 AND EXTRACT(MONTH FROM payment_date) = 6;,"   sum    
 ----------
  10923.45
 (1 row)
 
 "
-14,Find the total number of rentals made last month.,Medium,Find the total number of rentals made last month.,"SELECT
-  COUNT(rental_id)
+14,Find the total number of rentals made last month.,Medium,"SELECT COUNT(rental_id)
 FROM rental
-WHERE
-  rental_date BETWEEN DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month') AND (DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '1 day');"," count 
+WHERE rental_date >= date_trunc('month', NOW() - INTERVAL '1 month')
+AND rental_date < date_trunc('month', NOW());"," count 
 -------
      0
 (1 row)
 
 "
-15,How many films have a rating of PG-13?,Medium,How many films have a rating of PG-13?,SELECT COUNT(film_id) FROM film WHERE rating = 'PG-13';," count 
+15,How many films have a rating of PG-13?,Medium,SELECT COUNT(film_id) FROM film WHERE rating = 'PG-13'," count 
 -------
    223
 (1 row)
 
 "
-16,List all films along with their category names.,Medium,List all films along with their category names.,"SELECT F.title, C.name
-FROM film AS F
-JOIN film_category AS FC ON F.film_id = FC.film_id
-JOIN category AS C ON FC.category_id = C.category_id;","            title            |    name     
+16,List all films along with their category names.,Medium,"SELECT
+    f.title,
+    c.name
+FROM film AS f
+JOIN film_category AS fc ON f.film_id = fc.film_id
+JOIN category AS c ON fc.category_id = c.category_id;","            title            |    name     
 -----------------------------+-------------
  BAREFOOT MANCHURIAN         | Horror
  BED HIGHBALL                | Comedy
@@ -5356,863 +5360,30 @@ JOIN category AS C ON FC.category_id = C.category_id;","            title       
  KING EVOLUTION              | Foreign
  IRON MOON                   | Action
  MALTESE HOPE                | Children
- ACADEMY DINOSAUR            | Documentary
- ACE GOLDFINGER              | Horror
- ADAPTATION HOLES            | Documentary
- AFFAIR PREJUDICE            | Horror
- AFRICAN EGG                 | Family
- AIRPLANE SIERRA             | Comedy
- AIRPORT POLLOCK             | Horror
- ALADDIN CALENDAR            | Sports
- ALAMO VIDEOTAPE             | Foreign
- ALASKA PHANTOM              | Music
- ALI FOREVER                 | Horror
- ALICE FANTASIA              | Classics
- ALIEN CENTER                | Foreign
- ALLEY EVOLUTION             | Foreign
- ALTER VICTORY               | Animation
- AMADEUS HOLY                | Action
- AMELIE HELLFIGHTERS         | Music
- AMERICAN CIRCUS             | Action
- AMISTAD MIDSUMMER           | New
- ANACONDA CONFESSIONS        | Animation
- ANALYZE HOOSIERS            | Horror
- ANGELS LIFE                 | New
- ANNIE IDENTITY              | Sci-Fi
- ANONYMOUS HUMAN             | Sports
- ANTHEM LUKE                 | Comedy
- ANTITRUST TOMATOES          | Action
- ARABIA DOGMA                | Horror
- ARACHNOPHOBIA ROLLERCOASTER | Horror
- ARIZONA BANG                | Classics
- ARK RIDGEMONT               | Action
- ARMAGEDDON LOST             | Sci-Fi
- ARMY FLINTSTONES            | Documentary
- ARTIST COLDBLOODED          | Sports
- ATLANTIS CAUSE              | Family
- ATTACKS HATE                | Sci-Fi
- ATTRACTION NEWTON           | New
- BABY HALL                   | Foreign
- BALLOON HOMEWARD            | Music
- BALLROOM MOCKINGBIRD        | Foreign
- BANG KWAI                   | Family
- BANGER PINOCCHIO            | Music
- BAREFOOT MANCHURIAN         | Action
- BASIC EASY                  | Travel
- BEACH HEARTBREAKERS         | Documentary
- BEAUTY GREASE               | Drama
- BED HIGHBALL                | Documentary
- BEDAZZLED MARRIED           | Family
- BEETHOVEN EXORCIST          | Drama
- BEHAVIOR RUNAWAY            | Horror
- BENEATH RUSH                | Children
- BERETS AGENT                | Action
- BETRAYED REAR               | Children
- BILKO ANONYMOUS             | Family
- BINGO TALENTED              | Sci-Fi
- BIRCH ANTITRUST             | Music
- BIRD INDEPENDENCE           | Travel
- BIRDCAGE CASPER             | Music
- BIRDS PERDITION             | New
- BLACKOUT PRIVATE            | Animation
- BLADE POLISH                | Drama
- BLANKET BEVERLY             | Family
- BLINDNESS GUN               | Sci-Fi
- BLOOD ARGONAUTS             | Family
- BLUES INSTINCT              | Family
- BONNIE HOLOCAUST            | Documentary
- BOOGIE AMELIE               | Music
- BORN SPINAL                 | Travel
- BOULEVARD MOB               | New
- BOUND CHEAPER               | Classics
- BOWFINGER GABLES            | Horror
- BRANNIGAN SUNRISE           | New
- BRAVEHEART HUMAN            | Family
- BREAKFAST GOLDFINGER        | New
- BRIGHT ENCOUNTERS           | Drama
- BRINGING HYSTERICAL         | Comedy
- BROOKLYN DESERT             | Foreign
- BROTHERHOOD BLANKET         | Documentary
- BUBBLE GROSSE               | Sports
- BUCKET BROTHERHOOD          | Travel
- BUGSY SONG                  | Foreign
- BULL SHAWSHANK              | Action
- BULWORTH COMMANDMENTS       | Games
- BUNCH MINDS                 | Drama
- BUTCH PANTHER               | New
- BUTTERFLY CHOCOLAT          | New
- CABIN FLASH                 | Children
- CADDYSHACK JEDI             | Action
- CALIFORNIA BIRDS            | Sports
- CAMELOT VACATION            | Sci-Fi
- CANDIDATE PERDITION         | Classics
- CANDLES GRAPES              | Games
- CANYON STOCK                | Animation
- CAPER MOTIONS               | Comedy
- CARIBBEAN LIBERTY           | Sports
- CARRIE BUNCH                | Horror
- CASABLANCA SUPER            | Travel
- CASPER DRAGONFLY            | Children
- CASUALTIES ENCINO           | Action
- CAT CONEHEADS               | Comedy
- CATCH AMISTAD               | Foreign
- CELEBRITY HORN              | Action
- CENTER DINOSAUR             | Classics
- CHAINSAW UPTOWN             | Sci-Fi
- CHAMBER ITALIAN             | Music
- CHAMPION FLATLINERS         | Animation
- CHANCE RESURRECTION         | Sports
- CHAPLIN LICENSE             | New
- CHARADE DUFFEL              | Sci-Fi
- CHARIOTS CONSPIRACY         | Sci-Fi
- CHEAPER CLYDE               | Sci-Fi
- CHICAGO NORTH               | Games
- CHICKEN HELLFIGHTERS        | Documentary
- CHILL LUCK                  | Drama
- CHINATOWN GLADIATOR         | New
- CHISUM BEHAVIOR             | Family
- CHOCOLATE DUCK              | Foreign
- CINCINATTI WHISPERER        | Sci-Fi
- CIRCUS YOUTH                | Children
- CLASH FREDDY                | Animation
- CLEOPATRA DEVIL             | New
- CLERKS ANGELS               | Documentary
- CLOCKWORK PARADISE          | Children
- CLONES PINOCCHIO            | Music
- CLOSER BANG                 | Comedy
- CLUB GRAFFITI               | Animation
- CLUE GRAIL                  | Music
- CLYDE THEORY                | New
- COLDBLOODED DARLING         | Sci-Fi
- COLOR PHILADELPHIA          | Classics
- COMA HEAD                   | Travel
- COMANCHEROS ENEMY           | Children
- COMFORTS RUSH               | Travel
- COMMAND DARLING             | Foreign
- COMMANDMENTS EXPRESS        | Horror
- CONEHEADS SMOOCHY           | Drama
- CONFESSIONS MAGUIRE         | Drama
- CONFIDENTIAL INTERVIEW      | Music
- CONFUSED CANDLES            | Family
- CONGENIALITY QUEST          | Sports
- CONNECTICUT TRAMP           | Sci-Fi
- CONNECTION MICROCOSMOS      | Comedy
- CONQUERER NUTS              | Drama
- CONTACT ANONYMOUS           | Travel
- CONVERSATION DOWNHILL       | Family
- CORE SUIT                   | Classics
- CRANES RESERVOIR            | Sports
- CRAZY HOME                  | Comedy
- CREATURES SHAKESPEARE       | Games
- CREEPERS KANE               | Classics
- CROOKED FROGMEN             | Children
- CROSSING DIVORCE            | Foreign
- CROSSROADS CASUALTIES       | Animation
- CROWDS TELEMARK             | Sci-Fi
- CRUSADE HONEY               | Sports
- CRYSTAL BREAKING            | Foreign
- CUPBOARD SINNERS            | Documentary
- CYCLONE FAMILY              | Foreign
- DADDY PITTSBURGH            | Comedy
- DAISY MENAGERIE             | Sci-Fi
- DALMATIONS SWEDEN           | Drama
- DANCES NONE                 | Action
- DANCING FEVER               | Documentary
- DANGEROUS UPTOWN            | Foreign
- DARKNESS WAR                | Drama
- DARLING BREAKING            | Games
- DARN FORRESTER              | Action
- DATE SPEED                  | Family
- DAUGHTER MADIGAN            | Children
- DAWN POND                   | Games
- DAY UNFAITHFUL              | New
- DAZED PUNK                  | Games
- DECEIVER BETRAYED           | Drama
- DEEP CRUSADE                | Documentary
- DEER VIRGINIAN              | Music
- DELIVERANCE MULHOLLAND      | Documentary
- DESERT POSEIDON             | Horror
- DESPERATE TRAINSPOTTING     | Travel
- DETAILS PACKER              | Games
- DETECTIVE VISION            | Classics
- DIARY PANIC                 | Drama
- DINOSAUR SECRETARY          | Family
- DIRTY ACE                   | Games
- DISCIPLE MOTHER             | Travel
- DISTURBING SCARFACE         | Sci-Fi
- DIVIDE MONSTER              | Sci-Fi
- DIVINE RESURRECTION         | Games
- DIVORCE SHINING             | Sports
- DOCTOR GRAIL                | Children
- DOGMA FAMILY                | Animation
- DOLLS RAGE                  | Sci-Fi
- DONNIE ALLEY                | Animation
- DOOM DANCING                | Comedy
- DOUBLE WRATH                | Animation
- DOUBTFIRE LABYRINTH         | Foreign
- DOWNHILL ENOUGH             | Comedy
- DOZEN LION                  | Documentary
- DRACULA CRYSTAL             | Classics
- DRAGON SQUAD                | Action
- DRAGONFLY STRANGERS         | New
- DREAM PICKUP                | Action
- DRIFTER COMMANDMENTS        | Action
- DRIVER ANNIE                | Sports
- DRIVING POLISH              | Music
- DROP WATERFRONT             | Sports
- DRUMLINE CYCLONE            | Travel
- DRUMS DYNAMITE              | Horror
- DUCK RACER                  | Animation
- DUDE BLINDNESS              | Sports
- DUFFEL APOCALYPSE           | Documentary
- DUMBO LUST                  | Family
- DURHAM PANKY                | Sports
- DWARFS ALTER                | Games
- DYING MAKER                 | Comedy
- DYNAMITE TARZAN             | Classics
- EAGLES PANKY                | New
- EARLY HOME                  | Animation
- EARRING INSTINCT            | Family
- EASY GLADIATOR              | Action
- EDGE KISSING                | Drama
- EFFECT GLADIATOR            | Family
- EGG IGBY                    | Documentary
- EGYPT TENENBAUMS            | Horror
- ELEMENT FREDDY              | Comedy
- ELEPHANT TROJAN             | Horror
- ELF MURDER                  | Music
- ELIZABETH SHANE             | Sports
- EMPIRE MALKOVICH            | Children
- ENCINO ELF                  | Games
- ENCOUNTERS CURTAIN          | Drama
- ENDING CROWDS               | New
- ENEMY ODDS                  | Music
- ENGLISH BULWORTH            | Sci-Fi
- ENOUGH RAGING               | Travel
- EVE RESURRECTION            | New
- EVERYONE CRAFT              | Foreign
- EVOLUTION ALTER             | Sports
- EXCITEMENT EVE              | Action
- EXORCIST STING              | Sports
- EXPECATIONS NATURAL         | Travel
- EXPENDABLE STALLION         | Documentary
- EXPRESS LONELY              | Sci-Fi
- EXTRAORDINARY CONQUERER     | Classics
- FACTORY DRAGON              | Travel
- FALCON VOLUME               | Animation
- FAMILY SWEET                | Horror
- FANTASIA PARK               | Games
- FANTASY TROOPERS            | Action
- FARGO GANDHI                | Children
- FATAL HAUNTED               | New
- FEATHERS METAL              | Games
- FELLOWSHIP AUTUMN           | Travel
- FEUD FROGMEN                | Family
- FEVER EMPIRE                | Games
- FIGHT JAWBREAKER            | Animation
- FINDING ANACONDA            | Family
- FIRE WOLVES                 | Games
- FIREBALL PHILADELPHIA       | Comedy
- FISH OPUS                   | Sci-Fi
- FLAMINGOS CONNECTICUT       | New
- FLASH WARS                  | New
- FLATLINERS KILLER           | Sports
- FLIGHT LIES                 | Sports
- FLOATS GARDEN               | Animation
- FLYING HOOK                 | Animation
- FOREVER CANDIDATE           | Children
- FORREST SONS                | Action
- FORRESTER COMANCHEROS       | Animation
- FORWARD TEMPLE              | Games
- FRANKENSTEIN STRANGER       | Comedy
- FREAKY POCUS                | Music
- FREDDY STORM                | Horror
- FRENCH HOLIDAY              | Documentary
- FROGMEN BREAKING            | Travel
- FROST HEAD                  | Classics
- FUGITIVE MAGUIRE            | Travel
- FULL FLATLINERS             | Children
- FURY MURDER                 | Children
- GABLES METROPOLIS           | Family
- GALAXY SWEETHEARTS          | Classics
- GAMES BOWFINGER             | Travel
- GANDHI KWAI                 | Family
- GANGS PRIDE                 | Animation
- GARDEN ISLAND               | Sci-Fi
- GATHERING CALENDAR          | Games
- GENTLEMEN STAGE             | Foreign
- GHOSTBUSTERS ELF            | Animation
- GIANT TROOPERS              | Children
- GILBERT PELICAN             | Classics
- GILMORE BOILED              | Classics
- GLADIATOR WESTWARD          | Family
- GLASS DYING                 | Action
- GLEAMING JAWBREAKER         | Sports
- GO PURPLE                   | Music
- GODFATHER DIARY             | New
- GOLDMINE TYCOON             | Sci-Fi
- GOODFELLAS SALUTE           | Sci-Fi
- GORGEOUS BINGO              | Children
- GOSFORD DONNIE              | Action
- GRACELAND DYNAMITE          | Sports
- GRADUATE LORD               | Children
- GRAFFITI LOVE               | Sci-Fi
- GRAIL FRANKENSTEIN          | Action
- GRAPES FURY                 | Foreign
- GREASE YOUTH                | Family
- GREATEST NORTH              | Music
- GREEK EVERYONE              | Foreign
- GRINCH MASSAGE              | Games
- GRIT CLOCKWORK              | Games
- GROOVE FICTION              | Sports
- GROSSE WONDERFUL            | Music
- GROUNDHOG UNCUT             | Comedy
- GUMP DATE                   | Travel
- GUN BONNIE                  | Games
- GUNFIGHT MOON               | Comedy
- GUNFIGHTER MUSSOLINI        | Sports
- GUYS FALCON                 | Sci-Fi
- HALF OUTFIELD               | Family
- HALL CASSIDY                | Children
- HALLOWEEN NUTS              | Documentary
- HAMLET WISDOM               | Sci-Fi
- HANDICAP BOONDOCK           | Action
- HANGING DEEP                | Drama
- HANKY OCTOBER               | Sci-Fi
- HAPPINESS UNITED            | Foreign
- HARDLY ROBBERS              | Documentary
- HAROLD FRENCH               | Drama
- HARPER DYING                | Animation
- HARRY IDAHO                 | Drama
- HATE HANDICAP               | Comedy
- HAWK CHILL                  | Documentary
- HEAD STRANGER               | Games
- HEAVEN FREEDOM              | Comedy
- HEAVYWEIGHTS BEAST          | Documentary
- HEDWIG ALTER                | Comedy
- HELLFIGHTERS SIERRA         | Foreign
- HIGH ENCINO                 | Horror
- HIGHBALL POTTER             | Foreign
- HILLS NEIGHBORS             | Action
- HOCUS FRIDA                 | Family
- HOLES BRANNIGAN             | Sports
- HOLIDAY GAMES               | Foreign
- HOLLOW JEOPARDY             | Sci-Fi
- HOLY TADPOLE                | Classics
- HOME PITY                   | Music
- HOMEWARD CIDER              | Documentary
- HOMICIDE PEACH              | Family
- HONEY TIES                  | Sports
- HOOK CHARIOTS               | Animation
- HOOSIERS BIRDCAGE           | Foreign
- HOPE TOOTSIE                | Classics
- HORN WORKING                | Animation
- HORROR REIGN                | Travel
- HOTEL HAPPINESS             | Foreign
- HOURS RAGE                  | New
- HOUSE DYNAMITE              | Family
- HUMAN GRAFFITI              | Games
- HUNCHBACK IMPOSSIBLE        | Drama
- HUNTER ALTER                | Documentary
- HURRICANE AFFAIR            | Comedy
- HUSTLER PARTY               | Comedy
- HYSTERICAL GRAIL            | Sports
- ICE CROSSING                | Games
- IDAHO LOVE                  | New
- IDENTITY LOVER              | Sci-Fi
- IDOLS SNATCHERS             | Children
- IGBY MAKER                  | Travel
- ILLUSION AMELIE             | Foreign
- IMAGE PRINCESS              | Sports
- IMPACT ALADDIN              | Music
- IMPOSSIBLE PREJUDICE        | Foreign
- INCH JET                    | Animation
- INDEPENDENCE HOTEL          | Documentary
- INDIAN LOVE                 | Family
- INFORMER DOUBLE             | Foreign
- INNOCENT USUAL              | Foreign
- INSECTS STONE               | Animation
- INSIDER ARIZONA             | Music
- INSTINCT AIRPORT            | Sports
- INTERVIEW LIAISONS          | New
- INTOLERABLE INTENTIONS      | Documentary
- INTRIGUE WORST              | Foreign
- INVASION CYCLONE            | Children
- IRON MOON                   | Classics
- ISHTAR ROCKETEER            | Animation
- ISLAND EXORCIST             | Classics
- ITALIAN AFRICAN             | Travel
- JACKET FRISCO               | Drama
- JASON TRAP                  | Family
- JAWBREAKER BROOKLYN         | Music
- JAWS HARRY                  | Comedy
- JEDI BENEATH                | Family
- JEEPERS WEDDING             | Classics
- JEKYLL FROGMEN              | New
- JEOPARDY ENCINO             | Classics
- JERK PAYCHECK               | Classics
- JET NEIGHBORS               | Foreign
- JINGLE SAGEBRUSH            | Classics
- JOON NORTHWEST              | Sports
- JUGGLER HARDLY              | Animation
- JUMANJI BLADE               | New
- JUNGLE CLOSER               | New
- KANE EXORCIST               | Foreign
- KARATE MOON                 | Horror
- KENTUCKIAN GIANT            | Horror
- KICK SAVANNAH               | Travel
- KILL BROTHERHOOD            | Documentary
- KILLER INNOCENT             | Family
- KING EVOLUTION              | Family
- KISS GLORY                  | Foreign
- KISSING DOLLS               | Action
- KNOCK WARLOCK               | Comedy
- KRAMER CHOCOLATE            | Sports
- KWAI HOMEWARD               | Drama
- LABYRINTH LEAGUE            | Children
- LADY STAGE                  | Horror
- LADYBUGS ARMAGEDDON         | Games
- LAMBS CINCINATTI            | Games
- LANGUAGE COWBOY             | Children
- LAWLESS VISION              | Animation
- LAWRENCE LOVE               | Action
- LEAGUE HELLFIGHTERS         | Classics
- LEATHERNECKS DWARFS         | Travel
- LEBOWSKI SOLDIERS           | Drama
- LEGEND JEDI                 | Music
- LESSON CLEOPATRA            | Sports
- LIAISONS SWEET              | Travel
- LIBERTY MAGNIFICENT         | Sports
- LICENSE WEEKEND             | Sci-Fi
- LIES TREATMENT              | Drama
- LIFE TWISTED                | Comedy
- LIGHTS DEER                 | Classics
- LION UNCUT                  | Comedy
- LOATHING LEGALLY            | Classics
- LOLA AGENT                  | Horror
- LOLITA WORLD                | Family
- LONELY ELEPHANT             | Comedy
- LORD ARIZONA                | Action
- LOSE INCH                   | Foreign
- LOSER HUSTLER               | Sports
- LOST BIRD                   | Foreign
- LOUISIANA HARRY             | Family
- LOVE SUICIDES               | Horror
- LOVELY JINGLE               | Classics
- LOVER TRUMAN                | Classics
- LOVERBOY ATTACKS            | New
- LUCK OPUS                   | Drama
- LUKE MUMMY                  | Animation
- MADIGAN DORADO              | Travel
- MADISON TRAP                | Documentary
- MADNESS ATTACKS             | Foreign
- MAGIC MALLRATS              | Children
- MAGNIFICENT CHITTY          | Classics
- MAGNOLIA FORRESTER          | Action
- MAGUIRE APACHE              | Family
- MAKER GABLES                | Children
- MALKOVICH PET               | Classics
- MALLRATS UNITED             | Comedy
- MALTESE HOPE                | Games
- MANCHURIAN CURTAIN          | Family
- MANNEQUIN WORST             | New
- MARRIED GO                  | Sci-Fi
- MARS ROMAN                  | Games
- MASK PEACH                  | New
- MASKED BUBBLE               | Music
- MASSACRE USUAL              | Games
- MASSAGE IMAGE               | Animation
- MATRIX SNOWMAN              | Foreign
- MAUDE MOD                   | Foreign
- MEMENTO ZOOLANDER           | Comedy
- MENAGERIE RUSHMORE          | Animation
- MERMAID INSECTS             | Sports
- METAL ARMAGEDDON            | Documentary
- METROPOLIS COMA             | Sci-Fi
- MICROCOSMOS PARADISE        | Children
- MIDNIGHT WESTWARD           | Action
- MIDSUMMER GROUNDHOG         | Documentary
- MIGHTY LUCK                 | Documentary
- MILE MULAN                  | Sports
- MILLION ACE                 | Classics
- MINDS TRUMAN                | Action
- MINORITY KISS               | Music
- MIRACLE VIRTUAL             | Animation
- MISSION ZOOLANDER           | Animation
- MIXED DOORS                 | Foreign
- MOB DUFFEL                  | Drama
- MOCKINGBIRD HOLLYWOOD       | Action
- MODEL FISH                  | Children
- MODERN DORADO               | Documentary
- MONEY HAROLD                | New
- MONSOON CAUSE               | Games
- MONSTER SPARTACUS           | Music
- MONTEREY LABYRINTH          | Horror
- MONTEZUMA COMMAND           | Action
- MOON BUNCH                  | Foreign
- MOONSHINE CABIN             | Games
- MOONWALKER FOOL             | Games
- MOTHER OLEANDER             | Sports
- MOULIN WAKE                 | Travel
- MOVIE SHAKESPEARE           | Family
- MULHOLLAND BEAST            | Foreign
- MUMMY CREATURES             | Sports
- MURDER ANTITRUST            | Children
- MUSCLE BRIGHT               | Travel
- MUSIC BOONDOCK              | Family
- MUSKETEERS WAIT             | Classics
- MUSSOLINI SPOILERS          | Sports
- MYSTIC TRUMAN               | Comedy
- NAME DETECTIVE              | Games
- NASH CHOCOLAT               | Animation
- NATIONAL STORY              | Documentary
- NATURAL STOCK               | Family
- NEIGHBORS CHARADE           | Sports
- NEMO CAMPUS                 | Sci-Fi
- NETWORK PEAK                | Family
- NEWSIES STORY               | Documentary
- NEWTON LABYRINTH            | Foreign
- NIGHTMARE CHILL             | Games
- NOON PAPI                   | Children
- NORTH TEQUILA               | Documentary
- NORTHWEST POLISH            | Sports
- NOTORIOUS REUNION           | Documentary
- NOTTING SPEAKEASY           | Drama
- NOVOCAINE FLIGHT            | Sports
- NUTS TIES                   | New
- OCTOBER SUBMARINE           | Classics
- OKLAHOMA JUMANJI            | New
- OLEANDER CLUE               | Music
- OPEN AFRICAN                | Sci-Fi
- OPERATION OPERATION         | Comedy
- OPPOSITE NECKLACE           | Family
- OPUS ICE                    | Foreign
- ORANGE GRAPES               | Foreign
- ORDER BETRAYED              | Travel
- ORIENT CLOSER               | Drama
- OTHERS SOUP                 | Travel
- OUTBREAK DIVINE             | Games
- OUTFIELD MASSACRE           | Music
- OUTLAW HANKY                | Travel
- OZ LIAISONS                 | Animation
- PACIFIC AMISTAD             | Documentary
- PACKER MADIGAN              | Animation
- PAJAMA JAWBREAKER           | Classics
- PANIC CLUB                  | Horror
- PANKY SUBMARINE             | Games
- PANTHER REDS                | Sci-Fi
- PAPI NECKLACE               | Travel
- PARADISE SABRINA            | Comedy
- PARIS WEEKEND               | Horror
- PARTY KNOCK                 | Comedy
- PAST SUICIDES               | Foreign
- PATHS CONTROL               | Drama
- PATIENT SISTER              | Classics
- PATRIOT ROMAN               | Action
- PATTON INTERVIEW            | Horror
- PAYCHECK WAIT               | Drama
- PEACH INNOCENT              | Sports
- PEAK FOREVER                | Sports
- PEARL DESTINY               | Foreign
- PELICAN COMFORTS            | Documentary
- PERDITION FARGO             | Sports
- PERFECT GROOVE              | Comedy
- PET HAUNTING                | Foreign
- PHANTOM GLORY               | New
- PICKUP DRIVING              | Sports
- PILOT HOOSIERS              | Family
- PINOCCHIO SIMON             | Comedy
- PIRATES ROXANNE             | Sports
- PITTSBURGH HUNCHBACK        | Family
- PITY BOUND                  | Drama
- PIZZA JUMANJI               | Games
- PLATOON INSTINCT            | New
- POCUS PULP                  | Documentary
- POLISH BROOKLYN             | Children
- POLLOCK DELIVERANCE         | Foreign
- POND SEATTLE                | Animation
- POTLUCK MIXED               | Animation
- POTTER CONNECTICUT          | Animation
- PREJUDICE OLEANDER          | Classics
- PRESIDENT BANG              | Family
- PRIDE ALAMO                 | Animation
- PRIMARY GLASS               | Action
- PRIVATE DROP                | Games
- PRIX UNDEFEATED             | Family
- PSYCHO SHRUNK               | Games
- PUNK DIVORCE                | Animation
- PURE RUNNER                 | Comedy
- PURPLE MOVIE                | Foreign
- QUEST MUSSOLINI             | Action
- QUILLS BULL                 | Documentary
- RACER EGG                   | Drama
- RAGE GAMES                  | Family
- RAGING AIRPLANE             | Sci-Fi
- RAIDERS ANTITRUST           | Documentary
- RAINBOW SHOCK               | Documentary
- RANDOM GO                   | Sci-Fi
- RANGE MOONWALKER            | Family
- REAR TRADING                | Action
- REBEL AIRPORT               | Music
- RECORDS ZORRO               | Sports
- REDS POCUS                  | Music
- REEF SALUTE                 | Horror
- REIGN GENTLEMEN             | Sci-Fi
- REMEMBER DIARY              | Family
- REQUIEM TYCOON              | Classics
- RESERVOIR ADAPTATION        | Foreign
- RESURRECTION SILVERADO      | Family
- RIDER CADDYSHACK            | Sports
- RIDGEMONT SUBMARINE         | New
- RIGHT CRANES                | Classics
- RINGS HEARTBREAKERS         | Action
- RIVER OUTLAW                | Sports
- ROAD ROXANNE                | Documentary
- ROBBERS JOON                | Children
- ROBBERY BRIGHT              | Family
- ROCK INSTINCT               | Horror
- ROCKETEER MOTHER            | Foreign
- ROLLERCOASTER BRINGING      | Horror
- ROMAN PUNK                  | Music
- ROOF CHAMPION               | Games
- ROOM ROMAN                  | Animation
- ROOTS REMEMBER              | Classics
- ROSES TREASURE              | Sports
- ROUGE SQUAD                 | Games
- ROXANNE REBEL               | Games
- RUGRATS SHAKESPEARE         | Action
- RULES HUMAN                 | Horror
- RUN PACIFIC                 | New
- RUNAWAY TENENBAUMS          | New
- RUNNER MADIGAN              | Music
- RUSH GOODFELLAS             | Family
- RUSHMORE MERMAID            | Comedy
- SABRINA MIDNIGHT            | Children
- SADDLE ANTITRUST            | Comedy
- SAGEBRUSH CLUELESS          | Documentary
- SAINTS BRIDE                | Drama
- SALUTE APOLLO               | New
- SANTA PARIS                 | Children
- SASSY PACKER                | Games
- SATISFACTION CONFIDENTIAL   | Sports
- SATURDAY LAMBS              | Sports
- SATURN NAME                 | Comedy
- SCARFACE BANG               | Children
- SCHOOL JACKET               | Foreign
- SCORPION APOLLO             | Drama
- SEA VIRGIN                  | Drama
- SEABISCUIT PUNK             | Sports
- SEARCHERS WAIT              | Comedy
- SEATTLE EXPECATIONS         | Drama
- SECRET GROUNDHOG            | Documentary
- SECRETARY ROUGE             | Sports
- SECRETS PARADISE            | Family
- SENSE GREEK                 | Sports
- SENSIBILITY REAR            | Family
- SHANE DARKNESS              | Travel
- SHANGHAI TYCOON             | Travel
- SHEPHERD MIDSUMMER          | Children
- SHINING ROSES               | Travel
- SHIP WONDERLAND             | Documentary
- SHOCK CABIN                 | Foreign
- SHOOTIST SUPERFLY           | Drama
- SHOW LORD                   | Documentary
- SHREK LICENSE               | Foreign
- SHRUNK DIVINE               | Action
- SIDE ARK                    | Action
- SIEGE MADRE                 | Family
- SIMON NORTH                 | Horror
- SISTER FREDDY               | Children
- SLACKER LIAISONS            | Drama
- SLEEPING SUSPECTS           | Horror
- SLEEPLESS MONSOON           | Animation
- SLEEPY JAPANESE             | New
- SLEUTH ORIENT               | Games
- SLING LUKE                  | Classics
- SLIPPER FIDELITY            | Sports
- SLUMS DUCK                  | Family
- SMILE EARRING               | Travel
- SMOOCHY CONTROL             | Sports
- SNATCH SLIPPER              | Comedy
- SNATCHERS MONTEZUMA         | Classics
- SOLDIERS EVOLUTION          | Sci-Fi
- SOMETHING DUCK              | Drama
- SONG HEDWIG                 | Music
- SORORITY QUEEN              | Foreign
- SOUTH WAIT                  | Action
- SPARTACUS CHEAPER           | Family
- SPEAKEASY DATE              | Action
- SPEED SUIT                  | Travel
- SPICE SORORITY              | Drama
- SPIKING ELEMENT             | Classics
- SPINAL ROCKY                | Family
- SPIRIT FLINTSTONES          | Horror
- SPLASH GUMP                 | Family
- SPLENDOR PATTON             | Children
- SPOILERS HELLFIGHTERS       | Documentary
- SPY MILE                    | Games
- SQUAD FISH                  | Sports
- STAGE WORLD                 | Comedy
- STAGECOACH ARMAGEDDON       | Action
- STALLION SUNDANCE           | Sci-Fi
- STAR OPERATION              | Sports
- STEEL SANTA                 | Classics
- STEERS ARMAGEDDON           | Sports
- STEPMOM DREAM               | Foreign
- STING PERSONAL              | New
- STOCK GLASS                 | New
- STONE FIRE                  | Travel
- STORM HAPPINESS             | Animation
- STORY SIDE                  | Action
- STRAIGHT HOURS              | Sports
- STRANGELOVE DESIRE          | Children
- STRANGERS GRAFFITI          | Horror
- STREAK RIDGEMONT            | Documentary
- STREETCAR INTENTIONS        | Horror
- STRICTLY SCARFACE           | Comedy
- SUGAR WONKA                 | Animation
- SUICIDES SILENCE            | Sci-Fi
- SUMMER SCARFACE             | Classics
- SUNDANCE INVASION           | Children
- SUNSET RACER                | Family
- SUPER WYOMING               | Family
- SUPERFLY TRIP               | Travel
- SUSPECTS QUILLS             | Action
- SWARM GOLD                  | Horror
- SWEDEN SHINING              | Comedy
- SWEETHEARTS SUSPECTS        | Children
- TADPOLE PARK                | Classics
- TALENTED HOMICIDE           | Sports
- TARZAN VIDEOTAPE            | Horror
- TAXI KICK                   | Music
- TEEN APOLLO                 | Travel
- TELEGRAPH VOYAGE            | Music
- TELEMARK HEARTBREAKERS      | Animation
- TENENBAUMS COMMAND          | Drama
- TEQUILA PAST                | Children
- TERMINATOR CLUB             | Music
- TEXAS WATCH                 | Horror
- THEORY MERMAID              | Animation
- TIES HUNGER                 | Children
- TIGHTS DAWN                 | Sports
- TITANIC BOONDOCK            | Animation
- TITANS JERK                 | Sci-Fi
- TOMATOES HELLFIGHTERS       | Travel
- TOMORROW HUSTLER            | Classics
- TOOTSIE PILOT               | Children
- TORQUE BOUND                | Drama
- TOURIST PELICAN             | Sports
- TOWN ARK                    | Foreign
- TRACY CIDER                 | Animation
- TRADING PINOCCHIO           | Sports
- TRAFFIC HOBBIT              | Travel
- TRAIN BUNCH                 | Horror
- TRAINSPOTTING STRANGERS     | Comedy
- TRAMP OTHERS                | Comedy
- TRANSLATION SUMMER          | Drama
- TREASURE COMMAND            | Horror
- TRIP NEWTON                 | Action
- TROOPERS METAL              | New
- TROUBLE DATE                | Travel
- TRUMAN CRAZY                | Action
- TUXEDO MILE                 | Sports
- TWISTED PIRATES             | Children
- TYCOON GATHERING            | Games
- UNBREAKABLE KARATE          | New
- UNDEFEATED DALMATIONS       | Horror
- UNFAITHFUL KILL             | Drama
- UNFORGIVEN ZOOLANDER        | Sci-Fi
- UNITED PILOT                | Documentary
- UNTOUCHABLES SUNRISE        | Documentary
- UPRISING UPTOWN             | Action
- UPTOWN YOUNG                | Children
- VACATION BOONDOCK           | Sci-Fi
- VALENTINE VANISHING         | Travel
- VALLEY PACKER               | Comedy
- VAMPIRE WHALE               | New
- VANILLA DAY                 | Games
- VANISHED GARDEN             | New
- VANISHING ROCKY             | Music
- VARSITY TRIP                | New
- VELVET TERMINATOR           | Comedy
- VICTORY ACADEMY             | Sports
- VIDEOTAPE ARSENIC           | Games
- VIETNAM SMOOCHY             | Drama
- VILLAIN DESPERATE           | Documentary
- VIRGIN DAISY                | Drama
- VIRGINIAN PLUTO             | Documentary
- VIRTUAL SPOILERS            | Family
- VISION TORQUE               | Foreign
- VOICE PEACH                 | New
- VOLUME HOUSE                | Classics
- VOYAGE LEGALLY              | Classics
- WAGON JAWS                  | Documentary
- WAIT CIDER                  | Animation
- WAKE JAWS                   | New
- WALLS ARTIST                | Children
- WANDA CHAMBER               | Games
- WAR NOTTING                 | Foreign
- WARDROBE PHANTOM            | Drama
- WARLOCK WEREWOLF            | Children
- WARS PLUTO                  | Documentary
- WASH HEAVENLY               | Foreign
- WASTELAND DIVINE            | Classics
- WATCH TRACY                 | Animation
- WATERFRONT DELIVERANCE      | Action
- WATERSHIP FRONTIER          | Horror
- WEDDING APOLLO              | Documentary
- WEEKEND PERSONAL            | Sci-Fi
- WEREWOLF LOLA               | Action
- WEST LION                   | Drama
- WESTWARD SEABISCUIT         | Classics
- WHALE BIKINI                | Foreign
- WHISPERER GIANT             | Sci-Fi
- WIFE TURN                   | Documentary
- WILD APOLLO                 | New
- WILLOW TRACY                | Family
- WINDOW SIDE                 | Travel
- WISDOM WORKER               | Comedy
- WITCHES PANIC               | Drama
- WIZARD COLDBLOODED          | Music
- WON DARES                   | Music
- WONKA SEA                   | Animation
- WORDS HUNTER                | Music
- WORKER TARZAN               | Travel
- WORKING MICROCOSMOS         | Travel
- WORLD LEATHERNECKS          | Horror
- WORST BANGER                | Action
- WRATH MILE                  | Documentary
- WRONG BEHAVIOR              | Children
- WYOMING STORM               | New
- YENTL IDAHO                 | Horror
- YOUNG LANGUAGE              | Documentary
- YOUTH KICK                  | Music
- ZHIVAGO CORE                | Horror
- ZOOLANDER FICTION           | Children
- ZORRO ARK                   | Comedy
-(3201 rows)
+(2367 rows)
 
 "
-17,"Show all actors who appeared in the film ""Inception.""",Medium,"Show all actors who appeared in the film ""Inception.""","SELECT A.first_name, A.last_name
+17,"Show all actors who appeared in the film ""Inception.""",Medium,"SELECT A.first_name, A.last_name
 FROM actor AS A
 JOIN film_actor AS FA ON A.actor_id = FA.actor_id
 JOIN film AS F ON FA.film_id = F.film_id
-WHERE F.title = 'Inception';"," first_name | last_name 
+WHERE F.title ILIKE 'Inception';"," first_name | last_name 
 ------------+-----------
 (0 rows)
 
 "
-18,Get a list of all customers and the films they have rented.,Medium,Get a list of all customers and the films they have rented.,"SELECT
-  C.first_name,
-  C.last_name,
-  F.title
-FROM customer AS C
-JOIN rental AS R
-  ON C.customer_id = R.customer_id
-JOIN inventory AS I
-  ON R.inventory_id = I.inventory_id
-JOIN film AS F
-  ON I.film_id = F.film_id;"," first_name  |  last_name   |            title            
+18,Get a list of all customers and the films they have rented.,Medium,"SELECT
+    c.first_name,
+    c.last_name,
+    f.title
+FROM
+    customer c
+JOIN
+    rental r ON c.customer_id = r.customer_id
+JOIN
+    inventory i ON r.inventory_id = i.inventory_id
+JOIN
+    film f ON i.film_id = f.film_id;"," first_name  |  last_name   |            title            
 -------------+--------------+-----------------------------
  TOMMY       | COLLAZO      | FREAKY POCUS
  MANUEL      | MURRELL      | GRADUATE LORD
@@ -22261,9 +21432,13 @@ JOIN film AS F
 (16044 rows)
 
 "
-19,List all staff members along with the stores they work at.,Medium,List all staff members along with the stores they work at.,"SELECT staff.first_name, staff.last_name, store.store_id
-FROM staff
-JOIN store ON staff.store_id = store.store_id;"," first_name  |   last_name   | store_id 
+19,List all staff members along with the stores they work at.,Medium,"SELECT
+  s.first_name,
+  s.last_name,
+  st.store_id
+FROM staff AS s
+JOIN store AS st
+  ON s.store_id = st.store_id;"," first_name  |   last_name   | store_id 
 -------------+---------------+----------
  Tisha       | DuBuque       |       23
  Warner      | Hudson        |       25
@@ -23768,27 +22943,34 @@ JOIN store ON staff.store_id = store.store_id;"," first_name  |   last_name   | 
 (1500 rows)
 
 "
-20,"Find all films rented by customer ""John Doe.""",Medium,"Find all films rented by customer ""John Doe.""","SELECT F.title
+20,"Find all films rented by customer ""John Doe.""",Medium,"SELECT
+  F.title
 FROM film AS F
-JOIN inventory AS I ON F.film_id = I.film_id
-JOIN rental AS R ON I.inventory_id = R.inventory_id
-JOIN customer AS C ON R.customer_id = C.customer_id
-WHERE C.first_name = 'John' AND C.last_name = 'Doe';"," title 
+JOIN
+  inventory AS I
+  ON F.film_id = I.film_id
+JOIN
+  rental AS R
+  ON I.inventory_id = R.inventory_id
+JOIN
+  customer AS C
+  ON R.customer_id = C.customer_id
+WHERE
+  C.first_name = 'John' AND C.last_name = 'Doe';"," title 
 -------
 (0 rows)
 
 "
-21,Show the top 5 films rented the most across all stores.,Medium,Show the top 5 films rented the most across all stores.,"SELECT
-  f.title,
-  COUNT(r.rental_id) AS rental_count
-FROM film AS f
-JOIN inventory AS i
-  ON f.film_id = i.film_id
-JOIN rental AS r
-  ON i.inventory_id = r.inventory_id
+21,Show the top 5 films rented the most across all stores.,Medium,"SELECT
+  F.title,
+  COUNT(R.rental_id) AS rental_count
+FROM film AS F
+JOIN inventory AS I
+  ON F.film_id = I.film_id
+JOIN rental AS R
+  ON I.inventory_id = R.inventory_id
 GROUP BY
-  f.film_id,
-  f.title
+  F.film_id
 ORDER BY
   rental_count DESC
 LIMIT 5;","        title        | rental_count 
@@ -23801,13 +22983,13 @@ LIMIT 5;","        title        | rental_count
 (5 rows)
 
 "
-22,List all customers who have rented films in both store 1 and store 2.,Medium,List all customers who have rented films in both store 1 and store 2.,"SELECT c.first_name, c.last_name
+22,List all customers who have rented films in both store 1 and store 2.,Medium,"SELECT DISTINCT c.first_name, c.last_name
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
 JOIN inventory i ON r.inventory_id = i.inventory_id
 WHERE i.store_id = 1
 INTERSECT
-SELECT c.first_name, c.last_name
+SELECT DISTINCT c.first_name, c.last_name
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
 JOIN inventory i ON r.inventory_id = i.inventory_id
@@ -23816,212 +22998,212 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  JONATHAN    | SCARBOROUGH
  TRACEY      | BARRETT
  RUSSELL     | BRINSON
- FRANKLIN    | TROUTMAN
  CASSANDRA   | WALTERS
+ FRANKLIN    | TROUTMAN
  CECIL       | VINES
- THOMAS      | GRIGSBY
  JORDAN      | ARCHULETA
+ THOMAS      | GRIGSBY
  RUBY        | WASHINGTON
  STANLEY     | SCROGGINS
  ELIZABETH   | BROWN
  IVAN        | CROMWELL
- VANESSA     | SIMS
  LORRAINE    | STEPHENS
- MARTHA      | GONZALEZ
+ VANESSA     | SIMS
  MABEL       | HOLLAND
+ MARTHA      | GONZALEZ
  ADAM        | GOOCH
  TYLER       | WREN
- NANCY       | THOMAS
- PATRICIA    | JOHNSON
  RAFAEL      | ABNEY
+ PATRICIA    | JOHNSON
+ NANCY       | THOMAS
  PHYLLIS     | FOSTER
  DANNY       | ISOM
  DARLENE     | ROSE
  JOSEPH      | JOY
  ALVIN       | DELOACH
  EMILY       | DIAZ
- WANDA       | PATTERSON
  TANYA       | GILBERT
+ WANDA       | PATTERSON
  VERA        | MCCOY
  EVELYN      | MORGAN
- SCOTT       | SHELLEY
  ELMER       | NOE
- LESLIE      | SEWARD
+ SCOTT       | SHELLEY
  MARIA       | MILLER
+ LESLIE      | SEWARD
  JUDY        | GRAY
  MATTHEW     | MAHAN
- BRAD        | MCCURDY
- EUGENE      | CULPEPPER
  RONALD      | WEINER
- NINA        | SOTO
- ARNOLD      | HAVENS
- JASON       | MORRISSEY
+ EUGENE      | CULPEPPER
+ BRAD        | MCCURDY
  BEN         | EASTER
+ JASON       | MORRISSEY
+ ARNOLD      | HAVENS
+ NINA        | SOTO
  BRENT       | HARKINS
- ROBIN       | HAYES
- CONNIE      | WALLACE
  STEPHEN     | QUALLS
+ CONNIE      | WALLACE
+ ROBIN       | HAYES
  JESSICA     | HALL
  MAX         | PITT
  FREDDIE     | DUGGAN
  MITCHELL    | WESTMORELAND
- YVONNE      | WATKINS
  HENRY       | BILLINGSLEY
+ YVONNE      | WATKINS
  PAULINE     | HENRY
  HOWARD      | FORTNER
  RAMON       | CHOATE
  DARRYL      | ASHCRAFT
  ROSS        | GREY
- JESSIE      | BANKS
- STACY       | CUNNINGHAM
  GINA        | WILLIAMSON
+ STACY       | CUNNINGHAM
+ JESSIE      | BANKS
  BRANDY      | GRAVES
- WALLACE     | SLONE
  MICHELE     | GRANT
+ WALLACE     | SLONE
  GLORIA      | COOK
  LAUREN      | HUDSON
  VICTORIA    | GIBSON
  CHRISTOPHER | GRECO
  ANTONIO     | MEEK
- JUNE        | CARROLL
  ELSIE       | KELLEY
+ JUNE        | CARROLL
  LUCILLE     | HOLMES
  HARVEY      | GUAJARDO
  MARIAN      | MENDOZA
- FRANCIS     | SIKES
- NORMAN      | CURRIER
  ROBERTO     | VU
+ NORMAN      | CURRIER
+ FRANCIS     | SIKES
  JACKIE      | LYNCH
  FLOYD       | GANDY
  GEORGIA     | JACOBS
  MILTON      | HOWLAND
- HEATHER     | MORRIS
  BERNICE     | WILLIS
+ HEATHER     | MORRIS
  LILLIAN     | GRIFFIN
  LEO         | EBERT
  JOE         | GILLILAND
  NICOLE      | PETERSON
- CHRISTIAN   | JUNG
  LOUIS       | LEONE
- CLIFFORD    | BOWENS
- BYRON       | BOX
+ CHRISTIAN   | JUNG
  GRACE       | ELLIS
+ BYRON       | BOX
+ CLIFFORD    | BOWENS
  JESSE       | SCHILLING
  RICKY       | SHELBY
  ROY         | WHITING
  JON         | WILES
  PETER       | MENARD
- GREGORY     | MAULDIN
- GABRIEL     | HARDER
  SHIRLEY     | ALLEN
+ GABRIEL     | HARDER
+ GREGORY     | MAULDIN
  DORA        | MEDINA
- RODNEY      | MOELLER
- DELORES     | HANSEN
  RHONDA      | KENNEDY
+ DELORES     | HANSEN
+ RODNEY      | MOELLER
  FRANCES     | PARKER
  NAOMI       | JENNINGS
  ERIN        | DUNN
  MARLENE     | WELCH
- TODD        | TAN
  CARLOS      | COUGHLIN
+ TODD        | TAN
  JO          | FOWLER
- JANICE      | WARD
- HERBERT     | KRUGER
  KATIE       | ELLIOTT
- EDWARD      | BAUGH
+ HERBERT     | KRUGER
+ JANICE      | WARD
  TRACY       | HERRMANN
+ EDWARD      | BAUGH
  JENNY       | CASTRO
  BRIAN       | WYMAN
  JULIA       | FLORES
  ANNIE       | RUSSELL
- REGINALD    | KINDER
  CAROL       | GARCIA
+ REGINALD    | KINDER
  JACK        | FOUST
- JULIO       | NOLAND
- TERRENCE    | GUNDERSON
  JAVIER      | ELROD
+ TERRENCE    | GUNDERSON
+ JULIO       | NOLAND
  GERALD      | FULTZ
  JEFFREY     | SPEAR
  CARLA       | GUTIERREZ
- JAMES       | GANNON
  MARIE       | TURNER
- KIM         | CRUZ
+ JAMES       | GANNON
  ANDREW      | PURDY
+ KIM         | CRUZ
  JERRY       | JORDON
  WAYNE       | TRUONG
  MAXINE      | SILVA
  JOSHUA      | MARK
- GORDON      | ALLARD
- LEONARD     | SCHOFIELD
  BRUCE       | SCHWARZ
+ LEONARD     | SCHOFIELD
+ GORDON      | ALLARD
  RON         | DELUCA
  FELICIA     | SUTTON
  BRYAN       | HARDISON
- JOANNE      | ROBERTSON
- TED         | BREAUX
- BESSIE      | MORRISON
  DANIEL      | CABRAL
+ BESSIE      | MORRISON
+ TED         | BREAUX
+ JOANNE      | ROBERTSON
  ANN         | EVANS
  AARON       | SELBY
  MIGUEL      | BETANCOURT
  TERRI       | VASQUEZ
- ANNE        | POWELL
  CRYSTAL     | FORD
- KRISTEN     | CHAVEZ
+ ANNE        | POWELL
  ALLISON     | STANLEY
- SEAN        | DOUGLASS
+ KRISTEN     | CHAVEZ
  CHERYL      | MURPHY
+ SEAN        | DOUGLASS
  DOLORES     | WAGNER
  JOHNNIE     | CHISHOLM
  JEANETTE    | GREENE
  LUIS        | YANEZ
- MARSHALL    | THORN
  CARMEN      | OWENS
+ MARSHALL    | THORN
  DAISY       | BATES
  KAY         | CALDWELL
  MARGARET    | MOORE
  PRISCILLA   | LOWE
  KATHLEEN    | ADAMS
- MARION      | SNYDER
  CHARLES     | KOWALSKI
+ MARION      | SNYDER
  JARED       | ELY
  NATALIE     | MEYER
  VICKIE      | BREWER
- RANDY       | GAITHER
  GENE        | SANBORN
+ RANDY       | GAITHER
  CODY        | NOLEN
  BEVERLY     | BROOKS
  AGNES       | BISHOP
- CLYDE       | TOBIAS
  TOM         | MILNER
- ALMA        | AUSTIN
+ CLYDE       | TOBIAS
  LOIS        | BUTLER
+ ALMA        | AUSTIN
  COURTNEY    | DAY
  JAY         | ROBB
- LYNN        | PAYNE
- TERRANCE    | ROUSH
  ROBERT      | BAUGHMAN
+ TERRANCE    | ROUSH
+ LYNN        | PAYNE
  ANDRE       | RAPP
  HAROLD      | MARTINO
  DIANE       | COLLINS
  OLGA        | JIMENEZ
  TONYA       | CHAPMAN
- DWIGHT      | LOMBARDI
  JOYCE       | EDWARDS
+ DWIGHT      | LOMBARDI
  CAROLYN     | PEREZ
  BOBBY       | BOUDREAU
- LILLIE      | KIM
  PEDRO       | CHESTNUT
- LEE         | HAWKS
+ LILLIE      | KIM
  IDA         | ANDREWS
+ LEE         | HAWKS
  STEVE       | MACKENZIE
  ISAAC       | OGLESBY
  ESTHER      | CRAWFORD
  MAE         | FLETCHER
  TIMOTHY     | BUNN
  DAN         | PAINE
- KEVIN       | SCHULER
  VICKI       | FIELDS
+ KEVIN       | SCHULER
  BRADLEY     | MOTLEY
  RENE        | MCALISTER
  JUSTIN      | NGO
@@ -24029,29 +23211,29 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  BARRY       | LOVELACE
  TERRY       | GRISSOM
  TARA        | RYAN
- DONNA       | THOMPSON
  EDNA        | WEST
+ DONNA       | THOMPSON
  RICHARD     | MCCRARY
  JULIAN      | VEST
  ERNEST      | STEPP
- JIMMIE      | EGGLESTON
  ANGEL       | BARCLAY
- HERMAN      | DEVORE
+ JIMMIE      | EGGLESTON
  LANCE       | PEMBERTON
- EVERETT     | BANDA
+ HERMAN      | DEVORE
  JUAN        | FRALEY
+ EVERETT     | BANDA
  MARION      | OCAMPO
  GERALDINE   | PERKINS
- JORGE       | OLIVARES
  BEATRICE    | ARNOLD
+ JORGE       | OLIVARES
  LAURA       | RODRIGUEZ
  DANIELLE    | DANIELS
  JEFF        | EAST
- LORETTA     | CARPENTER
  JEREMY      | HURTADO
+ LORETTA     | CARPENTER
  ARMANDO     | GRUBER
- SIDNEY      | BURLESON
  ANNA        | HILL
+ SIDNEY      | BURLESON
  JANE        | BENNETT
  NATHAN      | RUNYON
  CHAD        | CARBONE
@@ -24060,42 +23242,42 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  BRETT       | CORNWELL
  FERNANDO    | CHURCHILL
  CHARLIE     | BESS
- CURTIS      | IRBY
  MARTIN      | BALES
+ CURTIS      | IRBY
  ALEX        | GRESHAM
- BRANDON     | HUEY
  JAMIE       | RICE
+ BRANDON     | HUEY
  AMANDA      | CARTER
  MELANIE     | ARMSTRONG
  ANA         | BRADLEY
- TONY        | CARRANZA
- ERIC        | ROBERT
  LESLIE      | GORDON
+ ERIC        | ROBERT
+ TONY        | CARRANZA
  NELSON      | CHRISTENSON
- DEREK       | BLAKELY
  EILEEN      | CARR
+ DEREK       | BLAKELY
  VALERIE     | BLACK
- EDDIE       | TOMLIN
  ALLEN       | BUTTERFIELD
+ EDDIE       | TOMLIN
  CATHERINE   | CAMPBELL
- LOUISE      | JENKINS
- DWAYNE      | OLVERA
  CAROLINE    | BOWMAN
+ DWAYNE      | OLVERA
+ LOUISE      | JENKINS
  ALBERTO     | HENNING
  VIOLET      | RODRIQUEZ
- DOROTHY     | TAYLOR
  AMY         | LOPEZ
- FELIX       | GAFFNEY
- BRENDA      | WRIGHT
+ DOROTHY     | TAYLOR
  SONIA       | GREGORY
+ BRENDA      | WRIGHT
+ FELIX       | GAFFNEY
  DUANE       | TUBBS
  MICHELLE    | CLARK
  EARL        | SHANKS
  IRENE       | PRICE
  GERTRUDE    | CASTILLO
  TERESA      | ROGERS
- ADRIAN      | CLARY
  TINA        | SIMMONS
+ ADRIAN      | CLARY
  GLADYS      | HAMILTON
  FRANCISCO   | SKIDMORE
  STEPHANIE   | MITCHELL
@@ -24115,26 +23297,26 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  JEROME      | KENYON
  SHERRI      | RHODES
  KRISTINA    | CHAMBERS
- PERRY       | SWAFFORD
- ROSA        | REYNOLDS
  LARRY       | THRASHER
+ ROSA        | REYNOLDS
+ PERRY       | SWAFFORD
  MARVIN      | YEE
  ASHLEY      | RICHARDSON
- BERTHA      | FERGUSON
  CHARLOTTE   | HUNTER
+ BERTHA      | FERGUSON
  CONSTANCE   | REID
  JENNIFER    | DAVIS
  ETHEL       | WEBB
  KURT        | EMMONS
  VINCENT     | RALSTON
  WADE        | DELVALLE
- JOHNNY      | TURPIN
  ANGELA      | HERNANDEZ
- LEONA       | OBRIEN
+ JOHNNY      | TURPIN
  MARGIE      | WADE
+ LEONA       | OBRIEN
  DANA        | HART
- ARLENE      | HARVEY
  DAWN        | SULLIVAN
+ ARLENE      | HARVEY
  PAULA       | BRYANT
  MARK        | RINEHART
  LORI        | WOOD
@@ -24142,28 +23324,28 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  VIOLA       | HANSON
  ANTHONY     | SCHWAB
  EMMA        | BOYD
- VIRGINIA    | GREEN
  RAUL        | FORTIER
+ VIRGINIA    | GREEN
  CHRIS       | BROTHERS
- MELISSA     | KING
  JULIE       | SANCHEZ
+ MELISSA     | KING
  KATHY       | JAMES
  JENNIE      | TERRY
  DORIS       | REED
  BOBBIE      | CRAIG
- DENISE      | KELLY
- NICHOLAS    | BARFIELD
  DEANNA      | BYRD
+ NICHOLAS    | BARFIELD
+ DENISE      | KELLY
  HUGH        | WALDROP
  MARJORIE    | TUCKER
  EDWIN       | BURK
  SALLY       | PIERCE
- DARREN      | WINDHAM
- HAZEL       | WARREN
  MONICA      | HICKS
+ HAZEL       | WARREN
+ DARREN      | WINDHAM
  JOSE        | ANDREW
- RONNIE      | RICKETTS
  PENNY       | NEAL
+ RONNIE      | RICKETTS
  SHEILA      | WELLS
  JESUS       | MCCARTNEY
  BECKY       | MILES
@@ -24172,93 +23354,93 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  DEBRA       | NELSON
  DOUGLAS     | GRAF
  KAREN       | JACKSON
- JIM         | REA
  MIRIAM      | MCKINNEY
+ JIM         | REA
  SHANNON     | FREEMAN
  RYAN        | SALISBURY
  KRISTIN     | JOHNSTON
  DERRICK     | BOURQUE
- PAMELA      | BAKER
  DON         | BONE
- IAN         | STILL
- ALEXANDER   | FENNELL
+ PAMELA      | BAKER
  BILLY       | POULIN
- KATHERINE   | RIVERA
- WILMA       | RICHARDS
+ ALEXANDER   | FENNELL
+ IAN         | STILL
  GARY        | COY
+ WILMA       | RICHARDS
+ KATHERINE   | RIVERA
  GWENDOLYN   | MAY
  ALAN        | KAHN
  TERRY       | CARLSON
  KYLE        | SPURLOCK
  JOANN       | GARDNER
  VICTOR      | BARKLEY
- CHRISTINA   | RAMIREZ
  LEON        | BOSTIC
+ CHRISTINA   | RAMIREZ
  SHARON      | ROBINSON
  DUSTIN      | GILLETTE
- JOY         | GEORGE
  MIKE        | WAY
+ JOY         | GEORGE
  JESSIE      | MILAM
- MARY        | SMITH
  NORA        | HERRERA
- SETH        | HANNON
+ MARY        | SMITH
  JAIME       | NETTLES
+ SETH        | HANNON
  VIRGIL      | WOFFORD
  MISTY       | LAMBERT
  CRAIG       | MORRELL
  ROBERTA     | HARPER
  STELLA      | MORENO
- EDUARDO     | HIATT
  MAURICE     | CRAWLEY
+ EDUARDO     | HIATT
  BONNIE      | HUGHES
  ELLEN       | SIMPSON
  KEN         | PREWITT
- BARBARA     | JONES
  ROSE        | HOWARD
- GLEN        | TALBERT
+ BARBARA     | JONES
  FREDERICK   | ISBELL
+ GLEN        | TALBERT
  WENDY       | HARRISON
- LESTER      | KRAUS
  SARA        | PERRY
+ LESTER      | KRAUS
  JACOB       | LANCE
- RALPH       | MADRIGAL
  RENEE       | LANE
- SUSAN       | WILSON
+ RALPH       | MADRIGAL
  TRAVIS      | ESTEP
- JAMIE       | WAUGH
+ SUSAN       | WILSON
  MICHEAL     | FORMAN
+ JAMIE       | WAUGH
  JIMMY       | SCHRADER
  CARRIE      | PORTER
- ELLA        | OLIVER
  HEIDI       | LARSON
+ ELLA        | OLIVER
  ROSEMARY    | SCHMIDT
  PAUL        | TROUT
- CLAUDIA     | FULLER
- DENNIS      | GILMAN
  CHRISTINE   | ROBERTS
+ DENNIS      | GILMAN
+ CLAUDIA     | FULLER
  RUBEN       | GEARY
  KENT        | ARSENAULT
  BILL        | GAVIN
  LYDIA       | BURKE
- NEIL        | RENNER
  WILLIE      | MARKHAM
+ NEIL        | RENNER
  VERONICA    | STONE
  LAURIE      | LAWRENCE
  ALBERT      | CROUSE
  CLIFTON     | MALCOLM
  GLENDA      | FRAZIER
- JEANNE      | LAWSON
  HARRY       | ARCE
- NELLIE      | GARRETT
+ JEANNE      | LAWSON
  APRIL       | BURNS
- MARCUS      | HIDALGO
+ NELLIE      | GARRETT
  ALICE       | STEWART
+ MARCUS      | HIDALGO
  TYRONE      | ASHER
- CORY        | MEEHAN
  LUCY        | WHEELER
+ CORY        | MEEHAN
  MATTIE      | HOFFMAN
- LEAH        | CURTIS
  DONALD      | MAHON
+ LEAH        | CURTIS
  JEAN        | BELL
  TIM         | CARY
  EVA         | RAMOS
@@ -24284,30 +23466,30 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  LINDA       | WILLIAMS
  ALLAN       | CORNISH
  CALVIN      | MARTEL
- LEWIS       | LYMAN
  KIRK        | STCLAIR
- AUDREY      | RAY
+ LEWIS       | LYMAN
  PHILIP      | CAUSEY
+ AUDREY      | RAY
  MANUEL      | MURRELL
  WILLIE      | HOWELL
  HELEN       | HARRIS
  ALICIA      | MILLS
  EDITH       | MCDONALD
- COLLEEN     | BURTON
  KATHRYN     | COLEMAN
+ COLLEEN     | BURTON
  SYLVIA      | ORTIZ
  KENNETH     | GOODEN
  MORRIS      | MCCARTER
  JUANITA     | MASON
- RACHEL      | BARNES
  LLOYD       | DOWD
+ RACHEL      | BARNES
  FRANK       | WAGGONER
  RAYMOND     | MCWHORTER
  CLARENCE    | GAMEZ
- DIANA       | ALEXANDER
  MARIO       | CHEATHAM
- AMBER       | DIXON
+ DIANA       | ALEXANDER
  ANNETTE     | OLSON
+ AMBER       | DIXON
  REGINA      | BERRY
  YOLANDA     | WEAVER
  CHESTER     | BENNER
@@ -24317,25 +23499,25 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  SAMANTHA    | DUNCAN
  GREG        | ROBINS
  THELMA      | MURRAY
- CATHY       | SPENCER
  JILL        | HAWKINS
+ CATHY       | SPENCER
  SAM         | MCDUFFIE
  JOAN        | COOPER
- MELVIN      | ELLINGTON
  SANDRA      | MARTIN
+ MELVIN      | ELLINGTON
  TONI        | HOLT
  DALE        | RATCLIFF
  MAUREEN     | LITTLE
  STACEY      | MONTGOMERY
  SAMUEL      | MARLOW
- CLAYTON     | BARBEE
- ANDY        | VANHORN
  MARSHA      | DOUGLAS
- DEBORAH     | WALKER
+ ANDY        | VANHORN
+ CLAYTON     | BARBEE
  DEBBIE      | REYES
+ DEBORAH     | WALKER
  BENJAMIN    | VARNEY
- CLAUDE      | HERZOG
  STEVEN      | CURLEY
+ CLAUDE      | HERZOG
  PHILLIP     | HOLM
  ARTHUR      | SIMPKINS
  RUTH        | MARTINEZ
@@ -24343,24 +23525,24 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  DARRELL     | POWER
  CLINTON     | BUFORD
  ANITA       | MORALES
- LONNIE      | TIRADO
  SHERRY      | MARSHALL
+ LONNIE      | TIRADO
  LISA        | ANDERSON
- MYRTLE      | FLEMING
- ENRIQUE     | FORSYTHE
  KEITH       | RICO
- KELLY       | KNOTT
+ ENRIQUE     | FORSYTHE
+ MYRTLE      | FLEMING
  JOEL        | FRANCISCO
+ KELLY       | KNOTT
  BOB         | PFEIFFER
- WILLARD     | LUMPKIN
  JOSEPHINE   | GOMEZ
+ WILLARD     | LUMPKIN
  TAMARA      | NGUYEN
  CYNTHIA     | YOUNG
- ELAINE      | STEVENS
  FRED        | WHEAT
+ ELAINE      | STEVENS
  TAMMY       | SANDERS
- ANDREA      | HENDERSON
  MILDRED     | BAILEY
+ ANDREA      | HENDERSON
  MARCIA      | DEAN
  RAY         | HOULE
  BETH        | FRANKLIN
@@ -24370,20 +23552,20 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  ELEANOR     | HUNT
  KARL        | SEAL
  MATHEW      | BOLIN
- DEAN        | SAUER
  ERIKA       | PENA
+ DEAN        | SAUER
  PEARL       | GARZA
- FLORENCE    | WOODS
  WALTER      | PERRYMAN
- VELMA       | LUCAS
+ FLORENCE    | WOODS
  MARC        | OUTLAW
+ VELMA       | LUCAS
  AUSTIN      | CINTRON
  JANET       | PHILLIPS
  NATHANIEL   | ADAM
  VIVIAN      | RUIZ
  SERGIO      | STANFIELD
- COREY       | HAUSER
  THEODORE    | CULP
+ COREY       | HAUSER
  ROLAND      | SOUTH
  PATSY       | DAVIDSON
  LENA        | JENSEN
@@ -24395,885 +23577,965 @@ WHERE i.store_id = 2;"," first_name  |  last_name
  JACQUELINE  | LONG
  TROY        | QUIGLEY
  SALVADOR    | TEEL
- TOMMY       | COLLAZO
  TIFFANY     | JORDAN
+ TOMMY       | COLLAZO
  CLARA       | SHAW
  MARILYN     | ROSS
  GAIL        | KNIGHT
  VERNON      | CHAPA
  BRITTANY    | RILEY
  KELLY       | TORRES
- TRACY       | COLE
- BERNARD     | COLBY
  WILLIAM     | SATTERFIELD
+ BERNARD     | COLBY
+ TRACY       | COLE
  CASEY       | MENA
  OSCAR       | AQUINO
- ALFRED      | CASILLAS
  JEFFERY     | PINSON
+ ALFRED      | CASILLAS
  CAROLE      | BARNETT
  ALFREDO     | MCADAMS
 (599 rows)
 
 "
-23,Find all actors who have appeared in more than 10 films.,Medium,Find all actors who have appeared in more than 10 films.,"SELECT A.first_name, A.last_name
+23,Find all actors who have appeared in more than 10 films.,Medium,"SELECT
+  A.first_name,
+  A.last_name
 FROM actor AS A
-JOIN film_actor AS FA ON A.actor_id = FA.actor_id
-GROUP BY A.actor_id, A.first_name, A.last_name
-HAVING COUNT(FA.film_id) > 10;"," first_name  |  last_name   
--------------+--------------
- CHRISTIAN   | AKROYD
- MATTHEW     | JOHANSSON
- HUMPHREY    | GARLAND
- DAN         | STREEP
- SPENCER     | PECK
- ADAM        | GRANT
- RIP         | WINSLET
- GARY        | PHOENIX
- ALBERT      | JOHANSSON
- RALPH       | CRUZ
- MICHELLE    | MCCONAUGHEY
- CARMEN      | HUNT
- AUDREY      | BAILEY
- OPRAH       | KILMER
- ADAM        | HOPPER
- JAMES       | PITT
- MENA        | HOPPER
- JOHN        | SUVARI
- JON         | CHASE
- KENNETH     | HOFFMAN
- KIRSTEN     | AKROYD
- SUSAN       | DAVIS
- KENNETH     | PALTROW
- JEFF        | SILVERSTONE
- HARRISON    | BALE
- MORGAN      | MCDORMAND
- HENRY       | BERRY
- MEG         | HAWKE
- RUSSELL     | BACALL
- WARREN      | NOLTE
- ELVIS       | MARX
- FAY         | WOOD
- DUSTIN      | TAUTOU
- REESE       | WEST
- RITA        | REYNOLDS
- ANGELA      | HUDSON
- KEVIN       | GARLAND
- SCARLETT    | BENING
- CHRIS       | BRIDGES
- ALAN        | DREYFUSS
- RUSSELL     | TEMPLE
- THORA       | TEMPLE
- GARY        | PENN
- MATTHEW     | LEIGH
- NICK        | STALLONE
- ZERO        | CAGE
- TOM         | MIRANDA
- CUBA        | BIRCH
- HARVEY      | HOPE
- LIZA        | BERGMAN
- RENEE       | TRACY
- KENNETH     | PESCI
- WOODY       | JOLIE
- ROCK        | DUKAKIS
- ALBERT      | NOLTE
- WARREN      | JACKMAN
- MORGAN      | HOPKINS
- JOHNNY      | CAGE
- MINNIE      | KILMER
- KIRK        | JOVOVICH
- FAY         | WINSLET
- JOE         | SWANK
- BELA        | WALKEN
- PENELOPE    | MONROE
- CUBA        | OLIVIER
- MAE         | HOFFMAN
- FRANCES     | DAY-LEWIS
- RIP         | CRAWFORD
- RENEE       | BALL
- MINNIE      | ZELLWEGER
- SEAN        | WILLIAMS
- DARYL       | WAHLBERG
- JUDE        | CRUISE
- SCARLETT    | DAMON
- CHRISTIAN   | NEESON
- BOB         | FAWCETT
- CHRIS       | DEPP
- CARY        | MCCONAUGHEY
- GROUCHO     | WILLIAMS
- SANDRA      | PECK
- KIRSTEN     | PALTROW
- JANE        | JACKMAN
- ED          | CHASE
- MARY        | KEITEL
- HELEN       | VOIGHT
- VAL         | BOLGER
- WOODY       | HOFFMAN
- PENELOPE    | CRONYN
- JOHNNY      | LOLLOBRIGIDA
- OLYMPIA     | PFEIFFER
- AL          | GARLAND
- DAN         | HARRIS
- GEOFFREY    | HESTON
- CHRISTOPHER | BERRY
- MILLA       | KEITEL
- ED          | GUINESS
- PENELOPE    | PINKETT
- ALEC        | WAYNE
- JENNIFER    | DAVIS
- LUCILLE     | DEE
- AUDREY      | OLIVIER
- MATTHEW     | CARREY
- GENE        | WILLIS
- BEN         | WILLIS
- JESSICA     | BAILEY
- CAMERON     | WRAY
- SEAN        | GUINESS
- CHRISTIAN   | GABLE
- SIDNEY      | CROWE
- JUDY        | DEAN
- MICHAEL     | BENING
- REESE       | KILMER
- GINA        | DEGENERES
- BETTE       | NICHOLSON
- GENE        | HOPKINS
- GREG        | CHAPLIN
- ANGELA      | WITHERSPOON
- GOLDIE      | BRODY
- WILL        | WILSON
- CHRISTOPHER | WEST
- ELLEN       | PRESLEY
- CHARLIZE    | DENCH
- WILLIAM     | HACKMAN
- BURT        | DUKAKIS
- SISSY       | SOBIESKI
- NATALIE     | HOPKINS
- WALTER      | TORN
- LAURENCE    | BULLOCK
- VIVIEN      | BERGEN
- MARY        | TANDY
- SYLVESTER   | DERN
- VIVIEN      | BASINGER
- IAN         | TANDY
- UMA         | WOOD
- CUBA        | ALLEN
- RICHARD     | PENN
- JAYNE       | SILVERSTONE
- CAMERON     | ZELLWEGER
- NICK        | WAHLBERG
- FRED        | COSTNER
- JULIA       | FAWCETT
- JAYNE       | NEESON
- JULIANNE    | DENCH
- BURT        | POSEY
- CATE        | MCQUEEN
- FRANCES     | TOMEI
- MERYL       | ALLEN
- NICK        | DEGENERES
- JIM         | MOSTEL
- JADA        | RYDER
- BEN         | HARRIS
- JODIE       | DEGENERES
- PARKER      | GOLDBERG
- GRETA       | MALDEN
- MENA        | TEMPLE
- TIM         | HACKMAN
- GRACE       | MOSTEL
- RUSSELL     | CLOSE
- SPENCER     | DEPP
- ED          | MANSFIELD
- TOM         | MCKELLEN
- JAYNE       | NOLTE
- WHOOPI      | HURT
- EWAN        | GOODING
- BURT        | TEMPLE
- KARL        | BERRY
- HUMPHREY    | WILLIS
- MORGAN      | WILLIAMS
- GROUCHO     | SINATRA
- CAMERON     | STREEP
- GREGORY     | GOODING
- LAURA       | BRODY
- KEVIN       | BLOOM
- CATE        | HARRIS
- SALMA       | NOLTE
- KENNETH     | TORN
- JULIA       | ZELLWEGER
- MERYL       | GIBSON
- ANNE        | CRONYN
- JULIA       | BARRYMORE
- GENE        | MCKELLEN
- LUCILLE     | TRACY
- DEBBIE      | AKROYD
- MILLA       | PECK
- PENELOPE    | GUINESS
- ANGELINA    | ASTAIRE
- GROUCHO     | DUNST
- DAN         | TORN
- MICHAEL     | BOLGER
- RAY         | JOHANSSON
- SUSAN       | DAVIS
- LISA        | MONROE
- KIM         | ALLEN
- FAY         | KILMER
- EMILY       | DEE
- GRETA       | KEITEL
- DARYL       | CRAWFORD
- JULIA       | MCQUEEN
- RIVER       | DEAN
- SANDRA      | KILMER
-(200 rows)
+JOIN film_actor AS FA ON A.actor_id = A.actor_id
+WHERE
+  EXISTS (
+    SELECT
+      1
+    FROM
+      film_actor AS FA1
+    WHERE
+      FA.actor_id = FA1.actor_id
+    GROUP BY
+      FA1.film_id
+    HAVING
+      count(*) > 10
+  );"," first_name | last_name 
+------------+-----------
+(0 rows)
 
 "
-24,Get a list of customers who have made more than 5 payments.,Medium,Get a list of customers who have made more than 5 payments.,"SELECT customer_id
-FROM payment
-GROUP BY customer_id
-HAVING COUNT(*) > 5;"," customer_id 
--------------
-         184
-          87
-         477
-         273
-         550
-         394
-          51
-         272
-          70
-         190
-         350
-         539
-         554
-         278
-         406
-         424
-         176
-         576
-         309
-         292
-         509
-         271
-          22
-         156
-         417
-         556
-         475
-         529
-         282
-         390
-         173
-         269
-         261
-         502
-          42
-         189
-         117
-         161
-         257
-         125
-         113
-          40
-          43
-         587
-         120
-         578
-         440
-         187
-         349
-          57
-          19
-         160
-         506
-         508
-         242
-         357
-         331
-         599
-         266
-         315
-         307
-         366
-          91
-         305
-          54
-          29
-           4
-         181
-          96
-         466
-         201
-          10
-          35
-           6
-         107
-         446
-          86
-         220
-         400
-         219
-         175
-         241
-         363
-         596
-         285
-          50
-          66
-         231
-         512
-         340
-         356
-         523
-          13
-         391
-         487
-         458
-         414
-           2
-         368
-         246
-          75
-         128
-         166
-         538
-         344
-         595
-         142
-         410
-         152
-         534
-         428
-         355
-         222
-         381
-          38
-         359
-         597
-         193
-         164
-         548
-         453
-         217
-         186
-          47
-         501
-         177
-         545
-         182
-          18
-         528
-         110
-         145
-          27
-         143
-         563
-         557
-         496
-          58
-         228
-         485
-         294
-         229
-         481
-         559
-         304
-          52
-         382
-         438
-         258
-         378
-         341
-         483
-         450
-         405
-          84
-         170
-         192
-         276
-         513
-         101
-         473
-          69
-         379
-         320
-         375
-         115
-          97
-         415
-         108
-         408
-          59
-         589
-         127
-         555
-         522
-         567
-         329
-          44
-          11
-         575
-         401
-         153
-         507
-         279
-         214
-           9
-         419
-         543
-         565
-         566
-         551
-         532
-          85
-         457
-         592
-         281
-          95
-         259
-         553
-         519
-         302
-         172
-         409
-          30
-         288
-          21
-         521
-           3
-         324
-         249
-         398
-         255
-         388
-         165
-          56
-         151
-         209
-         296
-          74
-         138
-          34
-         418
-         245
-         205
-          67
-         407
-         325
-          90
-         387
-         443
-         484
-         334
-         558
-         144
-         540
-          39
-         168
-         598
-         471
-         526
-         393
-         287
-         524
-         464
-         312
-         167
-         498
-         277
-         290
-         469
-         494
-         300
-         118
-         317
-         284
-         342
-         488
-         126
-         194
-         360
-         463
-         476
-          99
-         367
-         374
-         588
-          41
-          46
-         206
-         439
-         224
-         586
-          53
-          32
-         572
-         336
-         318
-         275
-         247
-         260
-         423
-         136
-         139
-         354
-         442
-         593
-          12
-         479
-         293
-         411
-         425
-         495
-         154
-         234
-         316
-         474
-         403
-         256
-         332
-          33
-         422
-         549
-         264
-         185
-         380
-         215
-         130
-         270
-          23
-         486
-         435
-         384
-         351
-         116
-         552
-         314
-         386
-         431
-         426
-         364
-         433
-         462
-         491
-         169
-         299
-         345
-          92
-         541
-         436
-         180
-         437
-         236
-         263
-         197
-         135
-         493
-         470
-         454
-         482
-         227
-         500
-         149
-         478
-          73
-         311
-         577
-         103
-         505
-         280
-         121
-         239
-          88
-         420
-         188
-         461
-         240
-         561
-         328
-         525
-         196
-         291
-          15
-         210
-         226
-          48
-         447
-         298
-          61
-          81
-         244
-         468
-         251
-         204
-         104
-           5
-         171
-         456
-         397
-         531
-         427
-         347
-         283
-         179
-         546
-         562
-         297
-         321
-         361
-         303
-         105
-         402
-         472
-         444
-         445
-         233
-         537
-          93
-          89
-         373
-         252
-          31
-         343
-         467
-         327
-         253
-          14
-         581
-         109
-         497
-         155
-         133
-         416
-         195
-         199
-         372
-         369
-         441
-         339
-         243
-         335
-         591
-         383
-         230
-         301
-           7
-         503
-         254
-         377
-          78
-         573
-         159
-         250
-         432
-          20
-         319
-           1
-          76
-         517
-         106
-         178
-         129
-         203
-           8
-         585
-         346
-         455
-          71
-         370
-         267
-          68
-         448
-          80
-         146
-         396
-         511
-         162
-         132
-         514
-         322
-         582
-         389
-         330
-         237
-         262
-         451
-         323
-         337
-         348
-         114
-         504
-          60
-         238
-         399
-         112
-         560
-         547
-         518
-         268
-         289
-         583
-          65
-         569
-         124
-         452
-          98
-         200
-         527
-         490
-         235
-         590
-          82
-         119
-         306
-         286
-         376
-         147
-         480
-         338
-         202
-         358
-         412
-          79
-          26
-         564
-          72
-         535
-         579
-         510
-         232
-          77
-         131
-          17
-         198
-          28
-         310
-          37
-         212
-         404
-         584
-         353
-         489
-         515
-         574
-         225
-          83
-          63
-         333
-         571
-         516
-         542
-         395
-         216
-          45
-         174
-         295
-         213
-         134
-         274
-         163
-         223
-         352
-          36
-         221
-         362
-         430
-         102
-         158
-         594
-         460
-         533
-         499
-         265
-         111
-         459
-          16
-         207
-          62
-         123
-         326
-         568
-         385
-         371
-         492
-         544
-         365
-         157
-         413
-         308
-         100
-         183
-         313
-         150
-         140
-         248
-         421
-         137
-         208
-          24
-         392
-         191
-         429
-          25
-          94
-         122
-         141
-         218
-         570
-          49
-         434
-         211
-         580
-         530
-         536
-         465
-         449
-         520
-          64
-          55
-         148
+24,Get a list of customers who have made more than 5 payments.,Medium,"SELECT c.first_name, c.last_name
+FROM customer c
+JOIN payment p ON c.customer_id = p.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+HAVING COUNT(p.payment_id) > 5;"," first_name  |  last_name   
+-------------+--------------
+ VIVIAN      | RUIZ
+ WANDA       | PATTERSON
+ DAN         | PAINE
+ PRISCILLA   | LOWE
+ GUY         | BROWNLEE
+ CHRIS       | BROTHERS
+ ALICE       | STEWART
+ KAY         | CALDWELL
+ CHRISTINA   | RAMIREZ
+ YOLANDA     | WEAVER
+ JUAN        | FRALEY
+ MATHEW      | BOLIN
+ DWAYNE      | OLVERA
+ BILLIE      | HORTON
+ NATHAN      | RUNYON
+ KYLE        | SPURLOCK
+ JUNE        | CARROLL
+ MORRIS      | MCCARTER
+ CHRISTOPHER | GRECO
+ MISTY       | LAMBERT
+ RAUL        | FORTIER
+ PENNY       | NEAL
+ LAURA       | RODRIGUEZ
+ BERTHA      | FERGUSON
+ TRAVIS      | ESTEP
+ ARMANDO     | GRUBER
+ PEDRO       | CHESTNUT
+ ERIK        | GUILLEN
+ JENNY       | CASTRO
+ SHAWN       | HEATON
+ AUDREY      | RAY
+ CASSANDRA   | WALTERS
+ DEANNA      | BYRD
+ BRETT       | CORNWELL
+ CAROLYN     | PEREZ
+ LORETTA     | CARPENTER
+ EDITH       | MCDONALD
+ GERALDINE   | PERKINS
+ MARSHA      | DOUGLAS
+ ETHEL       | WEBB
+ CINDY       | FISHER
+ AMANDA      | CARTER
+ CHRISTINE   | ROBERTS
+ SERGIO      | STANFIELD
+ SYLVIA      | ORTIZ
+ WILLARD     | LUMPKIN
+ BERNARD     | COLBY
+ BRITTANY    | RILEY
+ JOE         | GILLILAND
+ EVELYN      | MORGAN
+ RUTH        | MARTINEZ
+ ERIN        | DUNN
+ LESLIE      | SEWARD
+ MILTON      | HOWLAND
+ GLENDA      | FRAZIER
+ KEITH       | RICO
+ ERIC        | ROBERT
+ AUSTIN      | CINTRON
+ NORA        | HERRERA
+ KENNETH     | GOODEN
+ JOSEPH      | JOY
+ BRANDON     | HUEY
+ LOIS        | BUTLER
+ RICHARD     | MCCRARY
+ TERESA      | ROGERS
+ ANGELA      | HERNANDEZ
+ BARBARA     | JONES
+ ANA         | BRADLEY
+ DIANA       | ALEXANDER
+ LEO         | EBERT
+ VICKI       | FIELDS
+ DOROTHY     | TAYLOR
+ VIRGINIA    | GREEN
+ JENNIFER    | DAVIS
+ FLORENCE    | WOODS
+ THEODORE    | CULP
+ JACQUELINE  | LONG
+ CHARLENE    | ALVAREZ
+ BRYAN       | HARDISON
+ WILLIE      | HOWELL
+ ANNETTE     | OLSON
+ HEIDI       | LARSON
+ ROY         | WHITING
+ ENRIQUE     | FORSYTHE
+ MIRIAM      | MCKINNEY
+ DIANE       | COLLINS
+ JANICE      | WARD
+ GEORGIA     | JACOBS
+ CECIL       | VINES
+ PATRICK     | NEWSOM
+ GERALD      | FULTZ
+ HARVEY      | GUAJARDO
+ KAREN       | JACKSON
+ CLARENCE    | GAMEZ
+ HECTOR      | POINDEXTER
+ LLOYD       | DOWD
+ VINCENT     | RALSTON
+ PATRICIA    | JOHNSON
+ HARRY       | ARCE
+ MARIAN      | MENDOZA
+ TAMMY       | SANDERS
+ MARJORIE    | TUCKER
+ LYNN        | PAYNE
+ TED         | BREAUX
+ HENRY       | BILLINGSLEY
+ TERRENCE    | GUNDERSON
+ APRIL       | BURNS
+ CURTIS      | IRBY
+ ALICIA      | MILLS
+ CHRISTIAN   | JUNG
+ HERBERT     | KRUGER
+ TERRY       | GRISSOM
+ DELORES     | HANSEN
+ BOBBY       | BOUDREAU
+ MARTHA      | GONZALEZ
+ WILLIE      | MARKHAM
+ FREDDIE     | DUGGAN
+ KATIE       | ELLIOTT
+ JOANN       | GARDNER
+ ALLAN       | CORNISH
+ CALVIN      | MARTEL
+ AGNES       | BISHOP
+ HOLLY       | FOX
+ FRANCES     | PARKER
+ RUBEN       | GEARY
+ SAMANTHA    | DUNCAN
+ JULIO       | NOLAND
+ RENEE       | LANE
+ CAROL       | GARCIA
+ CLAUDE      | HERZOG
+ TIFFANY     | JORDAN
+ LUCILLE     | HOLMES
+ SHIRLEY     | ALLEN
+ LESLIE      | GORDON
+ KEN         | PREWITT
+ FELIX       | GAFFNEY
+ TYLER       | WREN
+ JEAN        | BELL
+ ALLISON     | STANLEY
+ CLYDE       | TOBIAS
+ SHELLY      | WATTS
+ TAMARA      | NGUYEN
+ HERMAN      | DEVORE
+ EVERETT     | BANDA
+ DAVID       | ROYAL
+ JULIE       | SANCHEZ
+ VICTOR      | BARKLEY
+ BARRY       | LOVELACE
+ MYRTLE      | FLEMING
+ EUGENE      | CULPEPPER
+ PETER       | MENARD
+ VERNON      | CHAPA
+ JAY         | ROBB
+ LEONARD     | SCHOFIELD
+ SARA        | PERRY
+ BEATRICE    | ARNOLD
+ LAURIE      | LAWRENCE
+ BRANDY      | GRAVES
+ DUANE       | TUBBS
+ PEGGY       | MYERS
+ JORGE       | OLIVARES
+ JUDY        | GRAY
+ CARLOS      | COUGHLIN
+ ANTHONY     | SCHWAB
+ AARON       | SELBY
+ WENDY       | HARRISON
+ ANNIE       | RUSSELL
+ GLENN       | PULLEN
+ TRACY       | COLE
+ MANUEL      | MURRELL
+ CHERYL      | MURPHY
+ TRACY       | HERRMANN
+ ELAINE      | STEVENS
+ DWIGHT      | LOMBARDI
+ ARNOLD      | HAVENS
+ ALFREDO     | MCADAMS
+ FRANK       | WAGGONER
+ MARIE       | TURNER
+ LISA        | ANDERSON
+ ISAAC       | OGLESBY
+ TONY        | CARRANZA
+ SUZANNE     | NICHOLS
+ EDGAR       | RHOADS
+ DIANNE      | SHELTON
+ KRISTIN     | JOHNSTON
+ MARGARET    | MOORE
+ CHAD        | CARBONE
+ LANCE       | PEMBERTON
+ JAIME       | NETTLES
+ CASEY       | MENA
+ CLAYTON     | BARBEE
+ NEIL        | RENNER
+ ANNE        | POWELL
+ BILL        | GAVIN
+ TERRANCE    | ROUSH
+ LEONA       | OBRIEN
+ PAULA       | BRYANT
+ LENA        | JENSEN
+ MAX         | PITT
+ RON         | DELUCA
+ MICHAEL     | SILVERMAN
+ BERNICE     | WILLIS
+ RODNEY      | MOELLER
+ MELISSA     | KING
+ BOBBIE      | CRAIG
+ MICHELLE    | CLARK
+ ROLAND      | SOUTH
+ LINDA       | WILLIAMS
+ GARY        | COY
+ DORA        | MEDINA
+ ANTONIO     | MEEK
+ IRMA        | PEARSON
+ CRAIG       | MORRELL
+ LORRAINE    | STEPHENS
+ GLORIA      | COOK
+ MEGAN       | PALMER
+ TONYA       | CHAPMAN
+ RAMONA      | HALE
+ DENISE      | KELLY
+ HAZEL       | WARREN
+ REBECCA     | SCOTT
+ JEFF        | EAST
+ COURTNEY    | DAY
+ EILEEN      | CARR
+ KELLY       | TORRES
+ DALE        | RATCLIFF
+ TIMOTHY     | BUNN
+ RUBY        | WASHINGTON
+ JESSE       | SCHILLING
+ FRANCISCO   | SKIDMORE
+ ROBERTO     | VU
+ RAYMOND     | MCWHORTER
+ JIMMIE      | EGGLESTON
+ CLARA       | SHAW
+ TYRONE      | ASHER
+ DEBRA       | NELSON
+ REGINA      | BERRY
+ WADE        | DELVALLE
+ DEAN        | SAUER
+ KARL        | SEAL
+ PHILIP      | CAUSEY
+ BECKY       | MILES
+ JARED       | ELY
+ JEROME      | KENYON
+ MARK        | RINEHART
+ SALLY       | PIERCE
+ GENE        | SANBORN
+ OLGA        | JIMENEZ
+ KRISTINA    | CHAMBERS
+ WESLEY      | BULL
+ RAMON       | CHOATE
+ JOHN        | FARNSWORTH
+ KIM         | CRUZ
+ EDWARD      | BAUGH
+ SONIA       | GREGORY
+ HAROLD      | MARTINO
+ SHANE       | MILLARD
+ ELLEN       | SIMPSON
+ KRISTEN     | CHAVEZ
+ RALPH       | MADRIGAL
+ DARRELL     | POWER
+ DERRICK     | BOURQUE
+ EMILY       | DIAZ
+ ADAM        | GOOCH
+ JEREMY      | HURTADO
+ MARION      | OCAMPO
+ STEPHANIE   | MITCHELL
+ CATHERINE   | CAMPBELL
+ TERRI       | VASQUEZ
+ ALEXANDER   | FENNELL
+ PEARL       | GARZA
+ KIRK        | STCLAIR
+ HEATHER     | MORRIS
+ AMY         | LOPEZ
+ SIDNEY      | BURLESON
+ JOSHUA      | MARK
+ BRIAN       | WYMAN
+ CAROLE      | BARNETT
+ STELLA      | MORENO
+ CHRISTY     | VARGAS
+ ALFRED      | CASILLAS
+ ANITA       | MORALES
+ AMBER       | DIXON
+ JUSTIN      | NGO
+ LEROY       | BUSTAMANTE
+ RENE        | MCALISTER
+ NANCY       | THOMAS
+ ZACHARY     | HITE
+ MAE         | FLETCHER
+ NORMAN      | CURRIER
+ FRANCIS     | SIKES
+ CHARLIE     | BESS
+ MICHELE     | GRANT
+ CLAUDIA     | FULLER
+ STEVEN      | CURLEY
+ DUSTIN      | GILLETTE
+ MIKE        | WAY
+ MABEL       | HOLLAND
+ STEPHEN     | QUALLS
+ ANNA        | HILL
+ MELVIN      | ELLINGTON
+ NELSON      | CHRISTENSON
+ GWENDOLYN   | MAY
+ ROBERTA     | HARPER
+ RUSSELL     | BRINSON
+ JESSIE      | BANKS
+ CHARLOTTE   | HUNTER
+ LEAH        | CURTIS
+ SARAH       | LEWIS
+ GLEN        | TALBERT
+ RICKY       | SHELBY
+ ERNEST      | STEPP
+ JACK        | FOUST
+ VICTORIA    | GIBSON
+ HUGH        | WALDROP
+ GEORGE      | LINTON
+ TODD        | TAN
+ JOEL        | FRANCISCO
+ BRADLEY     | MOTLEY
+ BENJAMIN    | VARNEY
+ DON         | BONE
+ WARREN      | SHERROD
+ RICK        | MATTOX
+ ERICA       | MATTHEWS
+ JAMES       | GANNON
+ CARL        | ARTIS
+ TINA        | SIMMONS
+ DARREN      | WINDHAM
+ TROY        | QUIGLEY
+ STACY       | CUNNINGHAM
+ RANDALL     | NEUMANN
+ MARCIA      | DEAN
+ HILDA       | HOPKINS
+ SUE         | PETERS
+ JUANITA     | MASON
+ BRENT       | HARKINS
+ GORDON      | ALLARD
+ ALEX        | GRESHAM
+ MAURICE     | CRAWLEY
+ COLLEEN     | BURTON
+ REGINALD    | KINDER
+ VALERIE     | BLACK
+ LEWIS       | LYMAN
+ BEVERLY     | BROOKS
+ PAUL        | TROUT
+ CLIFTON     | MALCOLM
+ GLADYS      | HAMILTON
+ RAFAEL      | ABNEY
+ TRACEY      | BARRETT
+ JOSEPHINE   | GOMEZ
+ MINNIE      | ROMERO
+ BONNIE      | HUGHES
+ JACOB       | LANCE
+ MELANIE     | ARMSTRONG
+ DEREK       | BLAKELY
+ MARLENE     | WELCH
+ IAN         | STILL
+ JEFFREY     | SPEAR
+ ADRIAN      | CLARY
+ ALMA        | AUSTIN
+ TONI        | HOLT
+ HELEN       | HARRIS
+ ELLA        | OLIVER
+ MAUREEN     | LITTLE
+ ANN         | EVANS
+ CLIFFORD    | BOWENS
+ ERIKA       | PENA
+ KATHERINE   | RIVERA
+ ANDREA      | HENDERSON
+ VIOLA       | HANSON
+ TIM         | CARY
+ VICKIE      | BREWER
+ ROSEMARY    | SCHMIDT
+ RITA        | GRAHAM
+ ELIZABETH   | BROWN
+ DOLORES     | WAGNER
+ RONNIE      | RICKETTS
+ JIMMY       | SCHRADER
+ JAMIE       | WAUGH
+ JESUS       | MCCARTNEY
+ RYAN        | SALISBURY
+ FELICIA     | SUTTON
+ DANA        | HART
+ KELLY       | KNOTT
+ WALLACE     | SLONE
+ SHERRI      | RHODES
+ KEVIN       | SCHULER
+ LAWRENCE    | LAWTON
+ WILLIAM     | SATTERFIELD
+ DAWN        | SULLIVAN
+ LUIS        | YANEZ
+ GREG        | ROBINS
+ MARCUS      | HIDALGO
+ MICHEAL     | FORMAN
+ LILLIE      | KIM
+ CLINTON     | BUFORD
+ PHYLLIS     | FOSTER
+ JULIA       | FLORES
+ LOUIS       | LEONE
+ MATTIE      | HOFFMAN
+ BRENDA      | WRIGHT
+ DOUGLAS     | GRAF
+ ALVIN       | DELOACH
+ LARRY       | THRASHER
+ TERRY       | CARLSON
+ BETTY       | WHITE
+ VIRGIL      | WOFFORD
+ EDNA        | WEST
+ GILBERT     | SLEDGE
+ GAIL        | KNIGHT
+ PAULINE     | HENRY
+ JEFFERY     | PINSON
+ VANESSA     | SIMS
+ BETH        | FRANKLIN
+ STEVE       | MACKENZIE
+ FRED        | WHEAT
+ MARIO       | CHEATHAM
+ WALTER      | PERRYMAN
+ LYDIA       | BURKE
+ GREGORY     | MAULDIN
+ KENT        | ARSENAULT
+ MARTIN      | BALES
+ JOY         | GEORGE
+ ROBERT      | BAUGHMAN
+ MARIA       | MILLER
+ ANGEL       | BARCLAY
+ MAXINE      | SILVA
+ HOWARD      | FORTNER
+ LORI        | WOOD
+ BYRON       | BOX
+ JILL        | HAWKINS
+ JO          | FOWLER
+ EDWIN       | BURK
+ SHARON      | ROBINSON
+ RONALD      | WEINER
+ MARY        | SMITH
+ IRENE       | PRICE
+ BRAD        | MCCURDY
+ CONNIE      | WALLACE
+ MARION      | SNYDER
+ CARRIE      | PORTER
+ TARA        | RYAN
+ SUSAN       | WILSON
+ PERRY       | SWAFFORD
+ ARTHUR      | SIMPKINS
+ JON         | WILES
+ KATHY       | JAMES
+ WAYNE       | TRUONG
+ MARGIE      | WADE
+ NICOLE      | PETERSON
+ MIGUEL      | BETANCOURT
+ MARILYN     | ROSS
+ JAMIE       | RICE
+ EARL        | SHANKS
+ CHESTER     | BENNER
+ LAUREN      | HUDSON
+ ESTHER      | CRAWFORD
+ FRANKLIN    | TROUTMAN
+ JASON       | MORRISSEY
+ ANDY        | VANHORN
+ ALAN        | KAHN
+ SCOTT       | SHELLEY
+ TANYA       | GILBERT
+ PATSY       | DAVIDSON
+ JIM         | REA
+ MATTHEW     | MAHAN
+ JERRY       | JORDON
+ ROGER       | QUINTANILLA
+ GRACE       | ELLIS
+ NATHANIEL   | ADAM
+ MILDRED     | BAILEY
+ NELLIE      | GARRETT
+ DANNY       | ISOM
+ ROSA        | REYNOLDS
+ JORDAN      | ARCHULETA
+ KURT        | EMMONS
+ GABRIEL     | HARDER
+ NINA        | SOTO
+ VIOLET      | RODRIQUEZ
+ MARSHALL    | THORN
+ ROSE        | HOWARD
+ DAVE        | GARDINER
+ SHEILA      | WELLS
+ TOM         | MILNER
+ LILLIAN     | GRIFFIN
+ JEANNE      | LAWSON
+ CORY        | MEEHAN
+ SAM         | MCDUFFIE
+ JACKIE      | LYNCH
+ SETH        | HANNON
+ KATHRYN     | COLEMAN
+ SHERRY      | MARSHALL
+ CHARLES     | KOWALSKI
+ VELMA       | LUCAS
+ RANDY       | GAITHER
+ JOANNE      | ROBERTSON
+ COREY       | HAUSER
+ DENNIS      | GILMAN
+ CARLA       | GUTIERREZ
+ SAMUEL      | MARLOW
+ ALLEN       | BUTTERFIELD
+ RACHEL      | BARNES
+ JESSICA     | HALL
+ BOB         | PFEIFFER
+ THERESA     | WATSON
+ JAVIER      | ELROD
+ DARYL       | LARUE
+ BEN         | EASTER
+ CONSTANCE   | REID
+ JANE        | BENNETT
+ MONICA      | HICKS
+ DONNA       | THOMPSON
+ ELSIE       | KELLEY
+ CYNTHIA     | YOUNG
+ DANIEL      | CABRAL
+ PAMELA      | BAKER
+ WILMA       | RICHARDS
+ STANLEY     | SCROGGINS
+ SALVADOR    | TEEL
+ JONATHAN    | SCARBOROUGH
+ RICARDO     | MEADOR
+ ANDRE       | RAPP
+ JULIAN      | VEST
+ ARLENE      | HARVEY
+ LOUISE      | JENKINS
+ ASHLEY      | RICHARDSON
+ ANDREW      | PURDY
+ JOHNNIE     | CHISHOLM
+ ELMER       | NOE
+ LONNIE      | TIRADO
+ JOHNNY      | TURPIN
+ NATALIE     | MEYER
+ JANET       | PHILLIPS
+ YVONNE      | WATKINS
+ DAISY       | BATES
+ GINA        | WILLIAMSON
+ EMMA        | BOYD
+ NAOMI       | JENNINGS
+ CATHY       | SPENCER
+ MELINDA     | FERNANDEZ
+ ALBERT      | CROUSE
+ KATHLEEN    | ADAMS
+ BESSIE      | MORRISON
+ NICHOLAS    | BARFIELD
+ RAY         | HOULE
+ CRYSTAL     | FORD
+ VERONICA    | STONE
+ EDUARDO     | HIATT
+ LEON        | BOSTIC
+ JESSIE      | MILAM
+ MARC        | OUTLAW
+ JENNIE      | TERRY
+ CARMEN      | OWENS
+ TOMMY       | COLLAZO
+ SANDRA      | MARTIN
+ GERTRUDE    | CASTILLO
+ JOAN        | COOPER
+ SHANNON     | FREEMAN
+ JOSE        | ANDREW
+ ALBERTO     | HENNING
+ PHILLIP     | HOLM
+ BILLY       | POULIN
+ LESTER      | KRAUS
+ CODY        | NOLEN
+ BRUCE       | SCHWARZ
+ DARLENE     | ROSE
+ MARVIN      | YEE
+ THOMAS      | GRIGSBY
+ ROBIN       | HAYES
+ IDA         | ANDREWS
+ DONALD      | MAHON
+ DANIELLE    | DANIELS
+ EVA         | RAMOS
+ CAROLINE    | BOWMAN
+ LEE         | HAWKS
+ RHONDA      | KENNEDY
+ LUCY        | WHEELER
+ KIMBERLY    | LEE
+ SEAN        | DOUGLASS
+ JEANETTE    | GREENE
+ FREDERICK   | ISBELL
+ DEBORAH     | WALKER
+ NORMA       | GONZALES
+ THELMA      | MURRAY
+ DEBBIE      | REYES
+ VERA        | MCCOY
+ IVAN        | CROMWELL
+ JOYCE       | EDWARDS
+ EDDIE       | TOMLIN
+ STACEY      | MONTGOMERY
+ ROSS        | GREY
+ DARRYL      | ASHCRAFT
+ FERNANDO    | CHURCHILL
+ FLOYD       | GANDY
+ OSCAR       | AQUINO
+ MITCHELL    | WESTMORELAND
+ JUDITH      | COX
+ DORIS       | REED
+ ELEANOR     | HUNT
 (599 rows)
 
 "
-25,"List all films that are in both the ""Action"" and ""Comedy"" categories.",Medium,"List all films that are in both the ""Action"" and ""Comedy"" categories.","SELECT f.title
-FROM film AS f
-JOIN film_category AS fc1 ON f.film_id = fc1.film_id
-JOIN category AS c1 ON fc1.category_id = c1.category_id
-JOIN film_category AS fc2 ON f.film_id = fc2.film_id
-JOIN category AS c2 ON fc2.category_id = c2.category_id
-WHERE c1.name = 'Action' AND c2.name = 'Comedy' AND c1.category_id != c2.category_id;","       title        
---------------------
+25,"List all films that are in both the ""Action"" and ""Comedy"" categories.",Medium,"SELECT F.title
+FROM film AS F
+JOIN film_category AS FC ON F.film_id = FC.film_id
+JOIN category AS C ON FC.category_id = C.category_id
+WHERE C.name = 'Action' OR C.name = 'Comedy';","          title          
+-------------------------
+ BED HIGHBALL
+ ARIZONA BANG
+ ACE GOLDFINGER
+ ALASKA PHANTOM
+ ANGELS LIFE
+ BEAST HUNCHBACK
+ BLACKOUT PRIVATE
  AIRPLANE SIERRA
+ ALIEN CENTER
+ BLUES INSTINCT
+ BIRDCAGE CASPER
+ BLANKET BEVERLY
+ BERETS AGENT
+ BIRCH ANTITRUST
+ CLERKS ANGELS
+ CRUSADE HONEY
+ CONEHEADS SMOOCHY
+ CORE SUIT
  CAT CONEHEADS
+ CLUE GRAIL
+ CHARADE DUFFEL
+ CALIFORNIA BIRDS
+ DARKNESS WAR
+ CROW GREASE
+ CATCH AMISTAD
+ COMMAND DARLING
+ COMANCHEROS ENEMY
  DAUGHTER MADIGAN
+ ENGLISH BULWORTH
+ DRUMLINE CYCLONE
+ DEVIL DESIRE
  FERRIS MOTHER
+ DISTURBING SCARFACE
+ DEEP CRUSADE
+ ENEMY ODDS
+ EAGLES PANKY
+ DIARY PANIC
+ DRIVING POLISH
+ DRUMS DYNAMITE
+ DOCTOR GRAIL
  DETECTIVE VISION
+ GUN BONNIE
+ FRISCO FORREST
+ FORWARD TEMPLE
+ HOLLYWOOD ANONYMOUS
+ HOLLOW JEOPARDY
+ GHOSTBUSTERS ELF
+ HOLIDAY GAMES
+ FUGITIVE MAGUIRE
+ HALF OUTFIELD
+ GOLD RIVER
+ GROOVE FICTION
+ GUMP DATE
+ GRIT CLOCKWORK
  INCH JET
  INSIDER ARIZONA
+ JINGLE SAGEBRUSH
+ JUGGLER HARDLY
+ IMAGE PRINCESS
+ JAWBREAKER BROOKLYN
+ KISS GLORY
+ LIGHTS DEER
+ JEDI BENEATH
+ KARATE MOON
+ LOCK REAR
+ HUNCHBACK IMPOSSIBLE
+ HUMAN GRAFFITI
+ LOATHING LEGALLY
+ MOVIE SHAKESPEARE
+ NEWTON LABYRINTH
+ MISSION ZOOLANDER
+ LUST LOCK
+ MONSOON CAUSE
+ LUCK OPUS
+ MADRE GABLES
+ MOULIN WAKE
+ MADNESS ATTACKS
+ MOB DUFFEL
+ MIRACLE VIRTUAL
+ MILE MULAN
+ MOONSHINE CABIN
+ OTHERS SOUP
+ ROAD ROXANNE
+ RACER EGG
+ PREJUDICE OLEANDER
+ PERDITION FARGO
+ PITTSBURGH HUNCHBACK
+ PURPLE MOVIE
  SHEPHERD MIDSUMMER
+ ROUGE SQUAD
+ RIGHT CRANES
+ POTTER CONNECTICUT
+ RANDOM GO
+ POCUS PULP
+ SOMETHING DUCK
+ SPIKING ELEMENT
+ SPIRIT FLINTSTONES
  RUSHMORE MERMAID
+ SHOOTIST SUPERFLY
+ SLEUTH ORIENT
  SEARCHERS WAIT
+ SPEED SUIT
+ STEPMOM DREAM
+ SOUP WISDOM
+ SPIRITED CASUALTIES
+ SHAWSHANK BUBBLE
+ SAGEBRUSH CLUELESS
+ STRANGELOVE DESIRE
+ TELEGRAPH VOYAGE
+ VACATION BOONDOCK
+ WARS PLUTO
+ UNDEFEATED DALMATIONS
+ TITANIC BOONDOCK
+ TOWN ARK
+ TRACY CIDER
+ TEEN APOLLO
+ TENENBAUMS COMMAND
+ TIMBERLAND SKY
+ SUBMARINE BED
+ VERTIGO NORTHWEST
  THEORY MERMAID
+ BAKED CLEOPATRA
+ ANACONDA CONFESSIONS
+ ANYTHING SAVANNAH
+ ADAPTATION HOLES
  WHISPERER GIANT
+ BEACH HEARTBREAKERS
+ VIETNAM SMOOCHY
+ WATERSHIP FRONTIER
+ WRONG BEHAVIOR
+ ZHIVAGO CORE
+ WON DARES
+ BETRAYED REAR
+ BABY HALL
+ BALLROOM MOCKINGBIRD
+ WOMEN DORADO
+ BUTCH PANTHER
+ CAROL TEXAS
+ CARIBBEAN LIBERTY
+ BONNIE HOLOCAUST
+ BORN SPINAL
+ CALENDAR GUNFIGHT
+ BRIDE INTRIGUE
+ CANYON STOCK
+ CAMPUS REMEMBER
+ CINCINATTI WHISPERER
+ BULWORTH COMMANDMENTS
+ DECEIVER BETRAYED
+ ENCOUNTERS CURTAIN
+ DESERT POSEIDON
+ DINOSAUR SECRETARY
+ DAUGHTER MADIGAN
+ DISCIPLE MOTHER
+ EFFECT GLADIATOR
+ CRYSTAL BREAKING
  DYING MAKER
+ CROSSROADS CASUALTIES
+ DRIVER ANNIE
+ CONTROL ANTHEM
+ DIVORCE SHINING
+ FALCON VOLUME
+ FACTORY DRAGON
+ ENTRAPMENT SATISFACTION
+ FIREHOUSE VIETNAM
+ FERRIS MOTHER
+ GOSFORD DONNIE
+ FRIDA SLIPPER
+ FREEDOM CLEOPATRA
+ FIRE WOLVES
+ GOODFELLAS SALUTE
+ FOOL MOCKINGBIRD
+ GILBERT PELICAN
+ GAMES BOWFINGER
+ IGBY MAKER
+ JET NEIGHBORS
+ HOOK CHARIOTS
+ KANE EXORCIST
+ HARDLY ROBBERS
+ HUNGER ROOF
+ INSTINCT AIRPORT
+ JUMPING WRATH
+ INSIDER ARIZONA
  HUSTLER PARTY
+ ITALIAN AFRICAN
+ HORROR REIGN
+ MIXED DOORS
+ LABYRINTH LEAGUE
+ MOTIONS DETAILS
+ MONEY HAROLD
+ MULAN MOON
+ LIBERTY MAGNIFICENT
+ LEBOWSKI SOLDIERS
  LIFE TWISTED
+ LOVE SUICIDES
+ MONSTER SPARTACUS
+ LOUISIANA HARRY
+ MICROCOSMOS PARADISE
+ MONTEREY LABYRINTH
+ OSCAR GOLD
+ ORDER BETRAYED
+ NEIGHBORS CHARADE
+ RAGING AIRPLANE
+ RANGE MOONWALKER
+ PITY BOUND
+ OKLAHOMA JUMANJI
+ NEWSIES STORY
+ NASH CHOCOLAT
+ PARK CITIZEN
+ ROBBERY BRIGHT
+ RAINBOW SHOCK
+ SLEEPING SUSPECTS
+ SLEEPY JAPANESE
+ SLUMS DUCK
+ ROBBERS JOON
+ SKY MIRACLE
+ SHANE DARKNESS
+ SMILE EARRING
+ TROOPERS METAL
+ SEABISCUIT PUNK
+ RESURRECTION SILVERADO
+ SHEPHERD MIDSUMMER
+ TADPOLE PARK
+ TRAP GUYS
+ TERMINATOR CLUB
+ UNTOUCHABLES SUNRISE
+ STOCK GLASS
+ STORM HAPPINESS
+ THIN SAGEBRUSH
+ TWISTED PIRATES
+ TEQUILA PAST
+ TRAFFIC HOBBIT
+ STEERS ARMAGEDDON
+ THEORY MERMAID
+ ALI FOREVER
+ VAMPIRE WHALE
+ WONDERLAND CHRISTMAS
+ WHISPERER GIANT
+ VANISHING ROCKY
+ ALICE FANTASIA
+ WORLD LEATHERNECKS
+ WEEKEND PERSONAL
  CATCH AMISTAD
+ BEDAZZLED MARRIED
+ BADMAN DAWN
+ ATTACKS HATE
+ BENEATH RUSH
+ ATTRACTION NEWTON
+ CHAPLIN LICENSE
+ BEHAVIOR RUNAWAY
+ BANGER PINOCCHIO
+ DARKO DORADO
+ CLUELESS BUCKET
+ COMFORTS RUSH
+ CHILL LUCK
+ DOLLS RAGE
+ DETECTIVE VISION
+ COMMANDMENTS EXPRESS
+ DIVIDE MONSTER
+ DETAILS PACKER
+ CONVERSATION DOWNHILL
  DISCIPLE MOTHER
  CLOSER BANG
+ CONQUERER NUTS
+ FLYING HOOK
  FREEDOM CLEOPATRA
+ FRONTIER CABIN
  FIREHOUSE VIETNAM
- BERETS AGENT
+ ELEPHANT TROJAN
+ EXPENDABLE STALLION
+ FLINTSTONES HAPPINESS
+ GALAXY SWEETHEARTS
+ EARRING INSTINCT
+ FOREVER CANDIDATE
+ EXPRESS LONELY
+ GATHERING CALENDAR
  EXCITEMENT EVE
- GOSFORD DONNIE
+ HONEY TIES
+ IDOLS SNATCHERS
+ INFORMER DOUBLE
  HANDICAP BOONDOCK
-(24 rows)
+ HARRY IDAHO
+ GONE TROUBLE
+ HEAD STRANGER
+ HOTEL HAPPINESS
+ HOLOCAUST HIGHBALL
+ HANOVER GALAXY
+ IDENTITY LOVER
+ GUNFIGHTER MUSSOLINI
+ INCH JET
+ MATRIX SNOWMAN
+ JERICHO MULAN
+ IRON MOON
+(292 rows)
 
 "
-26,Show all rentals made in the last 7 days.,Medium,Show all rentals made in the last 7 days.,"SELECT *
+26,Show all rentals made in the last 7 days.,Medium,"SELECT *
 FROM rental
 WHERE rental_date >= NOW() - INTERVAL '7 days';"," rental_id | rental_date | inventory_id | customer_id | return_date | staff_id | last_update 
 -----------+-------------+--------------+-------------+-------------+----------+-------------
 (0 rows)
 
 "
-27,Get all payments made in February 2022.,Medium,Get all payments made in February 2022.,"SELECT *
+27,Get all payments made in February 2022.,Medium,"SELECT *
 FROM payment
 WHERE EXTRACT(MONTH FROM payment_date) = 2 AND EXTRACT(YEAR FROM payment_date) = 2022;"," payment_id | customer_id | staff_id | rental_id | amount |         payment_date          
 ------------+-------------+----------+-----------+--------+-------------------------------
@@ -27681,1038 +26943,1031 @@ WHERE EXTRACT(MONTH FROM payment_date) = 2 AND EXTRACT(YEAR FROM payment_date) =
 (2401 rows)
 
 "
-28,List all films that have not been rented in the last 30 days.,Medium,List all films that have not been rented in the last 30 days.,"SELECT
-  f.title
+28,List all films that have not been rented in the last 30 days.,Medium,"SELECT DISTINCT f.title
 FROM film AS f
-LEFT JOIN inventory AS i
-  ON f.film_id = i.film_id
-LEFT JOIN rental AS r
-  ON i.inventory_id = r.inventory_id
-WHERE
-  r.rental_date < NOW() - INTERVAL '30 days' OR r.rental_id IS NULL
-GROUP BY
-  f.film_id, f.title
-ORDER BY
-  f.title;","            title            
+LEFT JOIN inventory AS i ON f.film_id = i.film_id
+LEFT JOIN rental AS r ON i.inventory_id = r.inventory_id
+WHERE r.rental_date IS NULL OR r.rental_date < NOW() - INTERVAL '30 days';","            title            
 -----------------------------
- ACADEMY DINOSAUR
- ACE GOLDFINGER
- ADAPTATION HOLES
- AFFAIR PREJUDICE
- AFRICAN EGG
- AGENT TRUMAN
- AIRPLANE SIERRA
- AIRPORT POLLOCK
- ALABAMA DEVIL
- ALADDIN CALENDAR
- ALAMO VIDEOTAPE
- ALASKA PHANTOM
- ALICE FANTASIA
- ALIEN CENTER
- ALI FOREVER
- ALLEY EVOLUTION
- ALONE TRIP
- ALTER VICTORY
- AMADEUS HOLY
- AMELIE HELLFIGHTERS
- AMERICAN CIRCUS
- AMISTAD MIDSUMMER
- ANACONDA CONFESSIONS
- ANALYZE HOOSIERS
- ANGELS LIFE
- ANNIE IDENTITY
- ANONYMOUS HUMAN
- ANTHEM LUKE
- ANTITRUST TOMATOES
- ANYTHING SAVANNAH
- APACHE DIVINE
- APOCALYPSE FLAMINGOS
- APOLLO TEEN
- ARABIA DOGMA
- ARACHNOPHOBIA ROLLERCOASTER
- ARGONAUTS TOWN
- ARIZONA BANG
- ARK RIDGEMONT
- ARMAGEDDON LOST
- ARMY FLINTSTONES
- ARSENIC INDEPENDENCE
- ARTIST COLDBLOODED
- ATLANTIS CAUSE
- ATTACKS HATE
- ATTRACTION NEWTON
- AUTUMN CROW
- BABY HALL
- BACKLASH UNDEFEATED
+ ITALIAN AFRICAN
+ FICTION CHRISTMAS
  BADMAN DAWN
- BAKED CLEOPATRA
- BALLOON HOMEWARD
- BALLROOM MOCKINGBIRD
- BANGER PINOCCHIO
- BANG KWAI
- BARBARELLA STREETCAR
- BAREFOOT MANCHURIAN
- BASIC EASY
- BEACH HEARTBREAKERS
- BEAR GRACELAND
- BEAST HUNCHBACK
- BEAUTY GREASE
- BEDAZZLED MARRIED
- BED HIGHBALL
- BEETHOVEN EXORCIST
- BEHAVIOR RUNAWAY
- BENEATH RUSH
- BERETS AGENT
- BETRAYED REAR
- BEVERLY OUTLAW
- BIKINI BORROWERS
- BILKO ANONYMOUS
- BILL OTHERS
- BINGO TALENTED
- BIRCH ANTITRUST
- BIRDCAGE CASPER
- BIRD INDEPENDENCE
- BIRDS PERDITION
- BLACKOUT PRIVATE
- BLADE POLISH
- BLANKET BEVERLY
- BLINDNESS GUN
- BLOOD ARGONAUTS
- BLUES INSTINCT
- BOILED DARES
- BONNIE HOLOCAUST
- BOOGIE AMELIE
- BOONDOCK BALLROOM
- BORN SPINAL
- BORROWERS BEDAZZLED
- BOULEVARD MOB
- BOUND CHEAPER
- BOWFINGER GABLES
- BRANNIGAN SUNRISE
- BRAVEHEART HUMAN
- BREAKFAST GOLDFINGER
- BREAKING HOME
- BRIDE INTRIGUE
- BRIGHT ENCOUNTERS
- BRINGING HYSTERICAL
- BROOKLYN DESERT
- BROTHERHOOD BLANKET
- BUBBLE GROSSE
- BUCKET BROTHERHOOD
- BUGSY SONG
- BULL SHAWSHANK
- BULWORTH COMMANDMENTS
- BUNCH MINDS
- BUTCH PANTHER
- BUTTERFLY CHOCOLAT
- CABIN FLASH
- CADDYSHACK JEDI
- CALENDAR GUNFIGHT
- CALIFORNIA BIRDS
- CAMELOT VACATION
- CAMPUS REMEMBER
- CANDIDATE PERDITION
- CANDLES GRAPES
- CANYON STOCK
- CAPER MOTIONS
- CARIBBEAN LIBERTY
- CAROL TEXAS
- CARRIE BUNCH
- CASABLANCA SUPER
- CASPER DRAGONFLY
- CASSIDY WYOMING
- CASUALTIES ENCINO
- CATCH AMISTAD
- CAT CONEHEADS
- CAUSE DATE
- CELEBRITY HORN
- CENTER DINOSAUR
- CHAINSAW UPTOWN
- CHAMBER ITALIAN
- CHAMPION FLATLINERS
- CHANCE RESURRECTION
- CHAPLIN LICENSE
- CHARADE DUFFEL
- CHARIOTS CONSPIRACY
- CHASING FIGHT
- CHEAPER CLYDE
- CHICAGO NORTH
- CHICKEN HELLFIGHTERS
- CHILL LUCK
- CHINATOWN GLADIATOR
- CHISUM BEHAVIOR
- CHITTY LOCK
- CHOCOLATE DUCK
- CHOCOLAT HARRY
- CHRISTMAS MOONSHINE
- CIDER DESIRE
- CINCINATTI WHISPERER
- CIRCUS YOUTH
+ LEGALLY SECRETARY
+ PELICAN COMFORTS
+ SEARCHERS WAIT
+ FRONTIER CABIN
+ STALLION SUNDANCE
+ TERMINATOR CLUB
+ WRONG BEHAVIOR
  CITIZEN SHREK
- CLASH FREDDY
- CLEOPATRA DEVIL
- CLERKS ANGELS
- CLOCKWORK PARADISE
- CLONES PINOCCHIO
- CLOSER BANG
- CLUB GRAFFITI
- CLUE GRAIL
- CLUELESS BUCKET
- CLYDE THEORY
- COAST RAINBOW
- COLDBLOODED DARLING
- COLOR PHILADELPHIA
- COMA HEAD
- COMANCHEROS ENEMY
- COMFORTS RUSH
- COMMAND DARLING
- COMMANDMENTS EXPRESS
- CONEHEADS SMOOCHY
- CONFESSIONS MAGUIRE
- CONFIDENTIAL INTERVIEW
- CONFUSED CANDLES
- CONGENIALITY QUEST
- CONNECTICUT TRAMP
- CONNECTION MICROCOSMOS
- CONQUERER NUTS
- CONSPIRACY SPIRIT
- CONTACT ANONYMOUS
- CONTROL ANTHEM
- CONVERSATION DOWNHILL
- CORE SUIT
+ WEREWOLF LOLA
  COWBOY DOOM
- CRAFT OUTFIELD
- CRANES RESERVOIR
- CRAZY HOME
- CREATURES SHAKESPEARE
- CREEPERS KANE
- CROOKED FROGMEN
- CROSSING DIVORCE
- CROSSROADS CASUALTIES
- CROWDS TELEMARK
- CROW GREASE
- CRUELTY UNFORGIVEN
- CRUSADE HONEY
- CRYSTAL BREAKING
- CUPBOARD SINNERS
- CURTAIN VIDEOTAPE
- CYCLONE FAMILY
- DADDY PITTSBURGH
- DAISY MENAGERIE
- DALMATIONS SWEDEN
- DANCES NONE
- DANCING FEVER
- DANGEROUS UPTOWN
- DARES PLUTO
- DARKNESS WAR
- DARKO DORADO
- DARLING BREAKING
- DARN FORRESTER
- DATE SPEED
- DAUGHTER MADIGAN
- DAWN POND
- DAY UNFAITHFUL
- DAZED PUNK
- DECEIVER BETRAYED
- DEEP CRUSADE
- DEER VIRGINIAN
- DELIVERANCE MULHOLLAND
- DESERT POSEIDON
- DESIRE ALIEN
- DESPERATE TRAINSPOTTING
- DESTINATION JERK
- DESTINY SATURDAY
- DETAILS PACKER
- DETECTIVE VISION
- DEVIL DESIRE
  DIARY PANIC
- DINOSAUR SECRETARY
- DIRTY ACE
- DISCIPLE MOTHER
- DISTURBING SCARFACE
- DIVIDE MONSTER
- DIVINE RESURRECTION
- DIVORCE SHINING
- DOCTOR GRAIL
- DOGMA FAMILY
- DOLLS RAGE
- DONNIE ALLEY
- DOOM DANCING
- DOORS PRESIDENT
- DORADO NOTTING
- DOUBLE WRATH
- DOUBTFIRE LABYRINTH
- DOWNHILL ENOUGH
- DOZEN LION
- DRACULA CRYSTAL
- DRAGONFLY STRANGERS
- DRAGON SQUAD
- DREAM PICKUP
- DRIFTER COMMANDMENTS
- DRIVER ANNIE
+ PULP BEVERLY
+ PIANIST OUTFIELD
+ OUTBREAK DIVINE
+ ROCK INSTINCT
+ GIANT TROOPERS
+ CARIBBEAN LIBERTY
+ MADIGAN DORADO
+ MINDS TRUMAN
+ QUEST MUSSOLINI
+ LEGEND JEDI
+ CRUSADE HONEY
+ JEKYLL FROGMEN
+ MASSACRE USUAL
+ HIGH ENCINO
+ BULL SHAWSHANK
+ SUPER WYOMING
+ CHRISTMAS MOONSHINE
+ WORKING MICROCOSMOS
+ LEAGUE HELLFIGHTERS
+ WESTWARD SEABISCUIT
+ CLOSER BANG
+ SHOOTIST SUPERFLY
+ NOTORIOUS REUNION
  DRIVING POLISH
- DROP WATERFRONT
+ DANGEROUS UPTOWN
+ NETWORK PEAK
+ IRON MOON
+ ROMAN PUNK
+ KILL BROTHERHOOD
+ SKY MIRACLE
+ STORY SIDE
+ CONTACT ANONYMOUS
+ JEOPARDY ENCINO
+ LUCKY FLYING
+ SHANE DARKNESS
+ EXORCIST STING
+ BOONDOCK BALLROOM
+ CLOCKWORK PARADISE
+ EGG IGBY
+ GABLES METROPOLIS
+ HOLOCAUST HIGHBALL
+ HIGHBALL POTTER
+ PARK CITIZEN
+ WORKER TARZAN
+ DRIVER ANNIE
+ BONNIE HOLOCAUST
+ NOON PAPI
+ SLUMS DUCK
+ HOLES BRANNIGAN
+ RINGS HEARTBREAKERS
+ BOOGIE AMELIE
+ HOBBIT ALIEN
+ LOSER HUSTLER
+ SUNRISE LEAGUE
+ SLEUTH ORIENT
+ DARN FORRESTER
+ HOMEWARD CIDER
+ INSIDER ARIZONA
+ LAMBS CINCINATTI
+ VACATION BOONDOCK
+ RUSHMORE MERMAID
+ SALUTE APOLLO
+ DOOM DANCING
+ BRANNIGAN SUNRISE
+ HORN WORKING
+ REIGN GENTLEMEN
+ OPERATION OPERATION
+ ALABAMA DEVIL
+ MOONWALKER FOOL
+ CLONES PINOCCHIO
+ SCALAWAG DUCK
+ DARKO DORADO
+ DOWNHILL ENOUGH
+ OZ LIAISONS
+ DIRTY ACE
+ STAR OPERATION
+ OTHERS SOUP
+ CAROL TEXAS
+ FERRIS MOTHER
+ UNTOUCHABLES SUNRISE
+ VOYAGE LEGALLY
+ SENSIBILITY REAR
+ OUTLAW HANKY
+ EXPENDABLE STALLION
+ INFORMER DOUBLE
+ SUNSET RACER
+ VOICE PEACH
+ AFFAIR PREJUDICE
+ ELIZABETH SHANE
+ BORROWERS BEDAZZLED
+ GRACELAND DYNAMITE
+ EARRING INSTINCT
+ SEATTLE EXPECATIONS
+ INSTINCT AIRPORT
+ WORDS HUNTER
+ DOZEN LION
+ RECORDS ZORRO
+ TRACY CIDER
+ DECEIVER BETRAYED
+ JET NEIGHBORS
+ PEAK FOREVER
+ JASON TRAP
+ SPIKING ELEMENT
+ VIDEOTAPE ARSENIC
+ SUGAR WONKA
+ DRACULA CRYSTAL
+ HYSTERICAL GRAIL
+ SUICIDES SILENCE
+ ROBBERY BRIGHT
  DRUMLINE CYCLONE
- DRUMS DYNAMITE
+ NATIONAL STORY
+ GHOSTBUSTERS ELF
+ NEIGHBORS CHARADE
+ DIVINE RESURRECTION
+ HEAD STRANGER
+ FROST HEAD
+ WAIT CIDER
+ MOURNING PURPLE
+ BINGO TALENTED
+ ROOTS REMEMBER
+ KARATE MOON
+ HOTEL HAPPINESS
+ STAGE WORLD
+ BENEATH RUSH
+ MAJESTIC FLOATS
+ EYES DRIVING
+ NOTTING SPEAKEASY
+ DYNAMITE TARZAN
+ TEEN APOLLO
+ STOCK GLASS
+ KANE EXORCIST
+ FRENCH HOLIDAY
+ STRICTLY SCARFACE
+ JINGLE SAGEBRUSH
+ REAP UNFAITHFUL
+ CHICAGO NORTH
+ LUCK OPUS
+ PERSONAL LADYBUGS
+ UNFAITHFUL KILL
+ GODFATHER DIARY
+ TOURIST PELICAN
+ JEEPERS WEDDING
+ COMANCHEROS ENEMY
+ GUYS FALCON
+ CROW GREASE
+ GOLDFINGER SENSIBILITY
+ PITY BOUND
+ ARSENIC INDEPENDENCE
+ ZORRO ARK
+ LIFE TWISTED
+ CYCLONE FAMILY
+ GROOVE FICTION
+ SUIT WALLS
+ DRIFTER COMMANDMENTS
+ HOLIDAY GAMES
+ MOONSHINE CABIN
+ JERK PAYCHECK
+ BEHAVIOR RUNAWAY
+ DISCIPLE MOTHER
+ MALTESE HOPE
+ MAGUIRE APACHE
+ EGYPT TENENBAUMS
+ CALIFORNIA BIRDS
+ PATTON INTERVIEW
+ MOON BUNCH
+ SWEDEN SHINING
+ ADAPTATION HOLES
+ CONNECTICUT TRAMP
+ DRAGON SQUAD
+ BERETS AGENT
+ SONG HEDWIG
+ FACTORY DRAGON
+ DAISY MENAGERIE
+ CHASING FIGHT
+ BRIDE INTRIGUE
+ RACER EGG
+ CHAMBER ITALIAN
+ DROP WATERFRONT
+ TIGHTS DAWN
+ BIRD INDEPENDENCE
+ FROGMEN BREAKING
+ DOUBLE WRATH
+ SOUTH WAIT
+ BIRDS PERDITION
+ TYCOON GATHERING
+ ENOUGH RAGING
+ STRANGER STRANGERS
+ MAIDEN HOME
+ MALKOVICH PET
+ SILENCE KANE
+ WAR NOTTING
+ FALCON VOLUME
+ EXPECATIONS NATURAL
+ NEWSIES STORY
+ ISLAND EXORCIST
+ GREEDY ROOTS
+ ARK RIDGEMONT
+ BOUND CHEAPER
+ UPRISING UPTOWN
+ CAMPUS REMEMBER
+ SAMURAI LION
+ GILBERT PELICAN
+ DOORS PRESIDENT
+ ALLEY EVOLUTION
+ MONSTER SPARTACUS
+ SUMMER SCARFACE
+ CHARIOTS CONSPIRACY
+ SHOW LORD
+ PHILADELPHIA WIFE
+ MIRACLE VIRTUAL
+ OLEANDER CLUE
+ BUGSY SONG
+ WHALE BIKINI
+ ANTHEM LUKE
+ VOLUME HOUSE
+ CHAINSAW UPTOWN
+ ALASKA PHANTOM
+ GUNFIGHTER MUSSOLINI
+ HOMICIDE PEACH
+ PANTHER REDS
+ SOLDIERS EVOLUTION
+ DEEP CRUSADE
+ THIEF PELICAN
+ NORTHWEST POLISH
+ STREAK RIDGEMONT
+ SHAWSHANK BUBBLE
  DUCK RACER
  DUDE BLINDNESS
- DUFFEL APOCALYPSE
- DUMBO LUST
- DURHAM PANKY
- DWARFS ALTER
- DYING MAKER
- DYNAMITE TARZAN
- EAGLES PANKY
- EARLY HOME
- EARRING INSTINCT
- EARTH VISION
- EASY GLADIATOR
- EDGE KISSING
- EFFECT GLADIATOR
- EGG IGBY
- EGYPT TENENBAUMS
- ELEMENT FREDDY
- ELEPHANT TROJAN
- ELF MURDER
- ELIZABETH SHANE
- EMPIRE MALKOVICH
- ENCINO ELF
- ENCOUNTERS CURTAIN
- ENDING CROWDS
- ENEMY ODDS
- ENGLISH BULWORTH
- ENOUGH RAGING
- ENTRAPMENT SATISFACTION
- ESCAPE METROPOLIS
- EVE RESURRECTION
- EVERYONE CRAFT
- EVOLUTION ALTER
- EXCITEMENT EVE
- EXORCIST STING
- EXPECATIONS NATURAL
- EXPENDABLE STALLION
- EXPRESS LONELY
- EXTRAORDINARY CONQUERER
- EYES DRIVING
- FACTORY DRAGON
- FALCON VOLUME
- FAMILY SWEET
- FANTASIA PARK
- FANTASY TROOPERS
- FARGO GANDHI
- FATAL HAUNTED
- FEATHERS METAL
- FELLOWSHIP AUTUMN
- FERRIS MOTHER
- FEUD FROGMEN
- FEVER EMPIRE
- FICTION CHRISTMAS
- FIDDLER LOST
- FIDELITY DEVIL
- FIGHT JAWBREAKER
- FINDING ANACONDA
- FIREBALL PHILADELPHIA
- FIREHOUSE VIETNAM
- FIRE WOLVES
- FISH OPUS
- FLAMINGOS CONNECTICUT
- FLASH WARS
- FLATLINERS KILLER
- FLIGHT LIES
- FLINTSTONES HAPPINESS
- FLOATS GARDEN
- FLYING HOOK
- FOOL MOCKINGBIRD
- FOREVER CANDIDATE
- FORRESTER COMANCHEROS
- FORREST SONS
- FORWARD TEMPLE
- FRANKENSTEIN STRANGER
- FREAKY POCUS
- FREDDY STORM
- FREEDOM CLEOPATRA
- FRENCH HOLIDAY
- FRIDA SLIPPER
- FRISCO FORREST
- FROGMEN BREAKING
- FRONTIER CABIN
- FROST HEAD
- FUGITIVE MAGUIRE
- FULL FLATLINERS
- FURY MURDER
- GABLES METROPOLIS
- GALAXY SWEETHEARTS
- GAMES BOWFINGER
- GANDHI KWAI
- GANGS PRIDE
- GARDEN ISLAND
- GASLIGHT CRUSADE
- GATHERING CALENDAR
- GENTLEMEN STAGE
- GHOSTBUSTERS ELF
- GHOST GROUNDHOG
- GIANT TROOPERS
- GILBERT PELICAN
- GILMORE BOILED
- GLADIATOR WESTWARD
- GLASS DYING
- GLEAMING JAWBREAKER
- GLORY TRACY
- GODFATHER DIARY
- GOLDFINGER SENSIBILITY
- GOLDMINE TYCOON
- GOLD RIVER
- GONE TROUBLE
- GOODFELLAS SALUTE
- GO PURPLE
- GORGEOUS BINGO
- GOSFORD DONNIE
- GRACELAND DYNAMITE
- GRADUATE LORD
- GRAFFITI LOVE
- GRAIL FRANKENSTEIN
- GRAPES FURY
- GREASE YOUTH
- GREATEST NORTH
- GREEDY ROOTS
- GREEK EVERYONE
- GRINCH MASSAGE
- GRIT CLOCKWORK
- GROOVE FICTION
- GROSSE WONDERFUL
- GROUNDHOG UNCUT
- GUMP DATE
- GUN BONNIE
- GUNFIGHTER MUSSOLINI
- GUNFIGHT MOON
- GUYS FALCON
- HALF OUTFIELD
- HALL CASSIDY
- HALLOWEEN NUTS
- HAMLET WISDOM
- HANDICAP BOONDOCK
- HANGING DEEP
- HANKY OCTOBER
- HANOVER GALAXY
- HAPPINESS UNITED
- HARDLY ROBBERS
- HAROLD FRENCH
- HARPER DYING
- HARRY IDAHO
- HATE HANDICAP
- HAUNTED ANTITRUST
- HAUNTING PIANIST
- HAWK CHILL
- HEAD STRANGER
- HEARTBREAKERS BRIGHT
- HEAVEN FREEDOM
- HEAVENLY GUN
- HEAVYWEIGHTS BEAST
- HEDWIG ALTER
- HELLFIGHTERS SIERRA
- HIGHBALL POTTER
- HIGH ENCINO
- HILLS NEIGHBORS
- HOBBIT ALIEN
- HOCUS FRIDA
- HOLES BRANNIGAN
- HOLIDAY GAMES
- HOLLOW JEOPARDY
- HOLLYWOOD ANONYMOUS
- HOLOCAUST HIGHBALL
- HOLY TADPOLE
- HOME PITY
- HOMEWARD CIDER
- HOMICIDE PEACH
- HONEY TIES
- HOOK CHARIOTS
- HOOSIERS BIRDCAGE
- HOPE TOOTSIE
- HORN WORKING
- HORROR REIGN
- HOTEL HAPPINESS
- HOURS RAGE
- HOUSE DYNAMITE
- HUMAN GRAFFITI
- HUNCHBACK IMPOSSIBLE
- HUNGER ROOF
- HUNTER ALTER
- HUNTING MUSKETEERS
- HURRICANE AFFAIR
- HUSTLER PARTY
- HYDE DOCTOR
- HYSTERICAL GRAIL
- ICE CROSSING
- IDAHO LOVE
- IDENTITY LOVER
- IDOLS SNATCHERS
- IGBY MAKER
- ILLUSION AMELIE
- IMAGE PRINCESS
- IMPACT ALADDIN
- IMPOSSIBLE PREJUDICE
- INCH JET
- INDEPENDENCE HOTEL
- INDIAN LOVE
- INFORMER DOUBLE
- INNOCENT USUAL
- INSECTS STONE
- INSIDER ARIZONA
- INSTINCT AIRPORT
- INTENTIONS EMPIRE
- INTERVIEW LIAISONS
- INTOLERABLE INTENTIONS
- INTRIGUE WORST
- INVASION CYCLONE
- IRON MOON
- ISHTAR ROCKETEER
- ISLAND EXORCIST
- ITALIAN AFRICAN
- JACKET FRISCO
- JADE BUNCH
- JAPANESE RUN
- JASON TRAP
- JAWBREAKER BROOKLYN
- JAWS HARRY
- JEDI BENEATH
- JEEPERS WEDDING
- JEKYLL FROGMEN
- JEOPARDY ENCINO
- JERICHO MULAN
- JERK PAYCHECK
- JERSEY SASSY
- JET NEIGHBORS
- JINGLE SAGEBRUSH
- JOON NORTHWEST
- JUGGLER HARDLY
- JUMANJI BLADE
- JUMPING WRATH
- JUNGLE CLOSER
- KANE EXORCIST
- KARATE MOON
- KENTUCKIAN GIANT
- KICK SAVANNAH
- KILL BROTHERHOOD
- KILLER INNOCENT
- KING EVOLUTION
- KISS GLORY
- KISSING DOLLS
- KNOCK WARLOCK
- KRAMER CHOCOLATE
- KWAI HOMEWARD
- LABYRINTH LEAGUE
- LADYBUGS ARMAGEDDON
- LADY STAGE
- LAMBS CINCINATTI
- LANGUAGE COWBOY
- LAWLESS VISION
- LAWRENCE LOVE
- LEAGUE HELLFIGHTERS
- LEATHERNECKS DWARFS
- LEBOWSKI SOLDIERS
- LEGALLY SECRETARY
- LEGEND JEDI
- LESSON CLEOPATRA
- LIAISONS SWEET
- LIBERTY MAGNIFICENT
- LICENSE WEEKEND
- LIES TREATMENT
- LIFE TWISTED
- LIGHTS DEER
- LION UNCUT
- LOATHING LEGALLY
- LOCK REAR
- LOLA AGENT
- LOLITA WORLD
- LONELY ELEPHANT
- LORD ARIZONA
- LOSE INCH
- LOSER HUSTLER
- LOST BIRD
- LOUISIANA HARRY
- LOVELY JINGLE
- LOVERBOY ATTACKS
- LOVER TRUMAN
- LOVE SUICIDES
- LUCK OPUS
- LUCKY FLYING
- LUKE MUMMY
- LUST LOCK
- MADIGAN DORADO
- MADISON TRAP
- MADNESS ATTACKS
- MADRE GABLES
- MAGIC MALLRATS
- MAGNIFICENT CHITTY
- MAGNOLIA FORRESTER
- MAGUIRE APACHE
- MAIDEN HOME
- MAJESTIC FLOATS
- MAKER GABLES
- MALKOVICH PET
- MALLRATS UNITED
- MALTESE HOPE
- MANCHURIAN CURTAIN
- MANNEQUIN WORST
- MARRIED GO
- MARS ROMAN
- MASKED BUBBLE
- MASK PEACH
- MASSACRE USUAL
- MASSAGE IMAGE
- MATRIX SNOWMAN
- MAUDE MOD
- MEET CHOCOLATE
- MEMENTO ZOOLANDER
- MENAGERIE RUSHMORE
- MERMAID INSECTS
- METAL ARMAGEDDON
- METROPOLIS COMA
- MICROCOSMOS PARADISE
- MIDNIGHT WESTWARD
- MIDSUMMER GROUNDHOG
- MIGHTY LUCK
- MILE MULAN
- MILLION ACE
- MINDS TRUMAN
- MINE TITANS
- MINORITY KISS
- MIRACLE VIRTUAL
- MISSION ZOOLANDER
- MIXED DOORS
- MOB DUFFEL
- MOCKINGBIRD HOLLYWOOD
- MODEL FISH
- MODERN DORADO
- MOD SECRETARY
- MONEY HAROLD
- MONSOON CAUSE
- MONSTER SPARTACUS
- MONTEREY LABYRINTH
- MONTEZUMA COMMAND
- MOON BUNCH
- MOONSHINE CABIN
- MOONWALKER FOOL
- MOSQUITO ARMAGEDDON
- MOTHER OLEANDER
- MOTIONS DETAILS
- MOULIN WAKE
- MOURNING PURPLE
- MOVIE SHAKESPEARE
- MULAN MOON
- MULHOLLAND BEAST
- MUMMY CREATURES
- MUPPET MILE
- MURDER ANTITRUST
- MUSCLE BRIGHT
- MUSIC BOONDOCK
- MUSKETEERS WAIT
- MUSSOLINI SPOILERS
- MYSTIC TRUMAN
- NAME DETECTIVE
- NASH CHOCOLAT
- NATIONAL STORY
- NATURAL STOCK
- NECKLACE OUTBREAK
- NEIGHBORS CHARADE
- NEMO CAMPUS
- NETWORK PEAK
- NEWSIES STORY
- NEWTON LABYRINTH
- NIGHTMARE CHILL
- NONE SPIKING
- NOON PAPI
- NORTH TEQUILA
- NORTHWEST POLISH
- NOTORIOUS REUNION
- NOTTING SPEAKEASY
- NOVOCAINE FLIGHT
- NUTS TIES
- OCTOBER SUBMARINE
- ODDS BOOGIE
- OKLAHOMA JUMANJI
- OLEANDER CLUE
- OPEN AFRICAN
- OPERATION OPERATION
- OPPOSITE NECKLACE
- OPUS ICE
- ORANGE GRAPES
- ORDER BETRAYED
- ORIENT CLOSER
- OSCAR GOLD
- OTHERS SOUP
- OUTBREAK DIVINE
- OUTFIELD MASSACRE
- OUTLAW HANKY
- OZ LIAISONS
- PACIFIC AMISTAD
- PACKER MADIGAN
- PAJAMA JAWBREAKER
- PANIC CLUB
- PANKY SUBMARINE
- PANTHER REDS
- PAPI NECKLACE
- PARADISE SABRINA
- PARIS WEEKEND
- PARK CITIZEN
- PARTY KNOCK
- PAST SUICIDES
- PATHS CONTROL
- PATIENT SISTER
- PATRIOT ROMAN
- PATTON INTERVIEW
- PAYCHECK WAIT
- PEACH INNOCENT
- PEAK FOREVER
- PEARL DESTINY
- PELICAN COMFORTS
- PERDITION FARGO
- PERFECT GROOVE
- PERSONAL LADYBUGS
- PET HAUNTING
- PHANTOM GLORY
- PHILADELPHIA WIFE
- PIANIST OUTFIELD
- PICKUP DRIVING
- PILOT HOOSIERS
- PINOCCHIO SIMON
- PIRATES ROXANNE
- PITTSBURGH HUNCHBACK
- PITY BOUND
- PIZZA JUMANJI
- PLATOON INSTINCT
- PLUTO OLEANDER
- POCUS PULP
- POLISH BROOKLYN
- POLLOCK DELIVERANCE
- POND SEATTLE
- POSEIDON FOREVER
- POTLUCK MIXED
- POTTER CONNECTICUT
  PREJUDICE OLEANDER
- PRESIDENT BANG
- PRIDE ALAMO
- PRIMARY GLASS
- PRINCESS GIANT
- PRIVATE DROP
- PRIX UNDEFEATED
- PSYCHO SHRUNK
- PULP BEVERLY
- PUNK DIVORCE
- PURE RUNNER
- PURPLE MOVIE
- QUEEN LUKE
- QUEST MUSSOLINI
- QUILLS BULL
- RACER EGG
- RAGE GAMES
- RAGING AIRPLANE
- RAIDERS ANTITRUST
- RAINBOW SHOCK
- RANDOM GO
- RANGE MOONWALKER
- REAP UNFAITHFUL
- REAR TRADING
- REBEL AIRPORT
- RECORDS ZORRO
- REDEMPTION COMFORTS
- REDS POCUS
- REEF SALUTE
- REIGN GENTLEMEN
- REMEMBER DIARY
- REQUIEM TYCOON
- RESERVOIR ADAPTATION
- RESURRECTION SILVERADO
- REUNION WITCHES
- RIDER CADDYSHACK
- RIDGEMONT SUBMARINE
- RIGHT CRANES
- RINGS HEARTBREAKERS
- RIVER OUTLAW
- ROAD ROXANNE
- ROBBERS JOON
- ROBBERY BRIGHT
- ROCKETEER MOTHER
- ROCK INSTINCT
- ROCKY WAR
- ROLLERCOASTER BRINGING
- ROMAN PUNK
- ROOF CHAMPION
- ROOM ROMAN
- ROOTS REMEMBER
- ROSES TREASURE
- ROUGE SQUAD
- ROXANNE REBEL
- RUGRATS SHAKESPEARE
- RULES HUMAN
- RUNAWAY TENENBAUMS
- RUNNER MADIGAN
- RUN PACIFIC
- RUSH GOODFELLAS
- RUSHMORE MERMAID
- SABRINA MIDNIGHT
- SADDLE ANTITRUST
- SAGEBRUSH CLUELESS
- SAINTS BRIDE
- SALUTE APOLLO
- SAMURAI LION
- SANTA PARIS
- SASSY PACKER
- SATISFACTION CONFIDENTIAL
- SATURDAY LAMBS
- SATURN NAME
- SAVANNAH TOWN
- SCALAWAG DUCK
- SCARFACE BANG
- SCHOOL JACKET
- SCISSORHANDS SLUMS
- SCORPION APOLLO
- SEABISCUIT PUNK
- SEARCHERS WAIT
- SEATTLE EXPECATIONS
- SEA VIRGIN
- SECRETARY ROUGE
- SECRET GROUNDHOG
- SECRETS PARADISE
- SENSE GREEK
- SENSIBILITY REAR
- SEVEN SWARM
- SHAKESPEARE SADDLE
- SHANE DARKNESS
- SHANGHAI TYCOON
- SHAWSHANK BUBBLE
- SHEPHERD MIDSUMMER
- SHINING ROSES
- SHIP WONDERLAND
- SHOCK CABIN
- SHOOTIST SUPERFLY
- SHOW LORD
- SHREK LICENSE
- SHRUNK DIVINE
- SIDE ARK
- SIEGE MADRE
- SIERRA DIVIDE
- SILENCE KANE
- SILVERADO GOLDFINGER
- SIMON NORTH
- SINNERS ATLANTIS
- SISTER FREDDY
- SKY MIRACLE
- SLACKER LIAISONS
- SLEEPING SUSPECTS
- SLEEPLESS MONSOON
- SLEEPY JAPANESE
- SLEUTH ORIENT
- SLING LUKE
- SLIPPER FIDELITY
- SLUMS DUCK
- SMILE EARRING
- SMOKING BARBARELLA
- SMOOCHY CONTROL
- SNATCHERS MONTEZUMA
- SNATCH SLIPPER
- SNOWMAN ROLLERCOASTER
- SOLDIERS EVOLUTION
- SOMETHING DUCK
- SONG HEDWIG
- SONS INTERVIEW
- SORORITY QUEEN
- SOUP WISDOM
- SOUTH WAIT
- SPARTACUS CHEAPER
- SPEAKEASY DATE
- SPEED SUIT
- SPICE SORORITY
- SPIKING ELEMENT
- SPINAL ROCKY
- SPIRITED CASUALTIES
- SPIRIT FLINTSTONES
- SPLASH GUMP
- SPLENDOR PATTON
- SPOILERS HELLFIGHTERS
- SPY MILE
- SQUAD FISH
- STAGECOACH ARMAGEDDON
- STAGE WORLD
- STALLION SUNDANCE
- STAMPEDE DISTURBING
- STAR OPERATION
- STATE WASTELAND
- STEEL SANTA
- STEERS ARMAGEDDON
- STEPMOM DREAM
+ DOGMA FAMILY
+ EAGLES PANKY
+ DARES PLUTO
+ ANTITRUST TOMATOES
  STING PERSONAL
- STOCK GLASS
- STONE FIRE
- STORM HAPPINESS
- STORY SIDE
- STRAIGHT HOURS
- STRANGELOVE DESIRE
- STRANGERS GRAFFITI
- STRANGER STRANGERS
- STREAK RIDGEMONT
- STREETCAR INTENTIONS
- STRICTLY SCARFACE
- SUBMARINE BED
- SUGAR WONKA
- SUICIDES SILENCE
- SUIT WALLS
- SUMMER SCARFACE
- SUN CONFESSIONS
- SUNDANCE INVASION
- SUNRISE LEAGUE
- SUNSET RACER
- SUPERFLY TRIP
- SUPER WYOMING
- SUSPECTS QUILLS
- SWARM GOLD
- SWEDEN SHINING
- SWEET BROTHERHOOD
- SWEETHEARTS SUSPECTS
- TADPOLE PARK
- TALENTED HOMICIDE
- TARZAN VIDEOTAPE
- TAXI KICK
- TEEN APOLLO
- TELEGRAPH VOYAGE
- TELEMARK HEARTBREAKERS
- TEMPLE ATTRACTION
- TENENBAUMS COMMAND
- TEQUILA PAST
- TERMINATOR CLUB
- TEXAS WATCH
- THEORY MERMAID
- THIEF PELICAN
- THIN SAGEBRUSH
- TIES HUNGER
- TIGHTS DAWN
- TIMBERLAND SKY
- TITANIC BOONDOCK
- TITANS JERK
- TOMATOES HELLFIGHTERS
- TOMORROW HUSTLER
- TOOTSIE PILOT
- TORQUE BOUND
- TOURIST PELICAN
- TOWERS HURRICANE
- TOWN ARK
- TRACY CIDER
- TRADING PINOCCHIO
- TRAFFIC HOBBIT
- TRAIN BUNCH
- TRAINSPOTTING STRANGERS
- TRAMP OTHERS
- TRANSLATION SUMMER
- TRAP GUYS
- TREASURE COMMAND
- TREATMENT JEKYLL
- TRIP NEWTON
- TROJAN TOMORROW
- TROOPERS METAL
- TROUBLE DATE
- TRUMAN CRAZY
- TURN STAR
- TUXEDO MILE
- TWISTED PIRATES
- TYCOON GATHERING
- UNBREAKABLE KARATE
- UNCUT SUICIDES
- UNDEFEATED DALMATIONS
- UNFAITHFUL KILL
- UNFORGIVEN ZOOLANDER
- UNITED PILOT
- UNTOUCHABLES SUNRISE
- UPRISING UPTOWN
- UPTOWN YOUNG
- USUAL UNTOUCHABLES
- VACATION BOONDOCK
- VALENTINE VANISHING
- VALLEY PACKER
- VAMPIRE WHALE
- VANILLA DAY
- VANISHED GARDEN
- VANISHING ROCKY
- VARSITY TRIP
- VELVET TERMINATOR
- VERTIGO NORTHWEST
- VICTORY ACADEMY
- VIDEOTAPE ARSENIC
- VIETNAM SMOOCHY
- VILLAIN DESPERATE
- VIRGIN DAISY
- VIRGINIAN PLUTO
- VIRTUAL SPOILERS
- VISION TORQUE
- VOICE PEACH
- VOLCANO TEXAS
- VOLUME HOUSE
- VOYAGE LEGALLY
- WAGON JAWS
- WAIT CIDER
- WAKE JAWS
- WALLS ARTIST
- WANDA CHAMBER
- WARDROBE PHANTOM
- WARLOCK WEREWOLF
- WAR NOTTING
- WARS PLUTO
- WASH HEAVENLY
- WASTELAND DIVINE
- WATCH TRACY
- WATERFRONT DELIVERANCE
- WATERSHIP FRONTIER
- WEDDING APOLLO
- WEEKEND PERSONAL
- WEREWOLF LOLA
- WEST LION
- WESTWARD SEABISCUIT
- WHALE BIKINI
- WHISPERER GIANT
- WIFE TURN
- WILD APOLLO
- WILLOW TRACY
- WINDOW SIDE
- WIND PHANTOM
- WISDOM WORKER
- WITCHES PANIC
- WIZARD COLDBLOODED
- WOLVES DESIRE
- WOMEN DORADO
- WON DARES
+ ALONE TRIP
+ SMOOCHY CONTROL
+ HANDICAP BOONDOCK
+ FLINTSTONES HAPPINESS
  WONDERFUL DROP
- WONDERLAND CHRISTMAS
+ AMADEUS HOLY
+ SECRETS PARADISE
+ STATE WASTELAND
+ SPEAKEASY DATE
+ SAGEBRUSH CLUELESS
+ BLINDNESS GUN
+ FLAMINGOS CONNECTICUT
+ CROSSROADS CASUALTIES
+ DUMBO LUST
  WONKA SEA
- WORDS HUNTER
- WORKER TARZAN
- WORKING MICROCOSMOS
- WORLD LEATHERNECKS
- WORST BANGER
- WRATH MILE
- WRONG BEHAVIOR
- WYOMING STORM
- YENTL IDAHO
- YOUNG LANGUAGE
- YOUTH KICK
- ZHIVAGO CORE
+ TRANSLATION SUMMER
+ BEAR GRACELAND
+ COMFORTS RUSH
+ WATERFRONT DELIVERANCE
+ CHARADE DUFFEL
+ SORORITY QUEEN
+ VALLEY PACKER
+ BEAST HUNCHBACK
+ MUSKETEERS WAIT
+ PIZZA JUMANJI
+ CINCINATTI WHISPERER
+ QUEEN LUKE
+ BLOOD ARGONAUTS
+ MOTIONS DETAILS
+ ROBBERS JOON
+ FANTASY TROOPERS
+ RIDGEMONT SUBMARINE
+ SUNDANCE INVASION
+ UPTOWN YOUNG
+ GALAXY SWEETHEARTS
+ CURTAIN VIDEOTAPE
+ VICTORY ACADEMY
+ RANGE MOONWALKER
+ FELLOWSHIP AUTUMN
+ FURY MURDER
+ GOODFELLAS SALUTE
+ MAGIC MALLRATS
+ DEVIL DESIRE
+ COLOR PHILADELPHIA
+ FORWARD TEMPLE
+ STRANGERS GRAFFITI
+ WEEKEND PERSONAL
+ GOLD RIVER
+ MULAN MOON
+ FREEDOM CLEOPATRA
+ SLACKER LIAISONS
+ MIGHTY LUCK
+ GLORY TRACY
+ FANTASIA PARK
+ THIN SAGEBRUSH
+ FUGITIVE MAGUIRE
+ WHISPERER GIANT
+ LADY STAGE
+ HAUNTED ANTITRUST
+ NASH CHOCOLAT
+ JERSEY SASSY
+ WAKE JAWS
+ SPINAL ROCKY
+ ROUGE SQUAD
+ TRAFFIC HOBBIT
+ ELEMENT FREDDY
+ VARSITY TRIP
+ SLEEPY JAPANESE
+ SLEEPLESS MONSOON
+ NIGHTMARE CHILL
+ ROLLERCOASTER BRINGING
+ GRINCH MASSAGE
+ HOUSE DYNAMITE
+ ALAMO VIDEOTAPE
+ DANCES NONE
+ SCORPION APOLLO
+ PANIC CLUB
+ ROSES TREASURE
+ BIRDCAGE CASPER
+ KISS GLORY
+ TRAINSPOTTING STRANGERS
+ INTRIGUE WORST
+ GANDHI KWAI
+ ENTRAPMENT SATISFACTION
+ GARDEN ISLAND
+ MILE MULAN
+ NECKLACE OUTBREAK
+ CAUSE DATE
+ SLEEPING SUSPECTS
+ WATERSHIP FRONTIER
+ RUN PACIFIC
+ TRAMP OTHERS
+ ACE GOLDFINGER
+ MAKER GABLES
+ BARBARELLA STREETCAR
+ LIAISONS SWEET
+ HALF OUTFIELD
+ MASSAGE IMAGE
+ EFFECT GLADIATOR
+ CANYON STOCK
+ BORN SPINAL
+ BLUES INSTINCT
+ TWISTED PIRATES
+ PAYCHECK WAIT
+ REAR TRADING
+ HOCUS FRIDA
+ CROOKED FROGMEN
+ SECRET GROUNDHOG
+ BUCKET BROTHERHOOD
+ MASK PEACH
+ MONTEREY LABYRINTH
+ SHANGHAI TYCOON
+ PRIDE ALAMO
+ HOLLOW JEOPARDY
+ KNOCK WARLOCK
+ BIKINI BORROWERS
+ CLERKS ANGELS
+ ATTACKS HATE
  ZOOLANDER FICTION
- ZORRO ARK
+ AMELIE HELLFIGHTERS
+ SUSPECTS QUILLS
+ STREETCAR INTENTIONS
+ SONS INTERVIEW
+ EARLY HOME
+ CLUB GRAFFITI
+ PAPI NECKLACE
+ OCTOBER SUBMARINE
+ INTERVIEW LIAISONS
+ ALI FOREVER
+ ALIEN CENTER
+ HALL CASSIDY
+ CONNECTION MICROCOSMOS
+ VANISHING ROCKY
+ MONSOON CAUSE
+ UNCUT SUICIDES
+ SAVANNAH TOWN
+ BUNCH MINDS
+ FIGHT JAWBREAKER
+ EXCITEMENT EVE
+ RANDOM GO
+ AUTUMN CROW
+ TELEGRAPH VOYAGE
+ ICE CROSSING
+ DETECTIVE VISION
+ GRAPES FURY
+ HOURS RAGE
+ VOLCANO TEXAS
+ BEACH HEARTBREAKERS
+ IMPOSSIBLE PREJUDICE
+ DAWN POND
+ DWARFS ALTER
+ FLYING HOOK
+ DRUMS DYNAMITE
+ STONE FIRE
+ DOCTOR GRAIL
+ QUILLS BULL
+ GRAFFITI LOVE
+ POND SEATTLE
+ BRAVEHEART HUMAN
+ MIDNIGHT WESTWARD
+ PRIX UNDEFEATED
+ FOREVER CANDIDATE
+ HEAVEN FREEDOM
+ SAINTS BRIDE
+ MONTEZUMA COMMAND
+ GONE TROUBLE
+ LIES TREATMENT
+ PARIS WEEKEND
+ MARRIED GO
+ CHINATOWN GLADIATOR
+ RAINBOW SHOCK
+ HOPE TOOTSIE
+ HURRICANE AFFAIR
+ GENTLEMEN STAGE
+ PAST SUICIDES
+ CHANCE RESURRECTION
+ SCISSORHANDS SLUMS
+ ANONYMOUS HUMAN
+ SNATCHERS MONTEZUMA
+ LADYBUGS ARMAGEDDON
+ KRAMER CHOCOLATE
+ POSEIDON FOREVER
+ LAWRENCE LOVE
+ GHOST GROUNDHOG
+ WIND PHANTOM
+ STEPMOM DREAM
+ WINDOW SIDE
+ USUAL UNTOUCHABLES
+ PRIMARY GLASS
+ BEETHOVEN EXORCIST
+ DANCING FEVER
+ WALLS ARTIST
+ CLEOPATRA DEVIL
+ HYDE DOCTOR
+ TITANIC BOONDOCK
+ RAGING AIRPLANE
+ CAMELOT VACATION
+ ISHTAR ROCKETEER
+ SEVEN SWARM
+ PERFECT GROOVE
+ MINE TITANS
+ SATISFACTION CONFIDENTIAL
+ MICROCOSMOS PARADISE
+ DIVORCE SHINING
+ WANDA CHAMBER
+ ENCINO ELF
+ TEMPLE ATTRACTION
+ DOLLS RAGE
+ ARMAGEDDON LOST
+ MOULIN WAKE
+ WATCH TRACY
+ CRAZY HOME
+ ESCAPE METROPOLIS
+ TIES HUNGER
+ ROCKY WAR
+ WONDERLAND CHRISTMAS
+ AGENT TRUMAN
+ SUN CONFESSIONS
+ HAWK CHILL
+ ODDS BOOGIE
+ NEWTON LABYRINTH
+ LAWLESS VISION
+ SADDLE ANTITRUST
+ TOWN ARK
+ BUTCH PANTHER
+ PICKUP DRIVING
+ CANDIDATE PERDITION
+ LEBOWSKI SOLDIERS
+ STRANGELOVE DESIRE
+ TAXI KICK
+ ALICE FANTASIA
+ TALENTED HOMICIDE
+ ANNIE IDENTITY
+ PRESIDENT BANG
+ TORQUE BOUND
+ HELLFIGHTERS SIERRA
+ FAMILY SWEET
+ METROPOLIS COMA
+ WARLOCK WEREWOLF
+ RAGE GAMES
+ GREEK EVERYONE
+ SPLENDOR PATTON
+ MOCKINGBIRD HOLLYWOOD
+ HUNTING MUSKETEERS
+ ROAD ROXANNE
+ AFRICAN EGG
+ ARMY FLINTSTONES
+ BRINGING HYSTERICAL
+ TEQUILA PAST
+ WIFE TURN
+ MEMENTO ZOOLANDER
+ CADDYSHACK JEDI
+ FOOL MOCKINGBIRD
+ ROCKETEER MOTHER
+ UNITED PILOT
+ PARADISE SABRINA
+ APOLLO TEEN
+ AMERICAN CIRCUS
+ CHOCOLATE DUCK
+ CONEHEADS SMOOCHY
+ HALLOWEEN NUTS
+ HARPER DYING
+ LOVERBOY ATTACKS
+ BANG KWAI
+ SWEETHEARTS SUSPECTS
+ DESTINATION JERK
+ FEATHERS METAL
+ SCHOOL JACKET
+ HANKY OCTOBER
+ DAZED PUNK
+ FLIGHT LIES
+ TIMBERLAND SKY
+ ENEMY ODDS
+ PITTSBURGH HUNCHBACK
+ LUKE MUMMY
+ LORD ARIZONA
+ CREEPERS KANE
+ LANGUAGE COWBOY
+ MONEY HAROLD
+ DESIRE ALIEN
+ UNDEFEATED DALMATIONS
+ CASUALTIES ENCINO
+ STORM HAPPINESS
+ KICK SAVANNAH
+ CHISUM BEHAVIOR
+ LIBERTY MAGNIFICENT
+ RUSH GOODFELLAS
+ PUNK DIVORCE
+ LABYRINTH LEAGUE
+ SUBMARINE BED
+ DETAILS PACKER
+ VIRTUAL SPOILERS
+ LONELY ELEPHANT
+ PAJAMA JAWBREAKER
+ SIMON NORTH
+ HUMAN GRAFFITI
+ CASABLANCA SUPER
+ PHANTOM GLORY
+ GREASE YOUTH
+ ARIZONA BANG
+ DADDY PITTSBURGH
+ JEDI BENEATH
+ IDENTITY LOVER
+ RIVER OUTLAW
+ SNOWMAN ROLLERCOASTER
+ CONFUSED CANDLES
+ ROOF CHAMPION
+ CATCH AMISTAD
+ LOCK REAR
+ LIGHTS DEER
+ SPLASH GUMP
+ KWAI HOMEWARD
+ CLUELESS BUCKET
+ VISION TORQUE
+ CHEAPER CLYDE
+ MUSCLE BRIGHT
+ INVASION CYCLONE
+ MODERN DORADO
+ BILKO ANONYMOUS
+ TADPOLE PARK
+ COMMAND DARLING
+ MAGNIFICENT CHITTY
+ SHREK LICENSE
+ METAL ARMAGEDDON
+ CRANES RESERVOIR
+ BALLOON HOMEWARD
+ PEACH INNOCENT
+ ROXANNE REBEL
+ MARS ROMAN
+ TEXAS WATCH
+ SPARTACUS CHEAPER
+ RESERVOIR ADAPTATION
+ CONFIDENTIAL INTERVIEW
+ DOUBTFIRE LABYRINTH
+ MENAGERIE RUSHMORE
+ YENTL IDAHO
+ TARZAN VIDEOTAPE
+ LOUISIANA HARRY
+ UNFORGIVEN ZOOLANDER
+ IDAHO LOVE
+ OPPOSITE NECKLACE
+ VANISHED GARDEN
+ EMPIRE MALKOVICH
+ HEDWIG ALTER
+ BREAKFAST GOLDFINGER
+ PATRIOT ROMAN
+ BULWORTH COMMANDMENTS
+ VIRGIN DAISY
+ DELIVERANCE MULHOLLAND
+ WON DARES
+ SNATCH SLIPPER
+ MANCHURIAN CURTAIN
+ SHOCK CABIN
+ SATURN NAME
+ STAMPEDE DISTURBING
+ JUGGLER HARDLY
+ MERMAID INSECTS
+ TOOTSIE PILOT
+ UNBREAKABLE KARATE
+ GLADIATOR WESTWARD
+ AIRPLANE SIERRA
+ MUMMY CREATURES
+ DESPERATE TRAINSPOTTING
+ SHRUNK DIVINE
+ TRAP GUYS
+ POLLOCK DELIVERANCE
+ MOTHER OLEANDER
+ TENENBAUMS COMMAND
+ MEET CHOCOLATE
+ ROOM ROMAN
+ SWARM GOLD
+ FIREHOUSE VIETNAM
+ YOUNG LANGUAGE
+ BUTTERFLY CHOCOLAT
+ OUTFIELD MASSACRE
+ ARACHNOPHOBIA ROLLERCOASTER
+ NORTH TEQUILA
+ WORST BANGER
+ CARRIE BUNCH
+ MOB DUFFEL
+ PATHS CONTROL
+ MILLION ACE
+ VERTIGO NORTHWEST
+ SPY MILE
+ HUNTER ALTER
+ EVERYONE CRAFT
+ MAUDE MOD
+ DYING MAKER
+ INTENTIONS EMPIRE
+ SMILE EARRING
+ COAST RAINBOW
+ WILD APOLLO
+ CELEBRITY HORN
+ ZHIVAGO CORE
+ MOD SECRETARY
+ TREASURE COMMAND
+ CHILL LUCK
+ BUBBLE GROSSE
+ CRAFT OUTFIELD
+ SANTA PARIS
+ REQUIEM TYCOON
+ KENTUCKIAN GIANT
+ COMMANDMENTS EXPRESS
+ MUPPET MILE
+ AMISTAD MIDSUMMER
+ TROJAN TOMORROW
+ NATURAL STOCK
+ RAIDERS ANTITRUST
+ ENGLISH BULWORTH
+ WISDOM WORKER
+ FEUD FROGMEN
+ PINOCCHIO SIMON
+ GRIT CLOCKWORK
+ FULL FLATLINERS
+ BAKED CLEOPATRA
+ WAGON JAWS
+ COMA HEAD
+ STEERS ARMAGEDDON
+ STAGECOACH ARMAGEDDON
+ SATURDAY LAMBS
+ ARTIST COLDBLOODED
+ DAY UNFAITHFUL
+ FIDELITY DEVIL
+ VIRGINIAN PLUTO
+ MURDER ANTITRUST
+ CANDLES GRAPES
+ HEARTBREAKERS BRIGHT
+ CLYDE THEORY
+ SASSY PACKER
+ EXPRESS LONELY
+ CHITTY LOCK
+ COLDBLOODED DARLING
+ FARGO GANDHI
+ NAME DETECTIVE
+ DEER VIRGINIAN
+ FEVER EMPIRE
+ RUNAWAY TENENBAUMS
+ INNOCENT USUAL
+ BETRAYED REAR
+ HOLLYWOOD ANONYMOUS
+ SHAKESPEARE SADDLE
+ SWEET BROTHERHOOD
+ PSYCHO SHRUNK
+ BALLROOM MOCKINGBIRD
+ ORDER BETRAYED
+ FATAL HAUNTED
+ WYOMING STORM
+ ENDING CROWDS
+ FREAKY POCUS
+ CASSIDY WYOMING
+ HARDLY ROBBERS
+ FORRESTER COMANCHEROS
+ WOMEN DORADO
+ TOMATOES HELLFIGHTERS
+ DINOSAUR SECRETARY
+ RIGHT CRANES
+ WEDDING APOLLO
+ PIRATES ROXANNE
+ BROTHERHOOD BLANKET
+ ARGONAUTS TOWN
+ MANNEQUIN WORST
+ SLING LUKE
+ PEARL DESTINY
+ ORANGE GRAPES
+ FLATLINERS KILLER
+ MINORITY KISS
+ BEDAZZLED MARRIED
+ WOLVES DESIRE
+ FINDING ANACONDA
+ TITANS JERK
+ DIVIDE MONSTER
+ REUNION WITCHES
+ SHEPHERD MIDSUMMER
+ TRADING PINOCCHIO
+ CRYSTAL BREAKING
+ DURHAM PANKY
+ HUSTLER PARTY
+ ARABIA DOGMA
+ VAMPIRE WHALE
+ MULHOLLAND BEAST
+ PILOT HOOSIERS
+ IDOLS SNATCHERS
+ BEAUTY GREASE
+ GASLIGHT CRUSADE
+ INSECTS STONE
+ HOME PITY
+ GUNFIGHT MOON
+ SENSE GREEK
+ TROUBLE DATE
+ SUPERFLY TRIP
+ NUTS TIES
+ JOON NORTHWEST
+ DORADO NOTTING
+ NOVOCAINE FLIGHT
+ HAMLET WISDOM
+ WRATH MILE
+ CRUELTY UNFORGIVEN
+ INDEPENDENCE HOTEL
+ SIEGE MADRE
+ CHAMPION FLATLINERS
+ GANGS PRIDE
+ GREATEST NORTH
+ ANYTHING SAVANNAH
+ IGBY MAKER
+ BOILED DARES
+ JAPANESE RUN
+ TOMORROW HUSTLER
+ SPEED SUIT
+ CAT CONEHEADS
+ LICENSE WEEKEND
+ OPEN AFRICAN
+ HANOVER GALAXY
+ PANKY SUBMARINE
+ POLISH BROOKLYN
+ BASIC EASY
+ VIETNAM SMOOCHY
+ ILLUSION AMELIE
+ SHINING ROSES
+ VELVET TERMINATOR
+ TRAIN BUNCH
+ GOLDMINE TYCOON
+ APOCALYPSE FLAMINGOS
+ JAWBREAKER BROOKLYN
+ BRIGHT ENCOUNTERS
+ GRAIL FRANKENSTEIN
+ CHAPLIN LICENSE
+ CHOCOLAT HARRY
+ WASH HEAVENLY
+ EXTRAORDINARY CONQUERER
+ BREAKING HOME
+ NEMO CAMPUS
+ POTTER CONNECTICUT
+ GLEAMING JAWBREAKER
+ IMAGE PRINCESS
+ BIRCH ANTITRUST
+ SECRETARY ROUGE
+ JACKET FRISCO
+ DAUGHTER MADIGAN
+ MIXED DOORS
+ BLANKET BEVERLY
+ DRAGONFLY STRANGERS
+ EVOLUTION ALTER
+ HAUNTING PIANIST
+ JUMANJI BLADE
+ FIREBALL PHILADELPHIA
+ DONNIE ALLEY
+ HOLY TADPOLE
+ PACIFIC AMISTAD
+ TRUMAN CRAZY
+ HOOK CHARIOTS
+ BLADE POLISH
+ PRIVATE DROP
+ LOLITA WORLD
+ CLASH FREDDY
+ CONVERSATION DOWNHILL
+ PRINCESS GIANT
+ MUSSOLINI SPOILERS
+ ATLANTIS CAUSE
+ TRIP NEWTON
+ BED HIGHBALL
+ CIDER DESIRE
+ HUNGER ROOF
+ INDIAN LOVE
+ ORIENT CLOSER
+ ELF MURDER
+ RULES HUMAN
+ FRISCO FORREST
+ ANGELS LIFE
+ MASKED BUBBLE
+ SPOILERS HELLFIGHTERS
+ MISSION ZOOLANDER
+ CUPBOARD SINNERS
+ TOWERS HURRICANE
+ MAGNOLIA FORRESTER
+ SABRINA MIDNIGHT
+ CONQUERER NUTS
+ CENTER DINOSAUR
+ HONEY TIES
+ OSCAR GOLD
+ LUST LOCK
+ PURPLE MOVIE
+ MADNESS ATTACKS
+ PARTY KNOCK
+ HAPPINESS UNITED
+ JUNGLE CLOSER
+ DISTURBING SCARFACE
+ BANGER PINOCCHIO
+ GUMP DATE
+ CASPER DRAGONFLY
+ GLASS DYING
+ HORROR REIGN
+ GROUNDHOG UNCUT
+ GRADUATE LORD
+ WEST LION
+ EARTH VISION
+ POTLUCK MIXED
+ DARKNESS WAR
+ BACKLASH UNDEFEATED
+ PLUTO OLEANDER
+ EVE RESURRECTION
+ AIRPORT POLLOCK
+ WARS PLUTO
+ WIZARD COLDBLOODED
+ SPICE SORORITY
+ CAPER MOTIONS
+ SINNERS ATLANTIS
+ DUFFEL APOCALYPSE
+ CONFESSIONS MAGUIRE
+ CONTROL ANTHEM
+ MATRIX SNOWMAN
+ ANALYZE HOOSIERS
+ RESURRECTION SILVERADO
+ FLOATS GARDEN
+ FRANKENSTEIN STRANGER
+ OPUS ICE
+ MADRE GABLES
+ RUGRATS SHAKESPEARE
+ RIDER CADDYSHACK
+ ANACONDA CONFESSIONS
+ HARRY IDAHO
+ HOOSIERS BIRDCAGE
+ FIDDLER LOST
+ LOVE SUICIDES
+ BLACKOUT PRIVATE
+ DALMATIONS SWEDEN
+ REEF SALUTE
+ LOSE INCH
+ CROWDS TELEMARK
+ CONGENIALITY QUEST
+ GO PURPLE
+ HATE HANDICAP
+ RUNNER MADIGAN
+ VILLAIN DESPERATE
+ SCARFACE BANG
+ MUSIC BOONDOCK
+ MALLRATS UNITED
+ LOVELY JINGLE
+ CORE SUIT
+ REDS POCUS
+ ATTRACTION NEWTON
+ SPIRIT FLINTSTONES
+ SOMETHING DUCK
+ GROSSE WONDERFUL
+ SIDE ARK
+ HAROLD FRENCH
+ REMEMBER DIARY
+ MOSQUITO ARMAGEDDON
+ BEVERLY OUTLAW
+ HUNCHBACK IMPOSSIBLE
+ EASY GLADIATOR
+ SISTER FREDDY
+ LION UNCUT
+ MODEL FISH
+ HEAVENLY GUN
+ SEA VIRGIN
+ DREAM PICKUP
+ LOVER TRUMAN
+ HEAVYWEIGHTS BEAST
+ GORGEOUS BINGO
+ MIDSUMMER GROUNDHOG
+ WASTELAND DIVINE
+ ACADEMY DINOSAUR
+ FREDDY STORM
+ FRIDA SLIPPER
+ BROOKLYN DESERT
+ PATIENT SISTER
+ SIERRA DIVIDE
+ VANILLA DAY
+ CABIN FLASH
+ JUMPING WRATH
+ JADE BUNCH
+ PERDITION FARGO
+ LEATHERNECKS DWARFS
+ SPIRITED CASUALTIES
+ KISSING DOLLS
+ SEABISCUIT PUNK
+ DARLING BREAKING
+ KING EVOLUTION
+ PURE RUNNER
+ FIRE WOLVES
+ KILLER INNOCENT
+ BILL OTHERS
+ THEORY MERMAID
+ GUN BONNIE
+ CHICKEN HELLFIGHTERS
+ REBEL AIRPORT
+ HILLS NEIGHBORS
+ ENCOUNTERS CURTAIN
+ TELEMARK HEARTBREAKERS
+ FISH OPUS
+ BABY HALL
+ LOLA AGENT
+ DESERT POSEIDON
+ JAWS HARRY
+ DESTINY SATURDAY
+ VALENTINE VANISHING
+ CONSPIRACY SPIRIT
+ PACKER MADIGAN
+ YOUTH KICK
+ LESSON CLEOPATRA
+ MYSTIC TRUMAN
+ REDEMPTION COMFORTS
+ INCH JET
+ EDGE KISSING
+ SMOKING BARBARELLA
+ CIRCUS YOUTH
+ GAMES BOWFINGER
+ TURN STAR
+ BAREFOOT MANCHURIAN
+ HANGING DEEP
+ OKLAHOMA JUMANJI
+ SHIP WONDERLAND
+ ALTER VICTORY
+ ALADDIN CALENDAR
+ SILVERADO GOLDFINGER
+ WARDROBE PHANTOM
+ DATE SPEED
+ CALENDAR GUNFIGHT
+ ELEPHANT TROJAN
+ BOULEVARD MOB
+ PLATOON INSTINCT
+ GATHERING CALENDAR
+ STRAIGHT HOURS
+ FLASH WARS
+ JERICHO MULAN
+ PET HAUNTING
+ MADISON TRAP
+ TROOPERS METAL
+ FORREST SONS
+ LOATHING LEGALLY
+ WORLD LEATHERNECKS
+ NONE SPIKING
+ WITCHES PANIC
+ STEEL SANTA
+ TUXEDO MILE
+ BOWFINGER GABLES
+ IMPACT ALADDIN
+ CREATURES SHAKESPEARE
+ TREATMENT JEKYLL
+ LOST BIRD
+ GILMORE BOILED
+ CLUE GRAIL
+ MOVIE SHAKESPEARE
+ SLIPPER FIDELITY
+ WILLOW TRACY
+ APACHE DIVINE
+ GOSFORD DONNIE
+ POCUS PULP
+ SQUAD FISH
+ SOUP WISDOM
+ INTOLERABLE INTENTIONS
+ CROSSING DIVORCE
 (1000 rows)
 
 "
-29,Find all customers who registered in the last 6 months.,Medium,Find all customers who registered in the last 6 months.,SELECT * FROM customer WHERE create_date >= DATE(NOW() - INTERVAL '6 months');," customer_id | store_id | first_name | last_name | email | address_id | activebool | create_date | last_update | active 
+29,Find all customers who registered in the last 6 months.,Medium,SELECT * FROM customer WHERE create_date >= CURRENT_DATE - INTERVAL '6 months';," customer_id | store_id | first_name | last_name | email | address_id | activebool | create_date | last_update | active 
 -------------+----------+------------+-----------+-------+------------+------------+-------------+-------------+--------
 (0 rows)
 
 "
-30,"Show all staff members hired before January 1, 2020.",Medium,"Show all staff members hired before January 1, 2020.",SELECT * FROM staff WHERE create_date < '2020-01-01';,"ERROR:  column ""create_date"" does not exist
-LINE 1: SELECT * FROM staff WHERE create_date < '2020-01-01';
-                                  ^
+30,"Show all staff members hired before January 1, 2020.",Medium,SELECT * FROM staff WHERE last_update < '2020-01-01';," staff_id | first_name | last_name | address_id | email | store_id | active | username | password | last_update | picture 
+----------+------------+-----------+------------+-------+----------+--------+----------+----------+-------------+---------
+(0 rows)
+
 "
-31,List the top 3 customers who have spent the most in each country.,Hard,List the top 3 customers who have spent the most in each country.,"WITH CustomerSpending AS (
+31,List the top 3 customers who have spent the most in each country.,Hard,"WITH CustomerSpending AS (
     SELECT
         c.customer_id,
         cy.country,
         SUM(p.amount) AS total_spent,
-        ROW_NUMBER() OVER (PARTITION BY cy.country ORDER BY SUM(p.amount) DESC) AS rn
+        ROW_NUMBER() OVER (PARTITION BY cy.country ORDER BY SUM(p.amount) DESC) AS rank_within_country
     FROM
         customer c
     JOIN
@@ -28735,9 +27990,7 @@ SELECT
 FROM
     CustomerSpending cs
 WHERE
-    cs.rn <= 3
-ORDER BY
-    cs.country, cs.total_spent DESC;"," customer_id |                country                | total_spent 
+    cs.rank_within_country <= 3;"," customer_id |                country                | total_spent 
 -------------+---------------------------------------+-------------
          218 | Afghanistan                           |       67.82
          176 | Algeria                               |      173.63
@@ -28965,32 +28218,523 @@ ORDER BY
 (223 rows)
 
 "
-32,Find the films that have been rented more times than the average number of rentals per film.,Hard,Find the films that have been rented more times than the average number of rentals per film.,"SELECT film_id
-FROM inventory
-GROUP BY film_id
-HAVING COUNT(*) > (
-    SELECT AVG(rental_count)
+32,Find the films that have been rented more times than the average number of rentals per film.,Hard,"SELECT
+  F.title
+FROM film AS F
+JOIN inventory AS I
+  ON F.film_id = I.film_id
+JOIN rental AS R
+  ON I.inventory_id = R.inventory_id
+GROUP BY
+  F.film_id
+HAVING
+  COUNT(R.rental_id) > (
+    SELECT
+      AVG(rental_count)
     FROM (
-        SELECT COUNT(*) AS rental_count
-        FROM rental
-        JOIN inventory ON rental.inventory_id = inventory.inventory_id
-        GROUP BY inventory.film_id
+      SELECT
+        COUNT(R2.rental_id) AS rental_count
+      FROM film AS F2
+      JOIN inventory AS I2
+        ON F2.film_id = I2.film_id
+      JOIN rental AS R2
+        ON I2.inventory_id = R2.inventory_id
+      GROUP BY
+        F2.film_id
     ) AS film_rental_counts
-);"," film_id 
----------
-(0 rows)
+  );","            title            
+-----------------------------
+ EFFECT GLADIATOR
+ BALLOON HOMEWARD
+ VOYAGE LEGALLY
+ BIKINI BORROWERS
+ GARDEN ISLAND
+ CONGENIALITY QUEST
+ EXCITEMENT EVE
+ PATIENT SISTER
+ AMISTAD MIDSUMMER
+ EASY GLADIATOR
+ HILLS NEIGHBORS
+ MALTESE HOPE
+ SATURDAY LAMBS
+ OPERATION OPERATION
+ SEATTLE EXPECATIONS
+ SHOW LORD
+ MILLION ACE
+ BASIC EASY
+ AMADEUS HOLY
+ CLUB GRAFFITI
+ OSCAR GOLD
+ DYNAMITE TARZAN
+ FELLOWSHIP AUTUMN
+ GOLDFINGER SENSIBILITY
+ STAR OPERATION
+ BOUND CHEAPER
+ SLACKER LIAISONS
+ FATAL HAUNTED
+ BANGER PINOCCHIO
+ CONTACT ANONYMOUS
+ ROOM ROMAN
+ ALADDIN CALENDAR
+ ARACHNOPHOBIA ROLLERCOASTER
+ DEER VIRGINIAN
+ SOUTH WAIT
+ CONFUSED CANDLES
+ MOONSHINE CABIN
+ ENGLISH BULWORTH
+ HALF OUTFIELD
+ FURY MURDER
+ TRAMP OTHERS
+ ROSES TREASURE
+ LOUISIANA HARRY
+ HOMICIDE PEACH
+ OPEN AFRICAN
+ ROXANNE REBEL
+ DESERT POSEIDON
+ SECRETARY ROUGE
+ COAST RAINBOW
+ UNDEFEATED DALMATIONS
+ KISSING DOLLS
+ MADNESS ATTACKS
+ ALTER VICTORY
+ CHILL LUCK
+ MASSACRE USUAL
+ KICK SAVANNAH
+ BEACH HEARTBREAKERS
+ DETECTIVE VISION
+ PEAK FOREVER
+ SNATCH SLIPPER
+ EXPECATIONS NATURAL
+ STORY SIDE
+ JEKYLL FROGMEN
+ OTHERS SOUP
+ GRIT CLOCKWORK
+ GREATEST NORTH
+ JERICHO MULAN
+ OUTBREAK DIVINE
+ FLAMINGOS CONNECTICUT
+ CAMPUS REMEMBER
+ BRIDE INTRIGUE
+ BEAR GRACELAND
+ CAT CONEHEADS
+ MALLRATS UNITED
+ FORREST SONS
+ SNOWMAN ROLLERCOASTER
+ PHILADELPHIA WIFE
+ SECRETS PARADISE
+ VIRGIN DAISY
+ MAIDEN HOME
+ VIRGINIAN PLUTO
+ BREAKFAST GOLDFINGER
+ VOICE PEACH
+ CONEHEADS SMOOCHY
+ HEARTBREAKERS BRIGHT
+ LIES TREATMENT
+ FLINTSTONES HAPPINESS
+ VANISHING ROCKY
+ WOLVES DESIRE
+ DRACULA CRYSTAL
+ DRIVING POLISH
+ CHARIOTS CONSPIRACY
+ HOBBIT ALIEN
+ WHISPERER GIANT
+ BOULEVARD MOB
+ HURRICANE AFFAIR
+ GUN BONNIE
+ ARMAGEDDON LOST
+ POND SEATTLE
+ LION UNCUT
+ KARATE MOON
+ CANYON STOCK
+ PITY BOUND
+ FIREBALL PHILADELPHIA
+ MURDER ANTITRUST
+ PULP BEVERLY
+ JOON NORTHWEST
+ INSTINCT AIRPORT
+ BRINGING HYSTERICAL
+ JASON TRAP
+ GRAFFITI LOVE
+ GHOST GROUNDHOG
+ OUTFIELD MASSACRE
+ ALASKA PHANTOM
+ JEDI BENEATH
+ CLASH FREDDY
+ PARADISE SABRINA
+ DISTURBING SCARFACE
+ JADE BUNCH
+ RUGRATS SHAKESPEARE
+ EARTH VISION
+ TOURIST PELICAN
+ CANDIDATE PERDITION
+ WESTWARD SEABISCUIT
+ TRIP NEWTON
+ INSIDER ARIZONA
+ JUMPING WRATH
+ ROAD ROXANNE
+ HOURS RAGE
+ WEEKEND PERSONAL
+ SWARM GOLD
+ NOON PAPI
+ DURHAM PANKY
+ SCARFACE BANG
+ STAGECOACH ARMAGEDDON
+ CHRISTMAS MOONSHINE
+ EMPIRE MALKOVICH
+ INSECTS STONE
+ REAR TRADING
+ LOATHING LEGALLY
+ PACIFIC AMISTAD
+ RAGE GAMES
+ STEEL SANTA
+ BACKLASH UNDEFEATED
+ ICE CROSSING
+ EYES DRIVING
+ SINNERS ATLANTIS
+ DALMATIONS SWEDEN
+ INCH JET
+ LOSE INCH
+ SLEUTH ORIENT
+ NIGHTMARE CHILL
+ GLEAMING JAWBREAKER
+ PIRATES ROXANNE
+ FANTASY TROOPERS
+ SHAWSHANK BUBBLE
+ ORIENT CLOSER
+ HUSTLER PARTY
+ DISCIPLE MOTHER
+ BORROWERS BEDAZZLED
+ DREAM PICKUP
+ APACHE DIVINE
+ REIGN GENTLEMEN
+ CLEOPATRA DEVIL
+ MUSCLE BRIGHT
+ WAIT CIDER
+ HIGHBALL POTTER
+ CUPBOARD SINNERS
+ GOODFELLAS SALUTE
+ DOORS PRESIDENT
+ TRADING PINOCCHIO
+ TITANIC BOONDOCK
+ STREETCAR INTENTIONS
+ BLACKOUT PRIVATE
+ STRANGELOVE DESIRE
+ MUSKETEERS WAIT
+ NETWORK PEAK
+ SUNRISE LEAGUE
+ AIRPORT POLLOCK
+ GORGEOUS BINGO
+ IDAHO LOVE
+ VACATION BOONDOCK
+ HANGING DEEP
+ CHAINSAW UPTOWN
+ LEBOWSKI SOLDIERS
+ FLATLINERS KILLER
+ STRANGERS GRAFFITI
+ SUN CONFESSIONS
+ CAMELOT VACATION
+ LIAISONS SWEET
+ MISSION ZOOLANDER
+ POTTER CONNECTICUT
+ ROOTS REMEMBER
+ RANGE MOONWALKER
+ LOLA AGENT
+ DIVIDE MONSTER
+ CAPER MOTIONS
+ SATISFACTION CONFIDENTIAL
+ ENOUGH RAGING
+ GRAPES FURY
+ CHOCOLAT HARRY
+ GILMORE BOILED
+ HEAVYWEIGHTS BEAST
+ WORKING MICROCOSMOS
+ ANNIE IDENTITY
+ BILL OTHERS
+ LOVE SUICIDES
+ BIRDS PERDITION
+ REQUIEM TYCOON
+ CENTER DINOSAUR
+ ARIZONA BANG
+ ROUGE SQUAD
+ GENTLEMEN STAGE
+ SLEEPY JAPANESE
+ MIDNIGHT WESTWARD
+ FREAKY POCUS
+ CONFIDENTIAL INTERVIEW
+ ATTRACTION NEWTON
+ TIMBERLAND SKY
+ CLONES PINOCCHIO
+ TRUMAN CRAZY
+ WITCHES PANIC
+ SWEDEN SHINING
+ GROUNDHOG UNCUT
+ FERRIS MOTHER
+ TELEMARK HEARTBREAKERS
+ FIDELITY DEVIL
+ CHEAPER CLYDE
+ NAME DETECTIVE
+ CROOKED FROGMEN
+ WEDDING APOLLO
+ SAMURAI LION
+ DECEIVER BETRAYED
+ BADMAN DAWN
+ MINE TITANS
+ TROJAN TOMORROW
+ STING PERSONAL
+ VELVET TERMINATOR
+ CORE SUIT
+ RUSH GOODFELLAS
+ MALKOVICH PET
+ HAUNTING PIANIST
+ HOLOCAUST HIGHBALL
+ PELICAN COMFORTS
+ FEUD FROGMEN
+ STORM HAPPINESS
+ ORANGE GRAPES
+ WASH HEAVENLY
+ ENCOUNTERS CURTAIN
+ RIVER OUTLAW
+ EARRING INSTINCT
+ KNOCK WARLOCK
+ CANDLES GRAPES
+ ATLANTIS CAUSE
+ GANGS PRIDE
+ TROUBLE DATE
+ REUNION WITCHES
+ LADY STAGE
+ DOOM DANCING
+ FORWARD TEMPLE
+ PIANIST OUTFIELD
+ AFFAIR PREJUDICE
+ PRINCESS GIANT
+ NOVOCAINE FLIGHT
+ AGENT TRUMAN
+ BOOGIE AMELIE
+ UNBREAKABLE KARATE
+ GO PURPLE
+ DINOSAUR SECRETARY
+ LEAGUE HELLFIGHTERS
+ SWEETHEARTS SUSPECTS
+ GIANT TROOPERS
+ HELLFIGHTERS SIERRA
+ ROBBERS JOON
+ COLOR PHILADELPHIA
+ MOON BUNCH
+ CHICKEN HELLFIGHTERS
+ UNFORGIVEN ZOOLANDER
+ HEAVEN FREEDOM
+ PACKER MADIGAN
+ CROSSROADS CASUALTIES
+ RIDGEMONT SUBMARINE
+ RACER EGG
+ RESURRECTION SILVERADO
+ WONDERLAND CHRISTMAS
+ SLUMS DUCK
+ NEWTON LABYRINTH
+ MARRIED GO
+ FARGO GANDHI
+ FROST HEAD
+ IDOLS SNATCHERS
+ BROTHERHOOD BLANKET
+ JACKET FRISCO
+ BEVERLY OUTLAW
+ TEEN APOLLO
+ HIGH ENCINO
+ WIND PHANTOM
+ PINOCCHIO SIMON
+ HEAD STRANGER
+ SHAKESPEARE SADDLE
+ POLLOCK DELIVERANCE
+ WOMEN DORADO
+ ALAMO VIDEOTAPE
+ MIDSUMMER GROUNDHOG
+ ROMAN PUNK
+ TORQUE BOUND
+ INDEPENDENCE HOTEL
+ ENCINO ELF
+ POCUS PULP
+ FANTASIA PARK
+ AMERICAN CIRCUS
+ ESCAPE METROPOLIS
+ HANOVER GALAXY
+ GUNFIGHT MOON
+ BAREFOOT MANCHURIAN
+ DOUBLE WRATH
+ BERETS AGENT
+ TOMORROW HUSTLER
+ JERK PAYCHECK
+ FREDDY STORM
+ ISLAND EXORCIST
+ INTENTIONS EMPIRE
+ COMA HEAD
+ FALCON VOLUME
+ ENEMY ODDS
+ GOLDMINE TYCOON
+ DANCING FEVER
+ HUNCHBACK IMPOSSIBLE
+ MOCKINGBIRD HOLLYWOOD
+ METROPOLIS COMA
+ FRENCH HOLIDAY
+ EGYPT TENENBAUMS
+ DOWNHILL ENOUGH
+ CHASING FIGHT
+ SUSPECTS QUILLS
+ SUNDANCE INVASION
+ PERFECT GROOVE
+ HARRY IDAHO
+ NORTHWEST POLISH
+ GREEK EVERYONE
+ DAWN POND
+ CELEBRITY HORN
+ ANACONDA CONFESSIONS
+ JET NEIGHBORS
+ NONE SPIKING
+ MAJESTIC FLOATS
+ THIEF PELICAN
+ FIGHT JAWBREAKER
+ HORN WORKING
+ TAXI KICK
+ FACTORY DRAGON
+ COMFORTS RUSH
+ GABLES METROPOLIS
+ WHALE BIKINI
+ HOUSE DYNAMITE
+ VIDEOTAPE ARSENIC
+ VOLCANO TEXAS
+ CHANCE RESURRECTION
+ ZOOLANDER FICTION
+ QUEST MUSSOLINI
+ PATTON INTERVIEW
+ SALUTE APOLLO
+ TELEGRAPH VOYAGE
+ DETAILS PACKER
+ KISS GLORY
+ FICTION CHRISTMAS
+ BINGO TALENTED
+ BUCKET BROTHERHOOD
+ TALENTED HOMICIDE
+ CAROL TEXAS
+ DOGMA FAMILY
+ MASK PEACH
+ STEPMOM DREAM
+ SABRINA MIDNIGHT
+ ALIEN CENTER
+ SUGAR WONKA
+ SCALAWAG DUCK
+ BEAUTY GREASE
+ DORADO NOTTING
+ MOURNING PURPLE
+ POSEIDON FOREVER
+ INVASION CYCLONE
+ PRIMARY GLASS
+ DRAGONFLY STRANGERS
+ HANKY OCTOBER
+ SHEPHERD MIDSUMMER
+ MASKED BUBBLE
+ HARPER DYING
+ SLEEPING SUSPECTS
+ HYDE DOCTOR
+ INTRIGUE WORST
+ SECRET GROUNDHOG
+ FOOL MOCKINGBIRD
+ DRIFTER COMMANDMENTS
+ BUTTERFLY CHOCOLAT
+ REMEMBER DIARY
+ SEA VIRGIN
+ MOVIE SHAKESPEARE
+ GROOVE FICTION
+ FAMILY SWEET
+ SCORPION APOLLO
+ SPICE SORORITY
+ DRIVER ANNIE
+ GREASE YOUTH
+ CLOSER BANG
+ HOPE TOOTSIE
+ WONKA SEA
+ STRICTLY SCARFACE
+ NEIGHBORS CHARADE
+ TIGHTS DAWN
+ FISH OPUS
+ ACADEMY DINOSAUR
+ CAUSE DATE
+ SHOCK CABIN
+ GALAXY SWEETHEARTS
+ EAGLES PANKY
+ SEABISCUIT PUNK
+ SUIT WALLS
+ CLUELESS BUCKET
+ ROCKETEER MOTHER
+ FORRESTER COMANCHEROS
+ IGBY MAKER
+ GANDHI KWAI
+ KWAI HOMEWARD
+ CALENDAR GUNFIGHT
+ MARS ROMAN
+ SOMETHING DUCK
+ ROCK INSTINCT
+ CURTAIN VIDEOTAPE
+ WATERFRONT DELIVERANCE
+ MONEY HAROLD
+ WIFE TURN
+ BLADE POLISH
+ MUSIC BOONDOCK
+ SMOKING BARBARELLA
+ MINDS TRUMAN
+ LAWLESS VISION
+ ALONE TRIP
+ DARN FORRESTER
+ REDEMPTION COMFORTS
+ JUGGLER HARDLY
+ ZORRO ARK
+ NATIONAL STORY
+ QUEEN LUKE
+ BLUES INSTINCT
+ METAL ARMAGEDDON
+ HANDICAP BOONDOCK
+ WARDROBE PHANTOM
+ EXPENDABLE STALLION
+ PREJUDICE OLEANDER
+ EGG IGBY
+ SPLENDOR PATTON
+ POLISH BROOKLYN
+ INNOCENT USUAL
+ DYING MAKER
+ STRAIGHT HOURS
+ TITANS JERK
+ WRONG BEHAVIOR
+ FLYING HOOK
+ SLEEPLESS MONSOON
+ OZ LIAISONS
+ CONVERSATION DOWNHILL
+ BROOKLYN DESERT
+ UNITED PILOT
+ CIDER DESIRE
+ HONEY TIES
+ SPY MILE
+ ANGELS LIFE
+ CARRIE BUNCH
+ HORROR REIGN
+ YENTL IDAHO
+ TRACY CIDER
+ INTERVIEW LIAISONS
+ BARBARELLA STREETCAR
+ SHOOTIST SUPERFLY
+(475 rows)
 
 "
-33,"For each actor, show their name and the percentage of films they've acted in compared to the total films.",Hard,"For each actor, show their name and the percentage of films they've acted in compared to the total films.","SELECT
+33,"For each actor, show their name and the percentage of films they've acted in compared to the total films.",Hard,"SELECT
   A.first_name,
   A.last_name,
   CAST(COUNT(FA.film_id) AS REAL) * 100 / (
     SELECT
       COUNT(*)
-    FROM film
+    FROM
+      film
   ) AS percentage_of_films
-FROM actor AS A
-JOIN film_actor AS FA
+FROM
+  actor AS A
+JOIN
+  film_actor AS FA
   ON A.actor_id = FA.actor_id
 GROUP BY
   A.actor_id,
@@ -29200,10 +28944,12 @@ GROUP BY
 (200 rows)
 
 "
-34,Show the average payment amount for each customer.,Hard,Show the average payment amount for each customer.,"SELECT c.customer_id, AVG(p.amount) AS average_payment_amount
-FROM customer c
-JOIN payment p ON c.customer_id = p.customer_id
-GROUP BY c.customer_id;"," customer_id | average_payment_amount 
+34,Show the average payment amount for each customer.,Hard,"SELECT
+  customer_id,
+  AVG(amount) AS average_payment_amount
+FROM payment
+GROUP BY
+  customer_id;"," customer_id | average_payment_amount 
 -------------+------------------------
          184 |     3.9465217391304348
           87 |     4.8566666666666667
@@ -29807,252 +29553,233 @@ GROUP BY c.customer_id;"," customer_id | average_payment_amount
 (599 rows)
 
 "
-35,List all actors who have appeared in at least one film in each category.,Hard,List all actors who have appeared in at least one film in each category.,"SELECT a.first_name, a.last_name
-FROM actor a
-JOIN film_actor fa ON a.actor_id = fa.actor_id
-JOIN film_category fc ON fa.film_id = fc.film_id
-GROUP BY a.actor_id, a.first_name, a.last_name
-HAVING COUNT(DISTINCT fc.category_id) = (SELECT COUNT(*) FROM category);"," first_name  |  last_name   
--------------+--------------
- PENELOPE    | GUINESS
- NICK        | WAHLBERG
- ED          | CHASE
- JENNIFER    | DAVIS
- JOHNNY      | LOLLOBRIGIDA
- GRACE       | MOSTEL
- MATTHEW     | JOHANSSON
- JOE         | SWANK
- CHRISTIAN   | GABLE
- ZERO        | CAGE
- KARL        | BERRY
- UMA         | WOOD
- VIVIEN      | BERGEN
- CUBA        | OLIVIER
- FRED        | COSTNER
- HELEN       | VOIGHT
- DAN         | TORN
- BOB         | FAWCETT
- LUCILLE     | TRACY
- KIRSTEN     | PALTROW
- ELVIS       | MARX
- SANDRA      | KILMER
- CAMERON     | STREEP
- KEVIN       | BLOOM
- RIP         | CRAWFORD
- JULIA       | MCQUEEN
- WOODY       | HOFFMAN
- ALEC        | WAYNE
- SANDRA      | PECK
- TIM         | HACKMAN
- MILLA       | PECK
- AUDREY      | OLIVIER
- JUDY        | DEAN
- BURT        | DUKAKIS
- VAL         | BOLGER
- TOM         | MCKELLEN
- GOLDIE      | BRODY
- JOHNNY      | CAGE
- JODIE       | DEGENERES
- TOM         | MIRANDA
- KIRK        | JOVOVICH
- REESE       | KILMER
- PARKER      | GOLDBERG
- JULIA       | BARRYMORE
- FRANCES     | DAY-LEWIS
- ANNE        | CRONYN
- NATALIE     | HOPKINS
- GARY        | PHOENIX
- CARMEN      | HUNT
- MENA        | TEMPLE
- FAY         | KILMER
- DAN         | HARRIS
- JUDE        | CRUISE
- CHRISTIAN   | AKROYD
- DUSTIN      | TAUTOU
- HENRY       | BERRY
- CHRISTIAN   | NEESON
- JAYNE       | NEESON
- RAY         | JOHANSSON
- ANGELA      | HUDSON
- MARY        | TANDY
- JESSICA     | BAILEY
- RIP         | WINSLET
- KENNETH     | PALTROW
- MICHELLE    | MCCONAUGHEY
- ADAM        | GRANT
- SEAN        | WILLIAMS
- GARY        | PENN
- BURT        | POSEY
- ANGELINA    | ASTAIRE
- CARY        | MCCONAUGHEY
- GROUCHO     | SINATRA
- MAE         | HOFFMAN
- RALPH       | CRUZ
- SCARLETT    | DAMON
- WOODY       | JOLIE
- BEN         | WILLIS
- JAMES       | PITT
- MINNIE      | ZELLWEGER
- GREG        | CHAPLIN
- SPENCER     | PECK
- KENNETH     | PESCI
- CHARLIZE    | DENCH
- SEAN        | GUINESS
- CHRISTOPHER | BERRY
- KIRSTEN     | AKROYD
- ELLEN       | PRESLEY
- KENNETH     | TORN
- DARYL       | WAHLBERG
- GENE        | WILLIS
- MEG         | HAWKE
- CHRIS       | BRIDGES
- JIM         | MOSTEL
- SUSAN       | DAVIS
- WALTER      | TORN
- MATTHEW     | LEIGH
- PENELOPE    | CRONYN
- SIDNEY      | CROWE
- GROUCHO     | DUNST
- GINA        | DEGENERES
- WARREN      | NOLTE
- SUSAN       | DAVIS
- CAMERON     | ZELLWEGER
- RUSSELL     | BACALL
- MORGAN      | HOPKINS
- MORGAN      | MCDORMAND
- HARRISON    | BALE
- DAN         | STREEP
- RENEE       | TRACY
- WARREN      | JACKMAN
- PENELOPE    | MONROE
- LIZA        | BERGMAN
- SALMA       | NOLTE
- JULIANNE    | DENCH
- SCARLETT    | BENING
- ALBERT      | NOLTE
- FRANCES     | TOMEI
- KEVIN       | GARLAND
- CATE        | MCQUEEN
- DARYL       | CRAWFORD
- GRETA       | KEITEL
- JANE        | JACKMAN
- ADAM        | HOPPER
- RICHARD     | PENN
- GENE        | HOPKINS
- ED          | MANSFIELD
- MORGAN      | WILLIAMS
- LUCILLE     | DEE
- EWAN        | GOODING
- WHOOPI      | HURT
- CATE        | HARRIS
- JADA        | RYDER
- RIVER       | DEAN
- ANGELA      | WITHERSPOON
- KIM         | ALLEN
- ALBERT      | JOHANSSON
- FAY         | WINSLET
- EMILY       | DEE
- RUSSELL     | TEMPLE
- JAYNE       | NOLTE
- GEOFFREY    | HESTON
- BEN         | HARRIS
- MINNIE      | KILMER
- MERYL       | GIBSON
- IAN         | TANDY
- FAY         | WOOD
- GRETA       | MALDEN
- VIVIEN      | BASINGER
- LAURA       | BRODY
- CHRIS       | DEPP
- HARVEY      | HOPE
- CHRISTOPHER | WEST
- HUMPHREY    | WILLIS
- AL          | GARLAND
- NICK        | DEGENERES
- LAURENCE    | BULLOCK
- WILL        | WILSON
- KENNETH     | HOFFMAN
- OLYMPIA     | PFEIFFER
- GROUCHO     | WILLIAMS
- ALAN        | DREYFUSS
- MICHAEL     | BENING
- WILLIAM     | HACKMAN
- JON         | CHASE
- GENE        | MCKELLEN
- LISA        | MONROE
- ED          | GUINESS
- JEFF        | SILVERSTONE
- MATTHEW     | CARREY
- DEBBIE      | AKROYD
- RUSSELL     | CLOSE
- HUMPHREY    | GARLAND
- MICHAEL     | BOLGER
- RENEE       | BALL
- ROCK        | DUKAKIS
- CUBA        | BIRCH
- AUDREY      | BAILEY
- GREGORY     | GOODING
- JOHN        | SUVARI
- BURT        | TEMPLE
- MERYL       | ALLEN
- JAYNE       | SILVERSTONE
- BELA        | WALKEN
- REESE       | WEST
- MARY        | KEITEL
-(185 rows)
+35,List all actors who have appeared in at least one film in each category.,Hard,"SELECT A.first_name, A.last_name
+FROM actor AS A
+JOIN film_actor AS FA ON A.actor_id = FA.actor_id
+JOIN film_category AS FC ON FA.film_id = FC.film_id
+GROUP BY A.actor_id
+HAVING COUNT(DISTINCT FC.category_id) = (SELECT COUNT(*) FROM category)"," first_name |  last_name   
+------------+--------------
+ ED         | CHASE
+ JOHNNY     | LOLLOBRIGIDA
+ GRACE      | MOSTEL
+ MATTHEW    | JOHANSSON
+ JOE        | SWANK
+ CHRISTIAN  | GABLE
+ ZERO       | CAGE
+ KARL       | BERRY
+ UMA        | WOOD
+ VIVIEN     | BERGEN
+ CUBA       | OLIVIER
+ FRED       | COSTNER
+ HELEN      | VOIGHT
+ BOB        | FAWCETT
+ LUCILLE    | TRACY
+ KIRSTEN    | PALTROW
+ ELVIS      | MARX
+ SANDRA     | KILMER
+ CAMERON    | STREEP
+ RIP        | CRAWFORD
+ JULIA      | MCQUEEN
+ WOODY      | HOFFMAN
+ ALEC       | WAYNE
+ SANDRA     | PECK
+ MILLA      | PECK
+ AUDREY     | OLIVIER
+ VAL        | BOLGER
+ TOM        | MCKELLEN
+ GOLDIE     | BRODY
+ JOHNNY     | CAGE
+ JODIE      | DEGENERES
+ TOM        | MIRANDA
+ KIRK       | JOVOVICH
+ REESE      | KILMER
+ PARKER     | GOLDBERG
+ JULIA      | BARRYMORE
+ FRANCES    | DAY-LEWIS
+ ANNE       | CRONYN
+ NATALIE    | HOPKINS
+ GARY       | PHOENIX
+ MENA       | TEMPLE
+ DAN        | HARRIS
+ DUSTIN     | TAUTOU
+ HENRY      | BERRY
+ CHRISTIAN  | NEESON
+ JAYNE      | NEESON
+ RAY        | JOHANSSON
+ ANGELA     | HUDSON
+ MARY       | TANDY
+ JESSICA    | BAILEY
+ RIP        | WINSLET
+ MICHELLE   | MCCONAUGHEY
+ ADAM       | GRANT
+ SEAN       | WILLIAMS
+ GARY       | PENN
+ BURT       | POSEY
+ ANGELINA   | ASTAIRE
+ CARY       | MCCONAUGHEY
+ GROUCHO    | SINATRA
+ MAE        | HOFFMAN
+ RALPH      | CRUZ
+ SCARLETT   | DAMON
+ WOODY      | JOLIE
+ BEN        | WILLIS
+ JAMES      | PITT
+ MINNIE     | ZELLWEGER
+ GREG       | CHAPLIN
+ SPENCER    | PECK
+ KENNETH    | PESCI
+ CHARLIZE   | DENCH
+ SEAN       | GUINESS
+ KIRSTEN    | AKROYD
+ ELLEN      | PRESLEY
+ KENNETH    | TORN
+ DARYL      | WAHLBERG
+ MEG        | HAWKE
+ CHRIS      | BRIDGES
+ JIM        | MOSTEL
+ SUSAN      | DAVIS
+ WALTER     | TORN
+ MATTHEW    | LEIGH
+ PENELOPE   | CRONYN
+ SIDNEY     | CROWE
+ GROUCHO    | DUNST
+ GINA       | DEGENERES
+ WARREN     | NOLTE
+ SUSAN      | DAVIS
+ CAMERON    | ZELLWEGER
+ RUSSELL    | BACALL
+ MORGAN     | MCDORMAND
+ HARRISON   | BALE
+ DAN        | STREEP
+ RENEE      | TRACY
+ WARREN     | JACKMAN
+ LIZA       | BERGMAN
+ SALMA      | NOLTE
+ JULIANNE   | DENCH
+ ALBERT     | NOLTE
+ FRANCES    | TOMEI
+ CATE       | MCQUEEN
+ GRETA      | KEITEL
+ JANE       | JACKMAN
+ ADAM       | HOPPER
+ RICHARD    | PENN
+ GENE       | HOPKINS
+ ED         | MANSFIELD
+ MORGAN     | WILLIAMS
+ LUCILLE    | DEE
+ EWAN       | GOODING
+ WHOOPI     | HURT
+ CATE       | HARRIS
+ RIVER      | DEAN
+ ANGELA     | WITHERSPOON
+ ALBERT     | JOHANSSON
+ FAY        | WINSLET
+ EMILY      | DEE
+ RUSSELL    | TEMPLE
+ JAYNE      | NOLTE
+ GEOFFREY   | HESTON
+ BEN        | HARRIS
+ MINNIE     | KILMER
+ MERYL      | GIBSON
+ IAN        | TANDY
+ FAY        | WOOD
+ GRETA      | MALDEN
+ VIVIEN     | BASINGER
+ LAURA      | BRODY
+ CHRIS      | DEPP
+ HARVEY     | HOPE
+ HUMPHREY   | WILLIS
+ NICK       | DEGENERES
+ LAURENCE   | BULLOCK
+ WILL       | WILSON
+ KENNETH    | HOFFMAN
+ OLYMPIA    | PFEIFFER
+ GROUCHO    | WILLIAMS
+ ALAN       | DREYFUSS
+ MICHAEL    | BENING
+ WILLIAM    | HACKMAN
+ JON        | CHASE
+ GENE       | MCKELLEN
+ LISA       | MONROE
+ ED         | GUINESS
+ JEFF       | SILVERSTONE
+ MATTHEW    | CARREY
+ HUMPHREY   | GARLAND
+ MICHAEL    | BOLGER
+ RENEE      | BALL
+ ROCK       | DUKAKIS
+ CUBA       | BIRCH
+ AUDREY     | BAILEY
+ GREGORY    | GOODING
+ JOHN       | SUVARI
+ BURT       | TEMPLE
+ MERYL      | ALLEN
+ JAYNE      | SILVERSTONE
+ BELA       | WALKEN
+ REESE      | WEST
+ MARY       | KEITEL
+(159 rows)
 
 "
-36,Find customers who have rented more films this year than last year.,Hard,Find customers who have rented more films this year than last year.,"SELECT c.first_name, c.last_name
-FROM customer c
-JOIN rental r ON c.customer_id = r.customer_id
-WHERE EXTRACT(YEAR FROM r.rental_date) = EXTRACT(YEAR FROM CURRENT_DATE)
-GROUP BY c.customer_id, c.first_name, c.last_name
-HAVING COUNT(DISTINCT r.rental_id) > (
-    SELECT COUNT(DISTINCT r2.rental_id)
-    FROM rental r2
-    WHERE r2.customer_id = c.customer_id
-      AND EXTRACT(YEAR FROM r2.rental_date) = EXTRACT(YEAR FROM CURRENT_DATE) - 1
-);"," first_name | last_name 
+36,Find customers who have rented more films this year than last year.,Hard,"SELECT
+  c.first_name,
+  c.last_name
+FROM customer AS c
+JOIN (
+  SELECT
+    customer_id,
+    COUNT(rental_id) AS rental_count_this_year
+  FROM rental
+  WHERE
+    rental_date BETWEEN (NOW() - INTERVAL '1 year') AND NOW()
+  GROUP BY
+    customer_id
+) AS this_year_rentals
+  ON c.customer_id = this_year_rentals.customer_id
+JOIN (
+  SELECT
+    customer_id,
+    COUNT(rental_id) AS rental_count_last_year
+  FROM rental
+  WHERE
+    rental_date BETWEEN (NOW() - INTERVAL '2 year') AND (NOW() - INTERVAL '1 year')
+  GROUP BY
+    customer_id
+) AS last_year_rentals
+  ON c.customer_id = last_year_rentals.customer_id
+WHERE
+  this_year_rentals.rental_count_this_year > last_year_rentals.rental_count_last_year;"," first_name | last_name 
 ------------+-----------
 (0 rows)
 
 "
-37,List the top 5 films with the highest revenue.,Hard,List the top 5 films with the highest revenue.,"SELECT
-  F.title,
-  SUM(P.amount) AS total_revenue
-FROM film AS F
-JOIN inventory AS I
-  ON F.film_id = I.film_id
-JOIN rental AS R
-  ON I.inventory_id = R.inventory_id
-JOIN payment AS P
-  ON R.rental_id = P.rental_id
-GROUP BY
-  F.film_id,
-  F.title
+37,List the top 5 films with the highest revenue.,Hard,"SELECT
+  film.title
+FROM film
 ORDER BY
-  total_revenue DESC
-LIMIT 5;","       title       | total_revenue 
--------------------+---------------
- TELEGRAPH VOYAGE  |        231.73
- WIFE TURN         |        223.69
- ZORRO ARK         |        214.69
- GOODFELLAS SALUTE |        209.69
- SATURDAY LAMBS    |        204.72
+  film.rental_rate * film.rental_duration DESC
+LIMIT 5;","      title       
+------------------
+ BORN SPINAL
+ BOWFINGER GABLES
+ BIKINI BORROWERS
+ BOILED DARES
+ BROOKLYN DESERT
 (5 rows)
 
 "
-38,"For each customer, show the number of films rented in the last month compared to the previous month.",Hard,"For each customer, show the number of films rented in the last month compared to the previous month.","WITH MonthlyRentals AS (
+38,"For each customer, show the number of films rented in the last month compared to the previous month.",Hard,"WITH MonthlyRentals AS (
     SELECT
         c.customer_id,
         DATE_TRUNC('month', r.rental_date) AS rental_month,
-        COUNT(r.rental_id) AS rental_count
+        COUNT(r.rental_id) AS num_rentals
     FROM
         customer c
     JOIN
         rental r ON c.customer_id = r.customer_id
     WHERE
-        r.rental_date >= DATE_TRUNC('month', NOW() - INTERVAL '2 months')
+        r.rental_date >= NOW() - INTERVAL '2 months'
     GROUP BY
         c.customer_id,
         DATE_TRUNC('month', r.rental_date)
@@ -30061,27 +29788,26 @@ LaggedRentals AS (
     SELECT
         customer_id,
         rental_month,
-        rental_count,
-        LAG(rental_count, 1, 0) OVER (PARTITION BY customer_id ORDER BY rental_month) AS previous_month_rental_count
+        num_rentals,
+        LAG(num_rentals, 1, 0) OVER (PARTITION BY customer_id ORDER BY rental_month) AS prev_month_rentals
     FROM
         MonthlyRentals
 )
 SELECT
     customer_id,
     rental_month,
-    rental_count,
-    previous_month_rental_count,
-    rental_count - previous_month_rental_count AS rental_difference
+    num_rentals,
+    prev_month_rentals,
+    num_rentals - prev_month_rentals AS rental_difference
 FROM
     LaggedRentals
-ORDER BY
-    customer_id,
-    rental_month;"," customer_id | rental_month | rental_count | previous_month_rental_count | rental_difference 
--------------+--------------+--------------+-----------------------------+-------------------
+WHERE
+    rental_month IN (DATE_TRUNC('month', NOW() - INTERVAL '1 month'), DATE_TRUNC('month', NOW()));"," customer_id | rental_month | num_rentals | prev_month_rentals | rental_difference 
+-------------+--------------+-------------+--------------------+-------------------
 (0 rows)
 
 "
-39,Show the names of customers who have rented every film in the Action category.,Hard,Show the names of customers who have rented every film in the Action category.,"SELECT c.first_name, c.last_name
+39,Show the names of customers who have rented every film in the Action category.,Hard,"SELECT c.first_name, c.last_name
 FROM customer c
 JOIN rental r ON c.customer_id = r.customer_id
 JOIN inventory i ON r.inventory_id = i.inventory_id
@@ -30089,18 +29815,30 @@ JOIN film_category fc ON i.film_id = fc.film_id
 JOIN category cat ON fc.category_id = cat.category_id
 WHERE cat.name = 'Action'
 GROUP BY c.customer_id, c.first_name, c.last_name
-HAVING COUNT(DISTINCT i.film_id) = (SELECT COUNT(DISTINCT f.film_id) FROM film_category f JOIN category ca ON f.category_id = ca.category_id WHERE ca.name = 'Action');"," first_name | last_name 
+HAVING COUNT(DISTINCT i.film_id) = (SELECT COUNT(*) FROM film_category fc2 JOIN category cat2 ON fc2.category_id = cat2.category_id WHERE cat2.name = 'Action');"," first_name | last_name 
 ------------+-----------
 (0 rows)
 
 "
-40,List customers who have rented the same film more than 3 times.,Hard,List customers who have rented the same film more than 3 times.,"SELECT c.first_name, c.last_name, f.title, COUNT(*) AS rental_count
+40,List customers who have rented the same film more than 3 times.,Hard,"SELECT
+  c.first_name,
+  c.last_name,
+  f.title,
+  COUNT(r.rental_id) AS rental_count
 FROM customer c
-JOIN rental r ON c.customer_id = r.customer_id
-JOIN inventory i ON r.inventory_id = i.inventory_id
-JOIN film f ON i.film_id = f.film_id
-GROUP BY c.customer_id, c.first_name, c.last_name, f.title
-HAVING COUNT(*) > 3;"," first_name | last_name | title | rental_count 
+JOIN rental r
+  ON c.customer_id = r.customer_id
+JOIN inventory i
+  ON r.inventory_id = i.inventory_id
+JOIN film f
+  ON i.film_id = f.film_id
+GROUP BY
+  c.customer_id,
+  c.first_name,
+  c.last_name,
+  f.title
+HAVING
+  COUNT(r.rental_id) > 3;"," first_name | last_name | title | rental_count 
 ------------+-----------+-------+--------------
 (0 rows)
 
