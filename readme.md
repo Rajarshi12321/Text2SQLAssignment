@@ -19,7 +19,6 @@
   - [Installation](#installation)
   - [Database Setup](#database-setup)
   - [Usage](#usage)
-  - [OR](#or)
   - [Project Structure](#project-structure)
   - [Features](#features)
   - [Database Schema](#database-schema)
