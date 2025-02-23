@@ -94,7 +94,6 @@ python app.py
 
 ## Agent Workflow:
 
-```python
 
 The agent in the `text2sql.py` or `text2sql.ipynb` script has several nodes that perform specific tasks in the Text-to-SQL conversion workflow. Here are the different nodes and their functions:
 
@@ -111,7 +110,7 @@ The agent in the `text2sql.py` or `text2sql.ipynb` script has several nodes that
   - It uses the `execute_query` function from the `setup_db` module to run the SQL query and retrieve the results.
 
 These nodes are part of a state graph workflow, which defines the sequence of operations and ensures that each step is performed in the correct order. The workflow starts with `generate_sql`, moves to `validate_sql`, and finally to `execute_sql`.
-```
+
 
 
 
