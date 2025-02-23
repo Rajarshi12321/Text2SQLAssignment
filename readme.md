@@ -199,10 +199,21 @@ for query in queries:
 Here's an example of converting a natural language query to SQL:
 
 Function and example:
+
 <img width="406" alt="image" src="https://github.com/user-attachments/assets/059a2377-bf89-4593-a788-713fc26b6395" />
 
 Output:
+
 <img width="353" alt="image" src="https://github.com/user-attachments/assets/a4b4210a-ca0a-4cf8-985f-611150c4b700" />
+
+Here's an example of using the Gradio UI - app.py:
+
+
+
+https://github.com/user-attachments/assets/5429700f-ace0-4548-a286-0dcd95a01dfc
+
+
+
 
 ## Troubleshooting
 
