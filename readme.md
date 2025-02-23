@@ -20,7 +20,9 @@
   - [Database Setup](#database-setup)
   - [Usage](#usage)
   - [Project Structure](#project-structure)
+  - [Agent Workflow](#agent-workflow)
   - [Features](#features)
+  - [Function for only app.py](#function-for-only-apppy)
   - [Database Schema](#database-schema)
   - [Evaluation Function](#evaluation-function)
   - [Evaluation Results](#evaluation-results)
@@ -91,7 +93,7 @@ python app.py
 - `requirements.txt`: Python package dependencies
 - `pagila/`: Directory containing Pagila database SQL files
 
-## Agent Workflow:
+## Agent Workflow
 
 
 The agent in the `text2sql.py` or `text2sql.ipynb` script has several nodes that perform specific tasks in the Text-to-SQL conversion workflow. Here are the different nodes and their functions:
