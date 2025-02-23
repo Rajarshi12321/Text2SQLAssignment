@@ -77,39 +77,12 @@ This will:
 
 ## Usage
 
-1. Run the app.py file:
+1. Run the app.py file for Gradio-UI:
 ```bash
 python app.py
 ```
 --- 
-OR
- ---
-1. Run the Jupyter notebook:
-```bash
-jupyter notebook text2sql.ipynb
-```
-
-2. Use the text-to-SQL converter in two ways:
-
-a. Simple approach:
-```python
-# Single query
-natural_language_query = "Show me the top 5 customers who have rented the most movies"
-sql = text_to_sql(natural_language_query)
-results = execute_query(sql)
-print("\nresults:", results)
-```
-
-b. Agent-based approach:
-```python
-# Using the agent executor
-result = agent_executor.invoke({
-    "input": natural_language_query,
-    "sql_query": "",
-    "final_query": ""
-})
-print("\nFinal SQL Query:", result["final_query"])
-```
+2. For experiments check  `text2sql.ipynb`
 
 ## Project Structure
 
