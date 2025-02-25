@@ -12,7 +12,6 @@ LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 EXAMPLE_QUERIES = [
     "Show me the top 5 customers who have rented the most movies",
     "List all actors who have appeared in at least one film in each category",
-    "Find the films that have been rented more times than the average",
     "Show the average payment amount for each customer",
     "List the top 5 films with the highest revenue",
 ]

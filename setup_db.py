@@ -49,6 +49,7 @@ def setup_pagila_database():
         if not check_schema.stdout.strip():
             print("Loading pagila schema...")
             try:
+                print("Platform:", platform.system())
                 # Use different commands based on OS
                 if platform.system() == "Windows":
                     subprocess.run(
@@ -59,7 +60,7 @@ def setup_pagila_database():
                 else:
                     # Original Unix command
                     subprocess.run(
-                        "type pagila/pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila",
+                        "cat pagila/pagila-schema.sql | docker exec -i postgres psql -U postgres -d pagila",
                         shell=True,
                         check=True,
                     )
@@ -80,8 +81,10 @@ def setup_pagila_database():
 
         # Check if data exists
         if check_data.stdout.strip() == "0":
+
             print("Loading pagila data...")
             try:
+                print("Platform:", platform.system())
                 # Use different commands based on OS
                 if platform.system() == "Windows":
                     subprocess.run(
@@ -92,7 +95,7 @@ def setup_pagila_database():
                 else:
                     # Original Unix command
                     subprocess.run(
-                        "type pagila/pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila",
+                        "cat pagila/pagila-data.sql | docker exec -i postgres psql -U postgres -d pagila",
                         shell=True,
                         check=True,
                     )
@@ -151,7 +154,10 @@ def restart_postgres_container():
             "docker ps -a -f name=postgres", shell=True, text=True, capture_output=True
         )
 
-        if check_container.stdout.strip():
+        # Print the output of the check_container command
+        print("Check", check_container.stdout)
+
+        if "postgres" in check_container.stdout.strip():
             print("Found existing postgres container...")
             # Get container status
             status = subprocess.run(
